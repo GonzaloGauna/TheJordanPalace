@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    font-family: ;
+} */
+
+header{
+    border: 1px solid black;
+}
+
+div#logo{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+}
+
+input#buscador{
+    margin-bottom: 20px;
+    margin-left: 100px;
+    width: 50%;
+    text-align: center;
+    text-align: left;
+}
+
+nav{
+    float: left;
+    width: 100%;
+    padding-left: 250px;
+    background-color: grey;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav ul li{
+    float: left;
+    font-size: 16px;
+    list-style: none;
+}
+
+nav ul li a{
+    width: 100%;
+    display: block;
+    padding: 20px;
+    /* color: ; */
+    text-decoration: none;
+}
+
+/* nav ul li a:hover{
+    background: ;
+} */
