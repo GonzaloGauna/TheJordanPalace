@@ -1,0 +1,14 @@
+DOCUMENTACIÓN CSS:
+- FLEXBOX: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- GRID: https://css-tricks.com/snippets/css/complete-guide-grid/
+
+ICONOS:
+- https://boxicons.com/
+
+COLORES:
+- https://colorhunt.co/
+- https://yeun.github.io/open-color/
+- https://coolors.co/
+
+FUENTES:
+- https://fonts.google.com/
