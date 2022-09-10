@@ -3,10 +3,14 @@
     padding: 0;
 }
 
+
+
+
 footer{
     background-color: black;
     text-align: center;
-    padding: 30px;
+    padding: 30px;  
+    width: 100%;
 }
 
 .bx{
