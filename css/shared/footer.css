@@ -3,29 +3,36 @@
     padding: 0;
 }
 
-
-
+body{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
 
 footer{
     background-color: black;
-    text-align: center;
-    padding: 30px;  
+    padding: 20px;  
     width: 100%;
 }
 
 .bx{
     font-size: 30px;
-    padding-bottom: 20px;
     color: white;
+    text-align: center   ;
 }
 
-p{
-    display: inline;
-    padding: 2px;
-    color: white;
+.column{
+    float: left;
+    width: 33.33%;
 }
 
 .copyright{
     color: darkgray;
+    text-align: center;
+    width: 95%;
 }
 
+div p{
+   color: white;
+}
