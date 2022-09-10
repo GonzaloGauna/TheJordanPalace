@@ -1,0 +1,51 @@
+@import url(login.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.field{
+    width: 70%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.buttons a{
+    text-align: center;
+    
+}
+
+.buttons a:hover{
+    text-decoration: none;
+}
+
+.ingreso{
+    width: 26%;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancelar{
+    width: 26%;
+    height: 40px;
+    background-color: #252323;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancelar:hover{
+    background-color: white;
+    color: #017bab;
+}
