@@ -14,9 +14,19 @@
   
 }
 
-button.cart_button{
-    margin-left: 100px;
-    margin-top: 30px;
+.button_cart{
+    background: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  
+.container_button_cart{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
 }
 
 body{
@@ -27,17 +37,20 @@ header{
     background: black;
 }
 
-div#logo{
-    border: 1px solid black;
-    display: inline-block;
-    padding: 10px;
-    margin: 15px;
-    margin-left: 70px;
-    background: white;
+.logo img{
+    margin-right: 10px;
+    height: 80px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  
+div.logo {
+    display: flex;
+    background: black;
+    align-items: center;
 }
 
 input#buscador{
-    margin-bottom: 20px;
     margin-left: 100px;
     width: 75%;
     text-align: center;
