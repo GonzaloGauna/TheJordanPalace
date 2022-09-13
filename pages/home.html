@@ -13,18 +13,16 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <script
+      src="https://kit.fontawesome.com/ce9fd9f657.js"
+      crossorigin="anonymous"
+    ></script>
     <title>The Jordan Palace</title>
   </head>
   <body>
     <header>
       <img src="/images/others/jordan-icon.jpg" alt="logo" id="logo" />
       <input type="search" placeholder="Buscador..." id="buscador" />
-      <!-- <div class="container_button_cart">  
-        <button type="button" class="button_cart">
-          <span class="material-symbols-outlined"> shopping_cart </span>
-        </button>
-      </div> -->
-      <!--boton de carrito-->
       <nav class="menu">
         <ul>
           <li><a href="#">Home</a></li>
@@ -34,77 +32,143 @@
         </ul>
       </nav>
     </header>
-    <br />
-    <main class="main">
+    <main>
+      <h2 id="modelos">MODELOS</h2>
       <div class="container">
-        <h2>MODELOS</h2>
-        <br /><br /><br /><br />
-        <ul class="slider">
-          <li id="slide1">
-            <img src="/images/articles/air-jordan-1-HighDaveWhite.png" />
-          </li>
-          <li id="slide2">
-            <img src="/images/articles/air-jordan-1-HyperRoyal.png" />
-          </li>
-          <li id="slide3">
-            <img src="/images/articles/air-jordan-1-mid-winterizad.png" />
-          </li>
-          <li id="slide4">
-            <img src="/images/articles/air-jordan-retro-1-HighStrap.png" />
-          </li>
-        </ul>
-        <br />
-        <ul class="menu_slide">
-          <li>
-            <a href="#slide1">.</a>
-          </li>
-          <li>
-            <a href="#slide2">.</a>
-          </li>
-          <li>
-            <a href="#slide3">.</a>
-          </li>
-          <li>
-            <a href="#slide4">.</a>
-          </li>
-        </ul>
+        <div class="carrusel" id="carrusel1">
+          <div class="tarjetaCarrusel">
+            <img
+              src="/images/articles/air-jordan-1-HighDaveWhite.png"
+              id="tarjeta1"
+            />
+          </div>
+          <div class="flechaCarrusel">
+            <a href="#carrusel4"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#carrusel2"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="carrusel" id="carrusel2">
+          <div class="tarjetaCarrusel">
+            <img
+              src="/images/articles/air-jordan-1-HyperRoyal.png"
+              id="tarjeta2"
+            />
+          </div>
+          <div class="flechaCarrusel">
+            <a href="#carrusel1"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#carrusel3"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="carrusel" id="carrusel3">
+          <div class="tarjetaCarrusel">
+            <img
+              src="/images/articles/air-jordan-1-mid-winterizad.png"
+              id="tarjeta3"
+            />
+          </div>
+          <div class="flechaCarrusel">
+            <a href="#carrusel2"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#carrusel4"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
+        <div class="carrusel" id="carrusel4">
+          <div class="tarjetaCarrusel">
+            <img
+              src="/images/articles/air-jordan-retro-1-HighStrap.png"
+              id="tarjeta4"
+            />
+          </div>
+          <div class="flechaCarrusel">
+            <a href="#carrusel3"><i class="fa-solid fa-chevron-left"></i></a>
+            <a href="#carrusel1"><i class="fa-solid fa-chevron-right"></i></a>
+          </div>
+        </div>
       </div>
-      <aside>
+
+      <div class="background_container_card">
+        <div class="container_card">
+          <div id="card1">
+            <img
+              src="/images/styleCards/4.png"
+              alt="styleCard"
+              style="width: 100%"
+            />
+            <div class="text_card">
+              <h4>JORDAN EJEMPLO</h4>
+              <a href="#">Agregar al carrito</a>
+            </div>
+          </div>
+          <div id="card2">
+            <img
+              src="/images/styleCards/2.png"
+              alt="styleCard"
+              style="width: 100%"
+            />
+            <div class="text_card">
+              <h4>JORDAN EJEMPLO</h4>
+              <a href="#">Agregar al carrito</a>
+            </div>
+          </div>
+          <div id="card3">
+            <img
+              src="/images/styleCards/1.png"
+              alt="styleCard"
+              style="width: 100%"
+            />
+            <div class="text_card">
+              <h4>JORDAN EJEMPLO</h4>
+              <a href="#">Agregar al carrito</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <aside>
         <h2>PRODUCTOS MAS VENDIDOS</h2>
         <br />
         <br />
         <br />
         <div class="productos_mas_vendidos_col_1">
-          <img src="/images/styleCards/5.png" alt="productoUno" id="producto1" />
-          <p class="leyenda">JORDAN EJEMPLO
+          <img
+            src="/images/styleCards/5.png"
+            alt="productoUno"
+            id="producto1"
+          />
+          <p class="leyenda">
+            JORDAN EJEMPLO
             <button type="button" id="button_cart">
               <span class="material-symbols-outlined"> shopping_cart </span>
             </button>
           </p>
         </div>
         <div class="productos_mas_vendidos_col_2">
-          <img src="/images/styleCards/3.png" alt="productoDos" id="producto2">
-          <p class="leyenda">JORDAN EJEMPLO
+          <img
+            src="/images/styleCards/3.png"
+            alt="productoDos"
+            id="producto2"
+          />
+          <p class="leyenda">
+            JORDAN EJEMPLO
             <button type="button" id="button_cart">
               <span class="material-symbols-outlined"> shopping_cart </span>
             </button>
           </p>
         </div>
         <div class="productos_mas_vendidos_col_3">
-          <img src="/images/styleCards/8.png" alt="producto3" id="producto3">
-          <p class="leyenda">JORDAN EJEMPLO
+          <img src="/images/styleCards/8.png" alt="producto3" id="producto3" />
+          <p class="leyenda">
+            JORDAN EJEMPLO
             <button type="button" id="button_cart">
               <span class="material-symbols-outlined"> shopping_cart </span>
             </button>
           </p>
         </div>
-      </aside>
-      <br><br><br>
+      </aside> -->
+      <br /><br /><br />
       <h2>FORMAS DE PAGO</h2>
     </main>
 
-
-    <br><br><br><br><br><br><br><br><br><br>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita cum
       eveniet aliquid, eaque commodi praesentium earum deserunt unde odio

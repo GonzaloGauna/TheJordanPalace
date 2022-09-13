@@ -3,13 +3,14 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  background: #e1b07e;;
+  background: rgb(255, 186, 8);
 }
 
 /* START HEADER */
@@ -90,7 +91,7 @@ nav.menu ul li a {
 }
 
 nav.menu ul li:hover {
-  text-decoration: underline;
+  text-decoration: none;
   border-top: 3px solid white;
 }
 
@@ -100,83 +101,147 @@ nav.menu ul li:hover {
 
 /* START SLIDER */
 
+main{
+  background: rgb(255, 186, 8);
+}
+
 h2 {
   text-align: center;
   margin-top: 70px;
 }
 
-.container {
-  margin: auto;
-  background-color: #e1b07e;
-  width: 800px;
-  padding: 30px;
-}
-
-ul.slider li {
-  padding: 0;
+#modelos{
+  background: rgb(255, 186, 8);
+  padding-top: 30px;
   margin: 0;
-  list-style: none;
-}
-
-ul.slider {
-  position: relative;
-  width: 800px;
-  height: 300px;
-}
-
-ul.slider li {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  opacity: 0;
-  width: inherit;
-  height: inherit;
-  transition: opacity 0.5s;
-  background: #e1b07e;
-}
-
-ul.slider li img {
-  width: 100%;
-  height: 300px;
-  object-fit: contain;
-}
-
-ul.slider li:first-child {
-  opacity: 1;
-}
-
-ul.slider li:target {
-  opacity: 1;
-}
-
-.menu_slide {
-  text-align: center;
-  margin: 20px;
-}
-
-.menu_slide li {
-  display: inline-block;
-  text-align: center;
-}
-
-.menu_slide li a {
-  display: inline-block;
   color: white;
-  text-decoration: none;
-  background-color: black;
-  padding: 10px;
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  border-radius: 100%;
-  padding-bottom: 10px;
 }
 
-.menu_slide li a:hover{
-  background: grey;
-} 
+.container{
+  box-sizing: border-box;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.container img{
+  padding-top: 100px;
+  height: 500px;
+  
+}
+
+.carrusel{
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  background: rgb(255, 186, 8);
+}
+
+.tarjetaCarrusel{
+  height: 100%;
+}
+
+.flechaCarrusel{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carrusel a{
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+}
 
 /* END SLIDER */
+
+/* STAR STYLECARDS*/
+
+.background_container_card{
+  background: url(/images/others/black_background_stripes-1301439.jpg);
+  height: 800px;
+}
+
+.container_card{
+  display: inline-block;
+  margin-top: 50px;
+}
+
+#card1{
+  display: inline-block;
+  transition: 0.3s;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+#card1:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.906);
+}
+
+#card1 img{
+  height: 600px;
+  width: 200px;
+}
+
+#card2{
+  display: inline-block;
+  transition: 0.3s;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+#card2:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.906);
+}
+
+#card2 img{
+  height: 600px;
+  width: 200px;
+}
+
+#card3{
+  display: inline-block;
+  transition: 0.3s;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+#card3:hover{
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.906);
+}
+
+#card3 img{
+  height: 600px;
+  width: 200px;
+}
+
+.text_card{
+  padding: 10px 16px;
+  margin-top: -4px;
+  background: rgb(255, 186, 8);
+}
+
+.text_card a{
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  float: right;
+}
+
+.text_card h4{
+  display: inline-block;
+}
+
+.text_card a:hover{
+  text-decoration: underline;
+}
+
+/* END STYLECARDS*/
 
 /* START ASIDE */
 
@@ -213,6 +278,7 @@ img#producto1{
   display: inline;
   float: right;
   margin-left: 116px;
+  margin-top: -5px;
 }
 
 .productos_mas_vendidos_col_2{
