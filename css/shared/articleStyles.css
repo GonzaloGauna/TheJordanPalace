@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(./animatedCard.css);
 html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+html::-webkit-scrollbar-track {
+    background-color: #dee2e6;
+}
+html::-webkit-scrollbar-thumb {
+    background-color: #343a40;
 }
 *,*::before,*::after {
     box-sizing: inherit;
@@ -16,10 +26,11 @@ html {
 }
 body {
     width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
+    overflow-x: hidden;
 }
 .main {
+    padding-top: 9rem;
     width: 100%;
     height: 100%;
     display: flex;
@@ -42,6 +53,7 @@ body {
     z-index: 2;
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 20px;
+    margin-bottom: 8rem;
 }
 .container::before {
     content: "";
@@ -310,7 +322,7 @@ button{
     border-radius: 45px;
     padding: 2rem 2rem;
     text-align: center;
-    background-color: transparent;
+    background-color: #fb8500;
     border: 2px solid white;
     cursor: pointer;
     z-index: 10;
@@ -319,7 +331,37 @@ button{
     font-size: 2rem;
     font-weight: bold;
 }
-.addToCart-button:hover {
-    background-color: #fb8500;
-    border-color: transparent;
+/* ========================= suggested-articles ========================= */
+.suggested-articles {
+    width: 100%;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, rgba(255,186,8,1) 0%, rgba(108,117,125,1) 100%);
+    background-image: url(./../../images/others/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.suggested-articles .suggested-articles__tittle {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+.container-card {
+    display: flex;
+    place-content: center;
+    gap: 3rem;
+}
+.container-card .card--colorRed::before, .container-card .card--colorRed .contentBx .size span:hover, .container-card .card--colorRed .contentBx a:hover {
+    background: #d00000;
+}
+.container-card .card--colorBlue::before, .container-card .card--colorBlue .contentBx .size span:hover, .container-card .card--colorBlue .contentBx a:hover {
+    background: #003566;
+}
+.container-card .card--colorBlack::before, .container-card .card--colorBlack .contentBx .size span:hover, .container-card .card--colorBlack .contentBx a:hover {
+    background: #403d39;
 }
