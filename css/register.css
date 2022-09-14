@@ -7,6 +7,7 @@
 
 .field{
     width: 70%;
+    padding-left: 1rem;
 }
 
 .buttons{
@@ -16,7 +17,9 @@
 }
 
 .buttons a{
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -47,5 +50,5 @@
 
 .cancelar:hover{
     background-color: white;
-    color: #017bab;
+    color: #252323;
 }
