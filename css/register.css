@@ -5,6 +5,16 @@
     padding: 0;
 }
 
+main{
+    background-color: darkgray;
+}
+
+
+body{
+    overflow-x: hidden;
+
+}
+
 .field{
     width: 70%;
     padding-left: 1rem;

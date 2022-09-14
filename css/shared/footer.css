@@ -25,6 +25,9 @@ footer{
 .column{
     float: left;
     width: 33.33%;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
 }
 
 .copyright{

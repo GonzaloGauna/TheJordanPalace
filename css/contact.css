@@ -8,7 +8,23 @@
 
 main{
     background-color: RGB(255, 186, 8);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100vw;
+
 }
+
+body{
+    overflow-x: hidden;
+}
+
+.primera-seccion{
+    width: 100%;
+    display: flex;
+    place-items: center;
+}
+
 
 .columna{
     float: left;
@@ -19,6 +35,7 @@ main{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: white;
+    margin: auto;
 }
 
 
@@ -63,4 +80,12 @@ main{
 
 ul{
     list-style: none;
+}
+
+.mapa-container{
+   
+}
+
+iframe{
+
 }
