@@ -24,11 +24,6 @@ header {
   box-shadow: 0px 0px 10px 0px black;
 }
 
-/* carrito */
-/* .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-} */
-
 img#logo {
   display: inline;
   margin-right: 10px;
@@ -116,13 +111,6 @@ h2 {
   text-align: center;
 }
 
-/* #modelos{
-  background: rgb(255, 186, 8);
-  padding-top: 30px;
-  margin: 0;
-  color: white;
-} */
-
 .container {
   box-sizing: border-box;
   height: 600px;
@@ -172,10 +160,10 @@ h2 {
   height: 800px;
   width: 100%;
   display: flex;
+  justify-content: space-around;
 }
 
 .container_card {
-  display: inline-block;
   margin-top: 50px;
 }
 
@@ -185,13 +173,10 @@ h2 {
   border-radius: 6px;
   overflow: hidden;
   cursor: default;
-  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-
   transition: all 400ms ease;
 }
 
 .card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
 
@@ -223,69 +208,3 @@ h2 {
 }
 
 /* END STYLECARDS*/
-
-/* START ASIDE */
-
-/* .productos_mas_vendidos_col_1{
-  width: 300px;
-  height: 339px;
-  display: inline-block;
-  margin-left: 200px;
-  box-sizing: border-box;
-}
-
-img#producto1{
-  width: 300px;
-  height: 300px;
-}
-
-.leyenda{
-  text-align: center;
-  background: white;
-  height: 39px;
-  display: inline-block;
-  margin: -4px 0px 0px 0px;
-  font-style: italic;
-  padding: 10px;
-  box-shadow: 0px 10px 10px -6px black;
-}
-
-.leyenda:hover{
-  text-decoration: underline;
-}
-
-#button_cart{
-  cursor: pointer;
-  display: inline;
-  float: right;
-  margin-left: 116px;
-  margin-top: -5px;
-}
-
-.productos_mas_vendidos_col_2{
-  width: 300px;
-  height: 339px;
-  display: inline-block;
-  margin-left: 300px;
-  box-sizing: border-box;
-}
-
-img#producto2{
-  width: 300px;
-  height: 300px;
-}
-
-.productos_mas_vendidos_col_3{
-  width: 300px;
-  height: 339px;
-  display: inline-block;
-  margin-left: 300px;
-  box-sizing: border-box;
-}
-
-img#producto3{
-  width: 300px;
-  height: 300px;
-} */
-
-/* END ASIDE */
