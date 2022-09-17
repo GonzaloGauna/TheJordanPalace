@@ -208,3 +208,59 @@ h2 {
 }
 
 /* END STYLECARDS*/
+
+/* START ASIDE */
+
+#titulo_aside{
+  padding-bottom: 15px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+
+aside{
+  background: url(/images/others/background_aside.jpg);
+  padding: 20px;
+  width: 500px;
+  height: 1000px;
+  float: right;
+}
+
+.contenedor_aside{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  height: 500px;
+  text-align: center;
+}
+
+.producto img{
+  height: 250px;
+  width: 225px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+.descripcion{
+  opacity: 0;
+  font-weight: 700;
+  padding: 5px;
+  color: white;
+  margin-top: -50px;
+  cursor: default;
+  transition: all 0.5s ease-in-out;
+}
+
+.producto:hover .descripcion{
+  opacity: 1;
+  transform: translateY(-3%);
+}
+
+.producto:hover img{
+  scale: 1.1;
+}
+
+/* END ASIDE */
