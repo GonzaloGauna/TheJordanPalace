@@ -51,7 +51,7 @@ body{
     width: 40%;
     text-align: center;
     background-color: RGB(255, 186, 8);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 20px 30px;
     border-top: 4px solid #252323;
     color: white;
