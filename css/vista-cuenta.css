@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    background-color: #FFCC33;
+    color: white;
+}
+.s1{
+    display:flex;
+    justify-content: left;
+    margin-left: 150px;
+    align-items: center;
+}
+
+article h1{
+    background-color: red;
+    padding: 50px;
+    margin-left: 50px;
+
+
+}
+.s1 img{
+    width: 300px;
+}
+
+.s2{
+    margin-top: 60px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+table{
+    width: 84.40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.ta1 {
+    border: 1px solid #FFFFFF;
+    background-color: #FFCC33;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.ta1 td, table.ta1 th {
+    border: 1px solid #FFFFFF;
+    padding: 20px 200px;
+  }
+  table.ta1 tbody td {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  table.ta1 thead {
+    background: #DDB12C;
+    background: -moz-linear-gradient(top, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    background: -webkit-linear-gradient(top, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    background: linear-gradient(to bottom, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    border-bottom: 2px solid #FFFFFF;
+  }
+  table.ta1 thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #D0E4F5;
+  }
+
+  table.ta2 {
+    border: 1px solid #FFFFFF;
+    background-color: #FFCC33;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.ta2 td, table.ta2 th {
+    border: 1px solid #FFFFFF;
+    padding: 20px 200px;
+  }
+  table.ta2 tbody td {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+  table.ta2 thead {
+    background: #DDB12C;
+    background: -moz-linear-gradient(top, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    background: -webkit-linear-gradient(top, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    background: linear-gradient(to bottom, #e5c461 0%, #e0b841 66%, #DDB12C 100%);
+    border-bottom: 2px solid #FFFFFF;
+  }
+  table.ta2 thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #D0E4F5;
+  }
