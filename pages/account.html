@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/account.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>The Jordan Palace</title>
 </head>
@@ -14,27 +14,56 @@
     </header>
 
     <main>
-        <form class="form-login" action="#" method="post" enctype="application/x-www-form-urlencoded" >
-            <img src="../images/others/jordan_logo.png" alt="">
-            <h5>Registrarse</h5>
-            <br>
-            <input class="field" type="email" name="email" id="email" placeholder="Ingrese su email" required>
-            <br>
-            <input class="field "type="text" name="nombre" placeholder="Ingrese su nombre" required>
-            <br>
-            <input class="field "type="text" name="apellido" placeholder="Ingrese su apellido" required>
-            <br>
-            <input class="field "type="password" name="password" placeholder="Ingrese su contraseña" required>
-            <br>
-            <input class="field "type="password" name="password" placeholder="Repita su contraseña" required>
-            <br>
-            <section class="buttons">
-                <a href="login.html" class="ingreso">Guardar</a> 
-                <br>
-                <br>
-                <a href="login.html" class="cancelar">Cancelar</a> 
+        <section class="usuario">
+            <img src="../images/others/Dandy_de_Barcelona.jpg" alt="">
+            <h2>NOMBRE Y APELLIDO</h2>
+        </section>
+
+        <section class="direcciones">
+            <h4>Mis direcciones</h4>
+            <input class="aceptar" type="submit" value="Agregar"> 
+        </section>
+        
+        <section class="lista-direcciones">
+            <table>
+                <tr>
+                    <th>Alias</th>
+                    <th>Dirección</th>
+                </tr>
+                <tr>
+                    <td>Mi depto</td>
+                    <td>XXXXXXXXXXXXX</td>
+                </tr>
+                <tr>
+                    <td>Casa Mamá</td>
+                    <td>XXXXXXXXXXXXX</td>
+                </tr>
+            </table>
+        </section>
+    
+        <section class="direcciones">
+            <h4>Mis métodos de pago</h4>
+            <input class="aceptar1" type="submit" value="Agregar"> 
+        </section>
+            <section class="lista-direcciones">
+                <table>
+                    <tr>
+                        <th>Tarjetas</th>
+                        <th>Titular</th>
+                    </tr>
+                    <tr>
+                        <td>Visa Debito</td>
+                        <td>XXXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td>Visa Credito</td>
+                        <td>XXXXXXXXXXXXX</td>
+                    </tr>
+                </table>
             </section>
-        </form>
+        </section>
+
+
     </main>
 
     <footer>
@@ -71,5 +100,7 @@
             </div>
         </div>
     </footer>
+
+
 </body>
 </html>
