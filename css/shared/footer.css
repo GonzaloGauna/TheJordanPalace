@@ -1,16 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    align-items: center;
-}
-
-footer{
+.footer{
     background-color: black;
     padding: 20px;  
     width: 100%;
@@ -36,6 +24,6 @@ footer{
     width: 95%;
 }
 
-div p{
-   color: white;
+.footer div p{
+    color: white;
 }
