@@ -17,9 +17,10 @@ footer{
 }
 
 .bx{
-    font-size: 30px;
+    font-size: 35px;
     color: white;
-    text-align: center   ;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .column{
@@ -28,6 +29,7 @@ footer{
     display: flex;
     place-items: center;
     flex-direction: column;
+    padding-top: 20px;
 }
 
 .copyright{
