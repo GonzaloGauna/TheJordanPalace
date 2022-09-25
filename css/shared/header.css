@@ -1,0 +1,95 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* START HEADER */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  
+}
+
+.button_cart{
+    background: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  
+.container_button_cart{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background: #e1b07e;
+}
+
+header{
+    background: black;
+}
+
+.logo img{
+    margin-right: 10px;
+    height: 80px;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+  
+div.logo {
+    display: flex;
+    background: black;
+    align-items: center;
+}
+
+input#buscador{
+    margin-left: 100px;
+    width: 75%;
+    text-align: center;
+    text-align: left;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+}
+
+nav.menu{
+    float: left;
+    width: 100%;
+    background-color: black;
+    border-top: 1px solid white;
+}
+
+nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+
+nav.menu ul li{
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    width: 25%;
+}
+
+nav.menu ul li a{
+    display: block;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+nav.menu ul li:hover{
+    background: grey;
+}
