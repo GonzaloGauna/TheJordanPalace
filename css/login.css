@@ -45,6 +45,7 @@ body{
 .ingreso:hover{
     background-color: white;
     color: #252323;
+    text-decoration: none;
 }
 
 .form-login{

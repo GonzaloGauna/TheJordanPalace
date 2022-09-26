@@ -11,7 +11,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background: rgb(255, 186, 8);
+  background-color:RGB(255, 186, 8);;
   color: white;
 }
 
@@ -33,14 +33,7 @@ article h1{
     text-shadow: -5px 0px 23px rgba(0, 0, 0, 0.425);
 }
 
-.s1 img{
-    width: 250px;
-    border: white solid 4px;
-    border-radius: 100%;
-}
-
 .s2{
-    
     display: flex;
     justify-content:space-between;
     font-size: 14px;
