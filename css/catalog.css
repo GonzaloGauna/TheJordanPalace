@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@700&display=swap');
 @import url(../css/shared/animatedCard.css);
 @import url(./shared/footer.css);
+@import url(./shared/header.css);
 
 html {
     box-sizing: border-box;
@@ -29,7 +30,7 @@ body {
 
 /* =========================== HEADER =========================== */
 
-.header {
+/* .header {
     width: 100%;
     height: 7rem;
     background-color: rgb(236, 158, 158);
@@ -95,7 +96,7 @@ body {
 }
 .navbar__link:hover {
     font-size: 2rem;
-}
+} */
 
 
 /* =========================== MAIN =========================== */
