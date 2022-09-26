@@ -1,4 +1,5 @@
 @import url(../css/contact.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -6,6 +7,7 @@
 }
 
 body{
+    font-family: 'Roboto', sans-serif;
     background-color: white;
 }
 
