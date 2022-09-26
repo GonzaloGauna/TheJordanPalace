@@ -12,18 +12,17 @@ body{
     width: 100%;
     align-items: center;
 }
-
-footer{
+.footer{
     background-color: black;
     padding: 20px;  
     width: 100%;
 }
 
 .bx{
-    font-size: 35px;
+    font-size: 3rem;
     color: white;
     text-align: center;
-    margin-top: 20px;
+    cursor: pointer;
 }
 
 .column{
@@ -41,6 +40,7 @@ footer{
     width: 95%;
 }
 
-div p{
-   color: white;
+.footer div p{
+    color: white;
+    font-size: 1.8rem;
 }

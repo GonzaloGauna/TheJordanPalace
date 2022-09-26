@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jordan Palace</title>
+    <link rel="stylesheet" href="./../css/shared/articleStyles.css">
+</head>
+<body>
+    <main class="main">
+        <div class="container">
+            <button class="arrow arrow-left"></button>
+            <button class="arrow arrow-right"></button>
+            <div class="brand">
+                <p>TheJordan <br><span>Palace</span></p>
+            </div>
+            <article class="article">
+                <img src="./../images/articles/jordanRetro1Black&Yellow/jordanRetro1Black&Yellow.png" alt="jordan retro 1 black and yellow">
+            </article>
+            <section class="info">
+                <h1 class="info__tittle">Jordan Retro 1 B&Y</h1>
+                <h3 class="info__infoText">Featuring new Streeter Slick Forte and more.</h3>
+                <div class="info__priceAmount">
+                    <div class="info__price">
+                        <h4>Precio</h4>
+                        <p>$60.000</p>
+                    </div>
+                    <div class="info__amount">
+                        <h4>Cantidad</h4>
+                        <div class="stepper-container">
+                            <button id="decrement" onclick="stepper(this)"> - </button>
+                            <input type="number" min="0" max="100" step="1" value="20" id="my-input" readonly>
+                            <button id="increment" onclick="stepper(this)"> + </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__descriptionDetails">
+                    <h3>Descripcion</h3>
+                    <h3>Detalles</h3>
+                </div>
+                <div class="info__descriptionDetails-border"></div>
+                <article class="stats">
+                    <div class="stat durability">
+                        <p class="stats__tittle">Durabilidad <span>83%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                    <div class="stat confort">
+                        <p class="stats__tittle">Confort <span>63%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                    <div class="stat softness">
+                        <p class="stats__tittle">Suabidad <span>78%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                </article>
+                <div class="purchase">
+                    <div class="totalPrice">
+                        <h4>Precio Total:</h4>
+                        <p>$60.000</p>
+                    </div>
+                    <div class="addToCart-button">
+                        <p>Agregar al carrito</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="suggested-articles">
+            <h3 class="suggested-articles__tittle">También te pueden interesar:</h3>
+            <div class="container-card">
+                <article class="card-container">
+                    <div class="card card--colorRed">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-HighDaveWhite.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>High Dave White</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$55.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card card--colorBlue">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-HyperRoyal.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>Hiper Royal</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$60.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card card--colorBlack">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-mid-winterizad.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>Mid Winterizad</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$57.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
