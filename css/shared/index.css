@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(./footer.css);
+@import url(./header.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 186, 8);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
+}
+
+/* START HEADER */
+
+
+
+/* END NAV BAR*/
+
+/* END HEADER */
+
+/* START CART */
+
+.carrito {
+  display: inline-block;
+  position: relative;
+}
+
+.carrito button {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 40px;
+  border: none;
+  position: absolute;
+  top: 7px;
+  left: 48px;
+  z-index: 1;
+}
+
+/* END CART */
+
+/* START SLIDER */
+
+main {
+  background: rgb(255, 186, 8);
+}
+
+h2 {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.modelos {
+  display: inline-block;
+  margin: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  box-sizing: border-box;
+  height: 600px;
+  overflow: hidden;
+  text-align: center;
+  z-index: 0;
+}
+
+.container img {
+  padding-top: 100px;
+  height: 500px;
+}
+
+.carrusel {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative;
+  background: rgb(255, 186, 8);
+  z-index: 0;
+}
+
+.tarjetaCarrusel {
+  height: 100%;
+}
+
+.flechaCarrusel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.carrusel a {
+  text-decoration: none;
+  font-size: 50px;
+  color: white;
+}
+
+/* END SLIDER */
+
+/* STAR STYLECARDS*/
+
+.background_container_card {
+  background: url(/images/others/black_background_stripes-1301439.jpg);
+  height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container_card {
+  margin-top: 50px;
+}
+
+.card {
+  width: 100%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 700px;
+}
+
+.text_card {
+  padding: 15px;
+  text-align: left;
+  margin-top: -4px;
+  background: rgb(255, 186, 8);
+}
+
+.text_card a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  float: right;
+}
+
+.text_card h4 {
+  display: inline-block;
+}
+
+.text_card a:hover {
+  text-decoration: underline;
+}
+
+/* END STYLECARDS*/
+
+/* START ASIDE */
+
+#titulo_aside {
+  padding-bottom: 15px;
+  margin-top: 5px;
+  color: white;
+  text-align: center;
+}
+
+aside {
+  background: url(/images/others/background_aside.jpg);
+  padding: 20px;
+  width: 500px;
+  height: 1000px;
+  float: right;
+}
+
+.contenedor_aside {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  height: 500px;
+  text-align: center;
+}
+
+.producto img {
+  height: 250px;
+  width: 225px;
+  margin: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 1);
+  transition: all 0.5s ease-in-out;
+}
+
+.descripcion {
+  opacity: 0;
+  font-weight: 700;
+  padding: 5px;
+  color: white;
+  margin-top: -50px;
+  cursor: default;
+  transition: all 0.5s ease-in-out;
+}
+
+.producto:hover .descripcion {
+  opacity: 1;
+  transform: translateY(-3%);
+}
+
+.producto:hover img {
+  scale: 1.1;
+}
+
+/* END ASIDE */
+
+/* =================================== MAIN =================================== */
+.main {
+  grid-area: main;
+}
+
+
+
+/* =================================== FOOTER =================================== */
+.footer {
+  grid-area: footer;
+}
