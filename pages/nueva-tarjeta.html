@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jordan Palace</title>
+    <link rel="stylesheet" href="../css/vista-pagos2.css">
+</head>
+<body>
+    <main>
+        <article>
+            <section>
+                <h1>Pagar</h1>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJpJREFUSEtjZKAxYKSx+QzDywIHBgaG+QwMDAoUBtsDBgaGRAYGhgMgc5CDCCQhT6HhMO0gsxTRLfgPlaU0XlDMQTaMbhZQKZQgwY/NB6MWwEIAZxAN/VQE8wEs2aJHOiEfEp0PaG4BucmVaB9Q3YIPDAwM/OSaiqbvIaxURo4wUHG9gAolKsjwBGzFNZUcj2oMoSRHsaVD3wIAEjsgGcmvqi8AAAAASUVORK5CYII="/>
+            </section>
+        </article>
+        <article class="formularios">
+            <form action="#" method="post">
+                <label class="text-izquierda1" for="Tarjetas">Tarjetas guardadas</label> 
+                    <select class="text-derecha1" id="Tarjetas" name="Tarjetas">
+                        <option value="1">MasterCard **** ****</option>
+                    </select>
+            </form>
+            <div class="control-group">
+                <label class="control control-checkbox">
+                    Otra tarjeta
+                       <input type="checkbox" checked="checked" />
+                    <div class="control_indicator"></div>
+                </label>
+            </div>
+                <form action="#" method="post">
+                    <label class="text-izquierda3" for="serial">Número tarjeta</label>
+                     <input class="text-derecha3" id="serial" type="text" name="serial" placeholder="Número tarjeta" pattern="[0-9]{16}">
+                  </form>
+                  <section>
+                <form class="form3" action="#" method="post">
+                    <label class="text-izquierda4" for="cod-seguridad">Codigo</label>
+                     <input class="text-derecha4" id="cod-seguridad" type="text" name="cod-seguridad" placeholder="Cod." pattern="[0-9]{3}">
+                  </form>
+                  <form class="form4" action="#" method="post">
+                    <label class="text-izquierda5" for="vencimiento">Vcto</label>
+                     <input class="text-derecha5" id="vencimiento" type="text" name="vencimiento"  placeholder="mm/aa" pattern="{5}">
+                  </form>
+                   </section>
+                   <form action="#" method="post">
+                    <label class="text-izquierda6" for="titular">Nombre Titular</label>
+                    <input class="text-derecha6" id="titular" type="text" name="titular" placeholder="Titular">
+                </form>
+            <form action="#" method="post">
+                <label class="text-izquierda7" for="direcciones">Direcciones guardadas</label> 
+                    <select class="text-derecha7" id="direcciones" name="direcciones">
+                        <option value="1">Mi depto</option>
+                    </select>
+            </form>
+            <label id="checkbox2"class="control control-checkbox">
+                Otra dirección
+                    <input class="checkbox2" type="checkbox" />
+                <div class="control_indicator"></div>
+            </label>
+            <a href=""><input class="inputs" type="submit" value="Pagar"></a>
+        </article>
+    </main>
+</body>
+</html>
