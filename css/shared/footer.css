@@ -1,12 +1,21 @@
+@import url(../shared/index.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: 'Roboto', sans-serif;
 }
+
 .footer{
     background-color: black;
     padding: 20px;  
     width: 100%;
+    color: white;
 }
 
 .bx{
@@ -15,7 +24,6 @@ body{
     text-align: center;
     cursor: pointer;
 }
-
 .column{
     float: left;
     width: 33.33%;
