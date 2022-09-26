@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: rgb(255, 186, 8);
+  color: black;
+  font-size: 16px;
+}
+article{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+  }
+  section h1,img{
+    display:inline;
+    position: relative;
+    left: -103px;
+  }
+  section img{
+    position: relative;
+    top: 3px;
+    left: -37px;
+    width: 20px;
+    height: 20px;
+  }
+  input{
+    padding-left: 5px; 
+    font: size 16px; 
+    text-align:left; 
+    border-width:2px; 
+    border-radius:25px; 
+    border-style:solid; 
+    border-color:#ffffff;
+    background-color: #e6e6e6; 
+    box-shadow: 0px 0px 5px 0px 
+    rgba(189,189,189,.75); 
+    font-style:none;  
+    color: rgb(102, 102, 102);
+    width: 125px;
+  }
+  select{
+    padding: 0px;
+    font: size 16px; 
+    text-align:left; 
+    border-width:2px; 
+    border-radius:25px; 
+    border-style:solid; 
+    border-color:#ffffff;
+    background-color: #e6e6e6; 
+    box-shadow: 0px 0px 5px 0px 
+    rgba(189,189,189,.75); 
+    font-style:none;
+    color: rgb(102, 102, 102);
+    width: 146px;
+  }
+
+  input:focus{ 
+    outline:none;
+  }
+  label{
+    padding: 10px;
+  }
+  form{
+    padding: 10px;
+    text-align: center;
+  }
+.formularios{
+    display: list-item;
+}
+.control {
+  display: block;
+  position: relative;
+  left: 540px;
+  margin-top: 3px;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+  .control input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+  }
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #e6e6e6;
+  border: 0px solid #000000;
+  border-radius: 20px;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #000000;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator{
+  background-color: gray;
+}
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 4;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: '';
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-checkbox .control_indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #7b7b7b;
+}
+.text-izquierda1{
+  position: relative;
+  left: 5px;
+}
+.text-derecha1{
+  position: relative;
+  left: 25px;
+}
+.form3, .form4{
+    display: inline;
+}
+.text-izquierda2{
+    position:relative;
+    left: 61px;
+    bottom: 2px;
+}
+.text-derecha2{
+    position: relative;
+    left: 81px;
+    bottom: 2px;
+    width: 146px;
+    
+}
+.text-izquierda3{
+    position: relative;
+    left: 22px;
+    bottom: 12px;
+}
+.text-derecha3{
+    position:relative;
+    bottom: 13px;
+    left: 40px;
+    width: 146px;
+}
+.text-izquierda4{
+    position: relative;
+    left: 605px;
+    bottom: 12px;
+}
+.text-derecha4{
+    position: relative;
+    left: 625px;
+    bottom: 12px;
+    width: 40px;
+}
+.text-izquierda5{
+    position: relative;
+    left: 602px;
+    bottom: 12px;
+}
+.text-derecha5{
+    position: relative;
+    left: 596px;
+    bottom: 12px;
+    width: 55px;
+}
+.text-izquierda6{
+    position:relative;
+    left: 19px;
+    bottom: 12px;
+}
+.text-derecha6{
+    position: relative;
+    left: 40px;
+    bottom: 12px;
+    width: 146px;
+}
+.text-izquierda7{
+  position: relative;
+  left: 16px;
+  bottom: 18px;
+}
+.text-derecha7{
+  position: relative;
+left: 12px;
+bottom: 18px;
+}
+#checkbox2{
+  position: relative;
+  bottom: 14px;
+}
+a input{
+  color: black;
+  position: relative;
+  left: 801px;
+  bottom: 13px;
+  width: 55px;
+}
