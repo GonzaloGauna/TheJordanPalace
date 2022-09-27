@@ -21,40 +21,37 @@ body {
   "main main main"
   "footer footer footer";
 }
-
-/* START HEADER */
-
-
-
-/* END NAV BAR*/
-
-/* END HEADER */
-
-/* START CART */
-
 .carrito {
   display: inline-block;
-  position: relative;
-}
-
-.carrito button {
-  background-color: transparent;
-  color: white;
-  cursor: pointer;
-  font-size: 40px;
-  border: none;
   position: absolute;
-  top: 7px;
-  left: 48px;
-  z-index: 1;
+  left: 3rem;
+  font-size: 3rem;
+  top: 6rem;
 }
-
-/* END CART */
-
-/* START SLIDER */
-
+.carrito a {
+  color: white;
+}
 main {
   background: rgb(255, 186, 8);
+}
+.formasDePagoTittle {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+  color: whitesmoke;
+}
+.imgMediosDePago {
+  position: absolute;
+  z-index: 1000;
+  top: 95rem;
+  left: 18.5rem;
+}
+.imgMediosDePagoCripto {
+  position: absolute;
+  z-index: 1000;
+  top: 120rem;
+  left: 22rem;
+  width: 40rem;
 }
 
 h2 {
