@@ -1,10 +1,11 @@
-@import url(../css/login.css);
+@import url(../css/shared/footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 main{
     background-color: RGB(255, 186, 8);
@@ -12,7 +13,6 @@ main{
     flex-direction: column;
     place-items: center;
     width: 100vw;
-
 }
 
 body{
@@ -37,6 +37,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: white;
     margin: auto;
+    margin-bottom: 92px;
 }
 
 
@@ -81,12 +82,4 @@ body{
 
 ul{
     list-style: none;
-}
-
-.mapa-container{
-   
-}
-
-iframe{
-
 }
