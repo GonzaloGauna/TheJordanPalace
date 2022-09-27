@@ -1,0 +1,66 @@
+@import url(login.css);
+@import url(./shared/header.css);
+@import url(./shared/footer.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    background-color: darkgray;
+}
+
+
+body{
+    overflow-x: hidden;
+
+}
+
+.field{
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.buttons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.buttons a:hover{
+    text-decoration: none;
+}
+
+.ingreso{
+    width: 26%;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancelar{
+    width: 26%;
+    height: 40px;
+    background-color: #252323;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancelar:hover{
+    background-color: white;
+    color: #252323;
+}

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Jordan Palace</title>
+    <link rel="stylesheet" href="./../css/shared/articleStyles.css">
+</head>
+<body>
+    <header>
+        <img src="/images/others/jordan-icon.jpg" alt="logo" id="logo" />
+        <input type="search" placeholder="Buscador..." id="buscador" />
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="/pages/contact.html">Contacto</a></li>
+                <li><a href="./catalog.html">Catálogo</a></li>
+                <li><a href="./login.html">Mi Cuenta</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="container">
+            <button class="arrow arrow-left"></button>
+            <button class="arrow arrow-right"></button>
+            <div class="brand">
+                <p>TheJordan <br><span>Palace</span></p>
+            </div>
+            <article class="article">
+                <img src="./../images/articles/jordanRetro1Black&Yellow/jordanRetro1Black&Yellow.png" alt="jordan retro 1 black and yellow">
+            </article>
+            <section class="info">
+                <h1 class="info__tittle">Jordan Retro 1 B&Y</h1>
+                <h3 class="info__infoText">Featuring new Streeter Slick Forte and more.</h3>
+                <div class="info__priceAmount">
+                    <div class="info__price">
+                        <h4>Precio</h4>
+                        <p>$60.000</p>
+                    </div>
+                    <div class="info__amount">
+                        <h4>Cantidad</h4>
+                        <div class="stepper-container">
+                            <button id="decrement" onclick="stepper(this)"> - </button>
+                            <input type="number" min="0" max="100" step="1" value="20" id="my-input" readonly>
+                            <button id="increment" onclick="stepper(this)"> + </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="info__descriptionDetails">
+                    <h3>Descripcion</h3>
+                    <h3>Detalles</h3>
+                </div>
+                <div class="info__descriptionDetails-border"></div>
+                <article class="stats">
+                    <div class="stat durability">
+                        <p class="stats__tittle">Durabilidad <span>83%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                    <div class="stat confort">
+                        <p class="stats__tittle">Confort <span>63%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                    <div class="stat softness">
+                        <p class="stats__tittle">Suabidad <span>78%</span></p>
+                        <div class="topBar"></div>
+                        <div class="bottomBar"></div>
+                    </div>
+                </article>
+                <div class="purchase">
+                    <div class="totalPrice">
+                        <h4>Precio Total:</h4>
+                        <p>$60.000</p>
+                    </div>
+                    <div class="addToCart-button">
+                        <p>Agregar al carrito</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="suggested-articles">
+            <h3 class="suggested-articles__tittle">También te pueden interesar:</h3>
+            <div class="container-card">
+                <article class="card-container">
+                    <div class="card card--colorRed">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-HighDaveWhite.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>High Dave White</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$55.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card card--colorBlue">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-HyperRoyal.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>Hiper Royal</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$60.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-container">
+                    <div class="card card--colorBlack">
+                        <div class="imgBx">
+                            <img src="./../images/articles/air-jordan-1-mid-winterizad.png">
+                        </div>
+                        <div class="contentBx">
+                            <h2>Air Jordan 1 <br>Mid Winterizad</h2>
+                            <div class="size">
+                            <h3>Talles :</h3>
+                            <span>39</span>
+                            <span>40</span>
+                            <span>41</span>
+                            <span>42</span>
+                        </div>
+                        <div class="card__purchase">
+                            <p class="card__price">$57.000</p>
+                            <a href="#">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div>
+            <div class="column">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3643336747227!2d-58.56499388505009!3d-34.67075316855472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1661516466757!5m2!1ses!2sar" width="400" height="300" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </div>  
+            <div class="column">
+                <p>Fortuna Mateo 45.238.796</p>
+                <br>
+                <p>Gauna Gonzalo 41.806.073</p>
+                <br>
+                <p>Herlein Gonzalo 43.861.369</p> <br>
+                <p>Pizarro Santiago 45.315.788</p>
+                <br> 
+                <p>Seguinos En</p>
+                <br>
+                <div>
+                    <i class='bx bxl-facebook-circle'></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-twitter' ></i>
+                </div>
+            </div>
+            <div class="column">
+                <p>Lunes a Sabado de 8 a 19hs</p>
+                <p>© 2022 The Jordan Palace</p>
+                <br>
+                <br>
+                <p>Terminos de uso</p>
+                <p>Politica de privacidad</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -43,6 +43,3 @@ MANEJO DE GIT:
     - Cada uno clona el repositorio ya creado y se crea una rama propia para trabajar.
     - Antes de pushear los cambio es IMPORTANTE checkear los cambios del repositorio, es decir, hacer un git fetch y luego un git pull. Luego de esto podemos hacer un git push.
     - Cuando la seccion que nos tocó trabajar esté finalizada, hacer un pull request (github) para registrar nuestro trabajo en el repositorio y luego se hace un merge request al main (checkea que no haya conflictos en el código).
-
-
-cambios
