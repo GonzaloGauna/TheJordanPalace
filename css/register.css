@@ -1,4 +1,6 @@
 @import url(login.css);
+@import url(./shared/header.css);
+@import url(./shared/footer.css);
 
 *{
     margin: 0;
