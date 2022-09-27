@@ -1,8 +1,10 @@
+
+@import url(./shared/header.css);
 @import url(../css/shared/footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,60 +21,72 @@ body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
-}
+} */
 
-.primera-seccion{
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "Outfit", sans-serif;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
     width: 100%;
+    height: 700px;
+    margin-top: 8rem;
+    background-color: RGB(255, 186, 8);
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
-
-
-.columna{
-    float: left;
-    width: 30%;
-    margin-left: 10px;
+.footer {
+    grid-area: footer;
+    width: 100%;
+}
+.contact{
+    width: 500px;
     padding: 30px;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-color: white;
-    margin: auto;
-    margin-bottom: 92px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-
-.field{
+.contact__title {
+    text-align: center;
+    font-size: 2rem;
+}
+.contact li {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+.btnEnviar{
     width: 40%;
-    margin-bottom: 15px;
-    padding: 10px 0.5px;
-    background-color: #252323;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 15px;
-    color: white;
-    outline: none;
-}
-
-.contacto{
-    font-weight: 600;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-.ingreso:hover{
-    cursor: pointer;
-    border: 2px solid black;
-    background-color: #252323;
-    color: white;
-}
-
-.ingreso{
-    width: 20%;
     margin-top: 10px;
     height: 40px;
     background-color: #E38B29;
@@ -81,13 +95,43 @@ body{
     border-radius: 15px;
     font-weight: 600;
 }
-
-
-.cosa{
-    margin-right: 15px;
+.btnEnviar:hover{
+    cursor: pointer;
+    border: 2px solid black;
+    background-color: #252323;
+    color: white;
 }
-
-
-ul{
-    list-style: none;
+.label {
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+.field{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0.5px;
+    background-color: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+.field::placeholder {
+    padding: 10px;
+}
+.textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+.textarea::placeholder {
+    padding: 10px;
+}
+.contacto{
+    font-weight: 600;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
