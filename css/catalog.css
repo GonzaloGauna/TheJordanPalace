@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700,900");
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:wght@700&display=swap");
 @import url(../css/shared/animatedCard.css);
 @import url(./shared/footer.css);
 @import url(./shared/header.css);
@@ -21,10 +21,10 @@ body {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
 }
 
 /* =========================== MAIN =========================== */
@@ -40,8 +40,7 @@ body {
     display: grid;
     grid-template-columns: 30rem auto;
     grid-template-rows: max-content;
-    grid-template-areas: 
-    "aside content";
+    grid-template-areas: "aside content";
 }
 
 .aside {
@@ -77,16 +76,43 @@ body {
     flex-wrap: wrap;
     gap: 1rem;
 }
-.container-card .card--colorRed::before, .container-card .card--colorRed .contentBx .size span:hover, .container-card .card--colorRed .contentBx a:hover {
+.container-card .card--colorRed::before,
+.container-card .card--colorRed .contentBx .size span:hover,
+.container-card .card--colorRed .contentBx a:hover {
     background: #d00000;
 }
-.container-card .card--colorBlue::before, .container-card .card--colorBlue .contentBx .size span:hover, .container-card .card--colorBlue .contentBx a:hover {
+.container-card .card--colorBlue::before,
+.container-card .card--colorBlue .contentBx .size span:hover,
+.container-card .card--colorBlue .contentBx a:hover {
     background: #003566;
 }
-.container-card .card--colorBlack::before, .container-card .card--colorBlack .contentBx .size span:hover, .container-card .card--colorBlack .contentBx a:hover {
+.container-card .card--colorBlack::before,
+.container-card .card--colorBlack .contentBx .size span:hover,
+.container-card .card--colorBlack .contentBx a:hover {
     background: #403d39;
 }
 
 .footer {
     grid-area: footer;
+}
+
+.carrito {
+    position: absolute;
+    left: 5rem;
+    top: 10rem;
+    z-index: 1000000;
+}
+.carrito a i{
+    font-size: 5rem;
+    color: rgb(39, 37, 37);
+}
+.loginIcon {
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    font-size: 3rem;
+    top: 2.5rem;
+}
+.loginIcon a {
+    color: white;
 }

@@ -28,8 +28,17 @@ body {
   font-size: 3rem;
   top: 6rem;
 }
-.carrito a {
+.carrito a, .loginIcon a {
   color: white;
+}
+.loginIcon {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+}
+.loginIcon a i {
+  font-size: 2rem;
 }
 main {
   background: rgb(255, 186, 8);
@@ -221,16 +230,16 @@ aside {
   scale: 1.1;
 }
 
-/* END ASIDE */
 
-/* =================================== MAIN =================================== */
 .main {
   grid-area: main;
 }
-
-
-
-/* =================================== FOOTER =================================== */
 .footer {
   grid-area: footer;
+}
+
+.column a {
+  text-decoration: none;
+  color: rgb(233, 165, 62);
+  font-size: 1.6rem;
 }

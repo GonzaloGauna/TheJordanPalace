@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url(./shared/header.css);
+@import url(./shared/footer.css);
 
 * {
   padding: 0;
@@ -10,9 +12,14 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
-  background-color:RGB(255, 186, 8);
-  color: white;
-  
+  background: rgb(255, 186, 8);
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: 
+  "header header header"
+  "main main main"
+  "footer footer footer";
 }
 
 .s1{
@@ -71,11 +78,7 @@ article h1{
 }
 
 table{
-    width: 84.40%;
-    margin-left: auto;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 80%;
 }
 table.ta1 {
     border: 1px solid #FFFFFF;
@@ -167,4 +170,53 @@ table.ta1 {
     position:absolute;
     right: 130px;
     bottom: 3px;
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  height: auto;
+  margin: 5rem 0;
+}
+.footer {
+  grid-area: footer;
+}
+.containerTable {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carritoTitle {
+  margin: 3rem 0;
+
+}
+
+.loginIcon {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+.btn{
+  width: 10rem;
+  height: 40px;
+  background-color: #E38B29;
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+  transition: all .3s;
+  margin-top: 3rem;
+}
+.btn:hover{
+  cursor: pointer;
+  letter-spacing: 5px;
+  color: white;
 }
