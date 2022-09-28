@@ -135,3 +135,10 @@ body {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+
+.bx{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
