@@ -20,17 +20,16 @@ body{
 }
 
 .bx{
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
     text-align: center;
     cursor: pointer;
 }
+
 .column{
     float: left;
-    width: 33.33%;
-    display: flex;
-    place-items: center;
-    flex-direction: column;
+    display: inline-block;
+    flex-direction: row;
     padding-top: 20px;
 }
 
@@ -42,5 +41,96 @@ body{
 
 .footer div p{
     color: white;
-    font-size: 16px;
+    font-size: 0.8em;
+}
+
+iframe{
+    width: 20em;
+    height: 18em;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 47em){
+    .footer{
+        background-color: black;
+        padding: 20px;  
+        width: 100%;
+        color: white;
+        
+    }
+    
+    .bx{
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .copyright{
+        color: darkgray;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .footer div p{
+        color: white;
+        font-size: 16px;
+    }
+
+    iframe{
+        width: 16em;
+        height: 15em;
+    }
+}
+
+/* PC */
+
+@media screen and (min-width: 60em){
+    .footer{
+        background-color: black;
+        padding: 20px;  
+        width: 100%;
+        color: white;
+        
+    }
+    
+    .bx{
+        font-size: 3rem;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .copyright{
+        color: darkgray;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .footer div p{
+        color: white;
+        font-size: 16px;
+    }
+
+    iframe{
+        width: 25em;
+        height: 18.75em;
+    }
 }
