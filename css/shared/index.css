@@ -43,25 +43,6 @@ body {
 main {
   background: rgb(255, 186, 8);
 }
-.formasDePagoTittle {
-  font-size: 2rem;
-  text-align: center;
-  margin: 2rem 0;
-  color: whitesmoke;
-}
-.imgMediosDePago {
-  position: absolute;
-  z-index: 1000;
-  top: 95rem;
-  left: 18.5rem;
-}
-.imgMediosDePagoCripto {
-  position: absolute;
-  z-index: 1000;
-  top: 120rem;
-  left: 22rem;
-  width: 40rem;
-}
 
 h2 {
   text-align: center;
@@ -178,19 +159,35 @@ h2 {
 
 /* START ASIDE */
 
+.container-mid{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  
+}
+
 #titulo_aside {
   padding-bottom: 15px;
   margin-top: 5px;
   color: white;
   text-align: center;
+  cursor: pointer;
+}
+
+#titulo_aside:hover{
+  text-decoration: underline;
 }
 
 aside {
-  background: url(/images/others/background_aside.jpg);
   padding: 20px;
   width: 500px;
   height: 1000px;
   float: right;
+  clear: both;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  border-left: 1px solid black;
+  background: linear-gradient(to top, rgb(255, 186, 8), darkorange);
 }
 
 .contenedor_aside {
@@ -230,6 +227,49 @@ aside {
   scale: 1.1;
 }
 
+.mediosDePago{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background: linear-gradient(to top, rgb(255, 186, 8), darkorange);
+}
+
+.mediosDePago h3{
+  font-size: 35px;
+  text-align: center;
+  margin: 2rem 0;
+  cursor: default;
+  position: relative;
+  bottom: -40px;
+  left: -275px;
+}
+
+.imgMediosDePago {
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 50px;
+}
+
+.imgComoComprar{
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 50px;
+  cursor: pointer;
+  transition: all 0.75s;
+}
+
+.imgComoComprar:hover{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 
 .main {
   grid-area: main;
