@@ -16,160 +16,167 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "header header header"
-  "main main main"
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
-.s1{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    display:flex;
-    justify-content: left;
-    align-items: center;
+.s1 {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 
-article h1{
-    padding: 50px;
-    position: relative;
-    left: 50px;
-    font-size: 28px;
-    text-shadow: -5px 0px 23px rgba(0, 0, 0, 0.425);
+article h1 {
+  padding: 50px;
+  position: relative;
+  left: 50px;
+  font-size: 28px;
+  text-shadow: -5px 0px 23px rgba(0, 0, 0, 0.425);
 }
 
-.s2{
-    display: flex;
-    justify-content:space-between;
-    font-size: 14px;
-    margin-left: 1500px;
-    padding-bottom: 10px;
+.s2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-left: 1500px;
+  padding-bottom: 10px;
 }
 
-.s2a1{
+.s2a1 {
   position: relative;
   left: 110px;
   top: 28px;
 }
 
 .boton {
-	background-color:#ffbf00;
-	border-radius:26px;
-	border:3px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: "Roboto", sans-serif;
-	font-size:14px;
-	padding:15px 25px;
-	text-decoration:none;
-	text-shadow:1px 0px 0px #ffffff;
+  background-color: #ffbf00;
+  border-radius: 26px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px #ffffff;
   position: relative;
 }
 .boton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
-.boton:hover{
-    background-color: black;
+.boton:hover {
+  background-color: black;
 }
 
-table{
-    width: 80%;
+table {
+  width: 80%;
+  transition: all 1s;
 }
+
+table:hover{
+  box-shadow: 3px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
 table.ta1 {
-    border: 1px solid #FFFFFF;
-    background-color: #FFCC33;
-    text-align: center;
-    border-collapse: collapse;
+  border: 1px solid #ffffff;
+  background-color: #ffcc33;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.ta1 td,
+table.ta1 th {
+  border: 1px solid #ffffff;
+  padding: 20px 200px;
+}
+table.ta1 tbody td {
+  font-size: 18px;
+  color: #363636;
+}
+table.ta1 thead {
+  background: #363636;
+  border-bottom: 2px solid #ffffff;
+}
+table.ta1 thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #d0e4f5;
+  font-family: "Roboto", sans-serif;
+  width: 50px;
+}
 
-  }
-  table.ta1 td, table.ta1 th {
-    border: 1px solid #FFFFFF;
-    padding: 20px 200px;
-  }
-  table.ta1 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
-
-  }
-  table.ta1 thead {
-    background: #363636;
-    border-bottom: 2px solid #FFFFFF;
-  }
-  table.ta1 thead th {
-    font-size: 19px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    border-left: 2px solid #D0E4F5;
-    font-family: "Roboto", sans-serif;
-  }
-
-  table.ta2 {
-    border: 1px solid #FFFFFF;
-    background-color: #FFCC33;
-    text-align: center;
-    border-collapse: collapse;
-  }
-  table.ta2 td, table.ta2 th {
-    border: 1px solid #FFFFFF;
-    padding: 20px 200px;
-  }
-  table.ta2 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-  }
-  table.ta2 thead {
-    background: #363636;
-    border-bottom: 2px solid #FFFFFF;
-  }
-  table.ta2 thead th {
-    font-size: 19px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    border-left: 2px solid #D0E4F5;
-  }
- #tachito1{
+table.ta2 {
+  border: 1px solid #ffffff;
+  background-color: #ffcc33;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.ta2 td,
+table.ta2 th {
+  border: 1px solid #ffffff;
+  padding: 20px 200px;
+}
+table.ta2 tbody td {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+table.ta2 thead {
+  background: #363636;
+  border-bottom: 2px solid #ffffff;
+}
+table.ta2 thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  border-left: 2px solid #d0e4f5;
+}
+#tachito1 {
   position: absolute;
   right: 130px;
   bottom: 555px;
- }
- #tachito2{
+}
+#tachito2 {
   position: absolute;
   right: 130px;
   bottom: 463px;
- }
+}
 
- #tachito3{
+#tachito3 {
   position: absolute;
   right: 130px;
   bottom: 371px;
- }
-#tachito4{
-  position:absolute;
+}
+#tachito4 {
+  position: absolute;
   right: 130px;
   bottom: 279px;
 }
-#tachito5{
-    position:absolute;
-    right: 130px;
-    bottom: 187px;
-  }
-#tachito6{
-  position:absolute;
+#tachito5 {
+  position: absolute;
+  right: 130px;
+  bottom: 187px;
+}
+#tachito6 {
+  position: absolute;
   right: 130px;
   bottom: 95px;
 }
-#tachito7{
-    position:absolute;
-    right: 130px;
-    bottom: 3px;
+#tachito7 {
+  position: absolute;
+  right: 130px;
+  bottom: 3px;
 }
 
 .header {
@@ -190,11 +197,22 @@ table.ta1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin: 150px;
+  margin-bottom: 50px;
 }
 
 .carritoTitle {
-  margin: 3rem 0;
+  position: absolute;
+  left: 193px;
+  top: 170px;
+  cursor: default;
+  font-size: 45px;
+  transition: all 1s;
+}
 
+.carritoTitle:hover{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .loginIcon {
@@ -202,21 +220,26 @@ table.ta1 {
   top: 1rem;
   right: 2rem;
 }
-.btn{
+.btn {
   width: 10rem;
   height: 40px;
-  background-color: #E38B29;
+  background-color: #e38b29;
   border: none;
   color: white;
   border-radius: 15px;
   font-size: 1.6rem;
   letter-spacing: 3px;
   text-transform: capitalize;
-  transition: all .3s;
+  transition: all 0.3s;
   margin-top: 3rem;
+  position: absolute;
+  bottom: -260px;
+  right: 190px;
+  transition: all 0.5s;
 }
-.btn:hover{
+.btn:hover {
   cursor: pointer;
   letter-spacing: 5px;
   color: white;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
 }

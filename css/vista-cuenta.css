@@ -55,6 +55,7 @@ article h1{
 }
 
 .s2a1{
+  font-size: 30px;
   position: relative;
   left: 150px;
   top: 28px;
@@ -68,7 +69,7 @@ article h1{
 	cursor:pointer;
 	color:#ffffff;
 	font-family: "Roboto", sans-serif;
-	font-size:14px;
+	font-size:20px;
 	padding:15px 25px;
 	text-decoration:none;
 	text-shadow:1px 0px 0px #ffffff;
@@ -76,20 +77,37 @@ article h1{
   right: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
+  transition: all 0.5s;
 }
 .boton:active {
 	position:relative;
 	top:1px;
 }
 
+.boton:hover{
+  background: #cda326;
+}
+
 table{
-    width: 84.40%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 
 }
+
+table.ta1 thead tr th{
+  color: white;
+  width: 50%;
+}
+
+table.ta1 thead tr{
+  background: #363636;
+  border-bottom: 2px solid #FFFFFF;
+  width: 50%;
+}
+
 table.ta1 {
     border: 1px solid #FFFFFF;
     background-color: #FFCC33;
@@ -101,17 +119,18 @@ table.ta1 {
     padding: 20px 200px;
   }
   table.ta1 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #363636;
   }
   table.ta1 thead {
-    background: #363636;
+    
+    background: #FFFFFF;
     border-bottom: 2px solid #FFFFFF;
   }
   table.ta1 thead th {
     font-size: 19px;
     font-size: 15px;
-    color: #FFFFFF;
+    color: #363636;
   }
   table.ta1 thead {
     background: #DDB12C;
@@ -121,9 +140,9 @@ table.ta1 {
     border-bottom: 2px solid #FFFFFF;
   }
   table.ta1 thead th {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #363636;
     text-align: center;
     border-left: 2px solid #D0E4F5;
   }
@@ -139,8 +158,8 @@ table.ta1 {
     padding: 20px 200px;
   }
   table.ta2 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
+    font-size: 20px;
+    color: #363636;
     font-family: "Roboto", sans-serif;
   }
   table.ta2 thead {
@@ -175,6 +194,14 @@ table.ta1 {
   position:absolute;
   right: 60px;
   bottom: -170px;
+}
+
+table{
+  transition: all 0.75s;
+}
+
+table:hover{
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .main {
