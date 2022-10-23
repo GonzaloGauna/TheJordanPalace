@@ -14,12 +14,13 @@ body{
 .footer{
     background-color: black;
     padding: 20px;  
-    width: 100%;
+    width: 50%;
     color: white;
-    
 }
 
-.bx{
+.bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
     font-size: 2rem;
     color: white;
     text-align: center;
@@ -28,7 +29,7 @@ body{
 
 .column{
     float: left;
-    display: inline-block;
+    width: 50%;
     flex-direction: row;
     padding-top: 20px;
 }
@@ -44,12 +45,6 @@ body{
     font-size: 0.8em;
 }
 
-iframe{
-    width: 20em;
-    height: 18em;
-}
-
-
 /* Tablet */
 @media screen and (min-width: 47em){
     .footer{
@@ -60,10 +55,15 @@ iframe{
         
     }
     
-    .bx{
+    .bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
         font-size: 2rem;
+        padding: 0.1em;
         color: white;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
     }
     .column{
@@ -84,11 +84,6 @@ iframe{
     .footer div p{
         color: white;
         font-size: 16px;
-    }
-
-    iframe{
-        width: 16em;
-        height: 15em;
     }
 }
 
@@ -99,16 +94,21 @@ iframe{
         background-color: black;
         padding: 20px;  
         width: 100%;
-        color: white;
-        
+        color: white;   
     }
     
-    .bx{
-        font-size: 3rem;
+    .bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
+        font-size: 2rem;
+        padding: 0.1em;
         color: white;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
     }
+
     .column{
         float: left;
         width: 33.33%;
@@ -117,7 +117,7 @@ iframe{
         flex-direction: column;
         padding-top: 20px;
     }
-    
+
     .copyright{
         color: darkgray;
         text-align: center;
@@ -127,10 +127,5 @@ iframe{
     .footer div p{
         color: white;
         font-size: 16px;
-    }
-
-    iframe{
-        width: 25em;
-        height: 18.75em;
     }
 }
