@@ -159,43 +159,42 @@ h2 {
 
 /* START ASIDE */
 
-.container-mid{
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
-  
-}
-
 #titulo_aside {
   padding-bottom: 15px;
   margin-top: 5px;
-  color: white;
   text-align: center;
-  cursor: pointer;
-}
-
-#titulo_aside:hover{
-  text-decoration: underline;
+  font-size: 30px;
+  cursor: default;
 }
 
 aside {
   padding: 20px;
-  width: 500px;
-  height: 1000px;
-  float: right;
-  clear: both;
-  grid-column: 2 / 3;
-  grid-row: 1;
-  border-left: 1px solid black;
-  background: linear-gradient(to top, rgb(255, 186, 8), darkorange);
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to bottom, rgb(255, 186, 8), black);
+  border-bottom: 5px solid black;
 }
 
 .contenedor_aside {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-template-areas: 'productoUno productoDos productoTres';
   height: 500px;
+  width: 100%;
   text-align: center;
+}
+
+#productoUno{
+  grid-area: productoUno;
+}
+
+#productoDos{
+  grid-area: productoDos;
+}
+
+#productoTres{
+  grid-area: productoTres;
 }
 
 .producto img {
@@ -227,6 +226,11 @@ aside {
   scale: 1.1;
 }
 
+#encabezadoPago{
+  font-size: 30px;
+  cursor: default;
+}
+
 .mediosDePago{
   display: flex;
   text-align: center;
@@ -235,40 +239,78 @@ aside {
   justify-content: center;
   align-items: center;
   width: 100%;
-  grid-column: 1 / 2;
-  grid-row: 1;
-  background: linear-gradient(to top, rgb(255, 186, 8), darkorange);
+  background: rgb(255, 186, 8);
 }
 
 .mediosDePago h3{
   font-size: 35px;
   text-align: center;
-  margin: 2rem 0;
   cursor: default;
-  position: relative;
-  bottom: -40px;
-  left: -275px;
 }
 
-.imgMediosDePago {
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 50px;
+.formasDePago{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 350px;
+  padding: 50px;
+  gap: 3em;
 }
 
-.imgComoComprar{
-  border-radius: 5px;
-  width: 100%;
-  height: auto;
+#efectivo{
   position: relative;
-  bottom: 50px;
-  cursor: pointer;
-  transition: all 0.75s;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  height: 250px;
+  text-align: center;
 }
 
-.imgComoComprar:hover{
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+#pagoEfectivo{
+  margin: 10px;
+}
+
+#transferencia{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+#pagoTransferencia{
+  margin: 10px;
+}
+
+#tarjeta{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+#pagoTarjeta{
+  margin: 10px;
+}
+
+#crypto{
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+#pagoCrypto{
+  margin: 10px;
+}
+
+.material-symbols-outlined{
+  transform: scale(5);
+  position: absolute;
+  left: 110px;
+  top: 150px;
 }
 
 .main {

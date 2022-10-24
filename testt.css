@@ -1,0 +1,33 @@
+.formasDePago{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 500px;
+    padding: 50px;
+}
+
+#efectivo{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+#transferencia{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    height: 250px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.material-symbols-outlined{
+    transform: scale(5);
+    position: absolute;
+    left: 110px;
+    top: 150px;
+}
