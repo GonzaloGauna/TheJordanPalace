@@ -6,7 +6,7 @@
 }
 
 main{
-    background-color: darkgray;
+    background: transparent;
 }
 
 
@@ -61,4 +61,72 @@ body{
 .cancelar:hover{
     background-color: white;
     color: #252323;
+}
+
+img{
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 768px){
+
+    .form-login{
+        width: 100%;
+    }
+
+    .ingreso{
+        position: relative;
+        left: 2em;
+        
+    }
+
+    .cancelar{
+        position: relative;
+        right: 2em;
+    }
+
+    .field{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    .form-login{
+        width: 100%;
+    }
+
+    .ingreso{
+        position: relative;
+        left: 3em;
+        width: 100%;
+    }
+
+    .cancelar{
+        position: relative;
+        right: 3em;
+        width: 100%;
+    }
+
+    .field{
+        font-size: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .form-login{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ingreso{
+        position: relative;
+        left: 3em;
+        width: 100%;
+    }
+
+    .cancelar{
+        position: relative;
+        right: 3em;
+        width: 100%;
+    }
 }
