@@ -16,10 +16,10 @@ body {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "header header header"
-  "main main main"
-  "footer footer footer";
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
 }
 
 .carrito {
@@ -31,21 +31,20 @@ body {
   transition: all 300ms;
 }
 
-.carrito:hover{
+.carrito:hover {
   scale: 1.3;
 }
 
-.carrito a, .loginIcon a {
+.carrito a,
+.loginIcon a {
   color: white;
 }
 
 .loginIcon {
   display: inline-block;
   position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  margin-left: 40px;
-  
+  right: 4rem;
+  top: 1.45rem;
 }
 
 .loginIcon a i {
@@ -53,7 +52,7 @@ body {
   transition: all 300ms;
 }
 
-.loginIcon a i:hover{
+.loginIcon a i:hover {
   scale: 1.3;
 }
 
@@ -110,11 +109,11 @@ h2 {
   padding: 20px;
 }
 
-.flechaCarrusel a i{
+.flechaCarrusel a i {
   transition: all 300ms;
 }
 
-.flechaCarrusel a i:hover{
+.flechaCarrusel a i:hover {
   scale: 1.3;
 }
 
@@ -205,27 +204,27 @@ aside {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  grid-template-areas: 'productoUno productoDos productoTres';
+  grid-template-areas: "productoUno productoDos productoTres";
   height: 500px;
   width: 100%;
   text-align: center;
 }
 
-#productoUno{
+#productoUno {
   grid-area: productoUno;
   border-right: 1px solid black;
 }
 
-#productoDos{
+#productoDos {
   grid-area: productoDos;
   border-right: 1px solid black;
 }
 
-#productoTres{
+#productoTres {
   grid-area: productoTres;
 }
 
-.producto{
+.producto {
   height: 300px;
 }
 
@@ -246,7 +245,7 @@ aside {
   color: white;
   margin-top: -50px;
   cursor: default;
-  transition: all 0.5s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .producto:hover .descripcion {
@@ -258,12 +257,12 @@ aside {
   scale: 1.1;
 }
 
-#encabezadoPago{
+#encabezadoPago {
   font-size: 30px;
   cursor: default;
 }
 
-.mediosDePago{
+.mediosDePago {
   display: flex;
   text-align: center;
   flex-wrap: wrap;
@@ -274,13 +273,13 @@ aside {
   background: rgb(255, 186, 8);
 }
 
-.mediosDePago h3{
+.mediosDePago h3 {
   font-size: 35px;
   text-align: center;
   cursor: default;
 }
 
-.formasDePago{
+.formasDePago {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -290,7 +289,7 @@ aside {
   gap: 3em;
 }
 
-#efectivo{
+#efectivo {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   width: 250px;
@@ -298,11 +297,11 @@ aside {
   text-align: center;
 }
 
-#pagoEfectivo{
+#pagoEfectivo {
   margin: 10px;
 }
 
-#transferencia{
+#transferencia {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   width: 250px;
@@ -310,11 +309,11 @@ aside {
   text-align: center;
 }
 
-#pagoTransferencia{
+#pagoTransferencia {
   margin: 10px;
 }
 
-#tarjeta{
+#tarjeta {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   width: 250px;
@@ -322,11 +321,11 @@ aside {
   text-align: center;
 }
 
-#pagoTarjeta{
+#pagoTarjeta {
   margin: 10px;
 }
 
-#crypto{
+#crypto {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
   width: 250px;
@@ -334,20 +333,27 @@ aside {
   text-align: center;
 }
 
-#pagoCrypto{
+#pagoCrypto {
   margin: 10px;
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   transform: scale(5);
   position: absolute;
   left: 110px;
   top: 150px;
+  cursor: default;
+  transition: all 300ms;
+}
+
+.material-symbols-outlined:hover{
+  scale: 1.1;
 }
 
 .main {
   grid-area: main;
 }
+
 .footer {
   grid-area: footer;
 }

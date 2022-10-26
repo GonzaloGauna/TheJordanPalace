@@ -20,6 +20,8 @@ body{
 .field{
     width: 70%;
     padding-left: 1rem;
+    outline: none;
+    border: none;
 }
 
 .buttons{
