@@ -20,9 +20,11 @@ img#logo {
 }
 
 input#buscador {
-    margin-left: 15px;
+    margin-left: 7px;
+    padding-left: 33px;
+    font-size: 17px;
     background-color: rgb(176, 171, 171);
-    color: white;
+    color: black;
     width: 50%;
     text-align: left;
     height: 30px;
@@ -33,7 +35,7 @@ input#buscador {
     background-image: url(/images/others/search-icon.jpg);
     background-repeat: no-repeat;
     background-size: 20px 20px;
-    background-position: 550px center;
+    background-position: 5px center;
 }
 
 input#buscador::placeholder {

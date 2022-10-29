@@ -195,3 +195,10 @@ body {
 .loginIcon a {
     color: white;
 }
+
+.bx{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
