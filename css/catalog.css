@@ -42,7 +42,17 @@ body {
     grid-template-rows: max-content;
     grid-template-areas: "aside content";
 }
+@media (max-width: 1500px){
+    .main .container {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "aside"
+        "content";
+    }
+}
 
+/* ============= Aside ============= */
 .aside {
     grid-area: aside;
     width: 100%;
@@ -68,11 +78,64 @@ body {
     font-size: 1.6rem;
     padding: 1rem;
 }
+.filter__btn {
+    display: none;
+}
+.filter__btn h3 {
+    font-size: 2rem;
+}
+.filter__btn i {
+    color: black;
+}
+.filters__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s;
+    overflow: hidden;
+}
+@media (max-width: 1500px){
+    .aside {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .aside hr{
+        display: none;
+    }
+}
+@media (max-width: 950px){
+    .aside {
+        flex-direction: column;
+        align-items: left;
+    }
+    .filter__btn {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+    }
+    .filters__container {
+        flex-direction: column;
+    }
+    
+}
+.filters-close .filter {
+    transition: all 1.5s;
+}
+.filters__container--close {
+    height: 1rem;
+}
+.filters__container--open {
+    height: 50rem;
+}
 
+/* ============= Articles ============= */
 .content {
     margin: 5rem 0;
     margin-left: 5rem;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -91,7 +154,23 @@ body {
 .container-card .card--colorBlack .contentBx a:hover {
     background: #403d39;
 }
-
+.card__logo {
+    display: flex;
+    justify-content: center;
+}
+.content article:last-child .card {
+    display: none;
+}
+@media (max-width: 1500px){
+    .content {
+        justify-content: center;
+        margin-left: 0%;
+    }
+    .content article:last-child .card {
+        display: block;
+    }
+}
+/* ============= Others ============= */
 .footer {
     grid-area: footer;
 }
