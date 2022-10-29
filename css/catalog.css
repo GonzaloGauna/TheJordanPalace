@@ -90,6 +90,7 @@ body {
 .filters__container {
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     transition: all 1s;
     overflow: hidden;
@@ -101,6 +102,9 @@ body {
     }
     .aside hr{
         display: none;
+    }
+    .filters__container {
+        flex-direction: row;
     }
 }
 @media (max-width: 950px){
@@ -119,15 +123,15 @@ body {
         flex-direction: column;
     }
     
-}
-.filters-close .filter {
-    transition: all 1.5s;
-}
-.filters__container--close {
-    height: 1rem;
-}
-.filters__container--open {
-    height: 50rem;
+    .filters-close .filter {
+        transition: all 1.5s;
+    }
+    .filters__container--close {
+        height: 1rem;
+    }
+    .filters__container--open {
+        height: 50rem;
+    }
 }
 
 /* ============= Articles ============= */
