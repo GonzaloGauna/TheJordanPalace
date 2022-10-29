@@ -79,7 +79,7 @@ body {
 }
 .contact__title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .contact li {
   font-size: 1.6rem;
@@ -152,4 +152,15 @@ body {
 ul li {
   margin: 15px;
   font-size: 50px;
+}
+
+ul{
+  position: relative;
+}
+
+hr{
+  width: 100%;
+  margin: 20px;
+  position: relative;
+  right: 3.5px;
 }
