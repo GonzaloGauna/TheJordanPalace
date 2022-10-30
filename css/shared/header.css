@@ -81,7 +81,8 @@ nav.menu ul li a {
 }
 
 nav.menu ul li a:hover {
-    scale: 1.3;
+    color: darkgray;
+    scale: 1.1;
 }
 
 .loginIcon a{

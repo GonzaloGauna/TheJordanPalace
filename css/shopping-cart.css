@@ -23,7 +23,7 @@ main{
 }
 
 .cart-item{
-    width: 30%;
+    width: 27%;
     height: 400px;
     border: 5px solid black;
     border-radius: 20px;
@@ -116,12 +116,3 @@ main{
     scale: 1.05;
     text-decoration: underline;
 }
-
-
-
-
-
-
-
-
-
