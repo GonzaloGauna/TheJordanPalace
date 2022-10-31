@@ -113,7 +113,6 @@ body{
 .form-login p{
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid;
 }
 
 .form-login a{
@@ -126,6 +125,14 @@ body{
     text-decoration: underline;
 }
 
+#message{
+    margin-top: 2em;
+}
+
+.error{
+    color:crimson;
+    padding: 1.5em;
+}
 
 @media screen and (max-width: 1200px){
     main{

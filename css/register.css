@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 main{
@@ -69,6 +70,15 @@ body{
 
 img{
     font-size: 2em;
+}
+
+#message{
+    margin-top: 2em;
+}
+
+.error{
+    color:crimson;
+    padding: 1.5em;
 }
 
 @media only screen and (min-width: 768px){
