@@ -37,7 +37,7 @@ function validation(){
 
     if(password.value.length < 7){
         error = true;
-        menssageError += "<p> La contraseña debe tener al menos 7 caracteres </p>"
+        menssageError += "<p class='asd'> La contraseña debe tener al menos 7 caracteres </p>"
     }
 
     if(password.value != repeatPassword.value){
