@@ -1,222 +1,118 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url(./shared/header.css);
-@import url(./shared/footer.css);
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  background: rgb(255, 186, 8);
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: 
-  "header header header"
-  "main main main"
-  "footer footer footer";
-}
-
-.s1{
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 80px;
-    display:flex;
-    justify-content: left;
-    align-items: center;
-}
-
-article h1{
-    padding: 50px;
-    position: relative;
-    left: 50px;
-    font-size: 28px;
-    text-shadow: -5px 0px 23px rgba(0, 0, 0, 0.425);
-}
-
-.s2{
+main{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 150px;
     display: flex;
-    justify-content:space-between;
-    font-size: 14px;
-    margin-left: 1500px;
-    padding-bottom: 10px;
+    justify-content: space-between;
 }
 
-.s2a1{
-  position: relative;
-  left: 110px;
-  top: 28px;
-}
-
-.boton {
-	background-color:#ffbf00;
-	border-radius:26px;
-	border:3px solid #ffffff;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family: "Roboto", sans-serif;
-	font-size:14px;
-	padding:15px 25px;
-	text-decoration:none;
-	text-shadow:1px 0px 0px #ffffff;
-  position: relative;
-}
-.boton:active {
-	position:relative;
-	top:1px;
-}
-
-.boton:hover{
-    background-color: black;
-}
-
-table{
+#container-cart{
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
     width: 80%;
 }
-table.ta1 {
-    border: 1px solid #FFFFFF;
-    background-color: #FFCC33;
-    text-align: center;
-    border-collapse: collapse;
 
-  }
-  table.ta1 td, table.ta1 th {
-    border: 1px solid #FFFFFF;
-    padding: 20px 200px;
-  }
-  table.ta1 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
-
-  }
-  table.ta1 thead {
-    background: #363636;
-    border-bottom: 2px solid #FFFFFF;
-  }
-  table.ta1 thead th {
-    font-size: 19px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    border-left: 2px solid #D0E4F5;
-    font-family: "Roboto", sans-serif;
-  }
-
-  table.ta2 {
-    border: 1px solid #FFFFFF;
-    background-color: #FFCC33;
-    text-align: center;
-    border-collapse: collapse;
-  }
-  table.ta2 td, table.ta2 th {
-    border: 1px solid #FFFFFF;
-    padding: 20px 200px;
-  }
-  table.ta2 tbody td {
-    font-size: 14px;
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-  }
-  table.ta2 thead {
-    background: #363636;
-    border-bottom: 2px solid #FFFFFF;
-  }
-  table.ta2 thead th {
-    font-size: 19px;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align: center;
-    border-left: 2px solid #D0E4F5;
-  }
- #tachito1{
-  position: absolute;
-  right: 130px;
-  bottom: 555px;
- }
- #tachito2{
-  position: absolute;
-  right: 130px;
-  bottom: 463px;
- }
-
- #tachito3{
-  position: absolute;
-  right: 130px;
-  bottom: 371px;
- }
-#tachito4{
-  position:absolute;
-  right: 130px;
-  bottom: 279px;
-}
-#tachito5{
-    position:absolute;
-    right: 130px;
-    bottom: 187px;
-  }
-#tachito6{
-  position:absolute;
-  right: 130px;
-  bottom: 95px;
-}
-#tachito7{
-    position:absolute;
-    right: 130px;
-    bottom: 3px;
+.cart-item{
+    width: 27%;
+    height: 400px;
+    border: 5px solid black;
+    border-radius: 20px;
+    position: relative;
+    transition: all 300ms;
 }
 
-.header {
-  grid-area: header;
-}
-.main {
-  grid-area: main;
-  display: flex;
-  place-items: center;
-  flex-direction: column;
-  height: auto;
-  margin: 5rem 0;
-}
-.footer {
-  grid-area: footer;
-}
-.containerTable {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.cart-item:hover{
+    scale: 1.05;
 }
 
-.carritoTitle {
-  margin: 3rem 0;
-
+.cart-item img{
+    padding: 10px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.loginIcon {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
+.cart-item h3{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
 }
-.btn{
-  width: 10rem;
-  height: 40px;
-  background-color: #E38B29;
-  border: none;
-  color: white;
-  border-radius: 15px;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  text-transform: capitalize;
-  transition: all .3s;
-  margin-top: 3rem;
+
+.cart-item h4{
+    font-size: 20px;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.btn:hover{
-  cursor: pointer;
-  letter-spacing: 5px;
-  color: white;
+
+.cart-item button{
+    width: 60%;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 8px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.cart-item button:hover{
+    background: darkgray;
+}
+
+#monto{
+    height: 200px;
+    padding: 20px;
+    width: 20%;
+    position: relative;
+    background: black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#monto h2{
+    margin-bottom: 10px;
+    color: white;
+}
+
+#monto h3{
+    margin-top: 10px;
+    color: white;
+}
+
+#monto a{
+    text-decoration: none;
+    position: absolute;
+    top: 140px;
+    padding: 10px;
+    background: white;
+    color: black;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: all 300ms;
+}
+
+#monto a:hover{
+    scale: 1.05;
+    text-decoration: underline;
 }
