@@ -57,7 +57,7 @@ body{
 }
 
 .ingreso{
-    width: 100%;
+    width: 80%;
     height: 40px;
     background-color: #E38B29;
     border: none;
@@ -93,7 +93,7 @@ body{
 }
 
 .field{
-    width: 100%;
+    width: 80%;
     margin-bottom: 15px;
     padding: 10px 0.5px;
     background-color: #252323;
@@ -172,13 +172,13 @@ body{
         border-radius: 10px;
     }
     
-
-
     .form-login p{
         font-size: 1em;
         height: 40px;
         text-align: center;
     }
+
+    
 }
 
 @media screen and (max-width: 37.5em){
