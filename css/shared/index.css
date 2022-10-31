@@ -35,7 +35,7 @@ body {
   scale: 1.3;
 }
 
-.carrito a{
+.carrito a {
   color: white;
 }
 
@@ -116,12 +116,13 @@ h2 {
 /* STAR STYLECARDS*/
 
 .background_container_card {
-  background: url(/images/others/black_background_stripes-1301439.jpg);
-  height: 800px;
+  padding: 40px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  background: black;
 }
 
 .container_card {
@@ -129,7 +130,6 @@ h2 {
 }
 
 .card {
-  width: 25%;
   margin: 20px;
   border-radius: 6px;
   overflow: hidden;
@@ -144,7 +144,7 @@ h2 {
 
 .card img {
   width: 100%;
-  height: 600px;
+  height: 100%;
 }
 
 .text_card {
@@ -163,17 +163,19 @@ h2 {
 
 .text_card h4 {
   display: inline-block;
+  color: black;
 }
 
 .text_card a:hover {
   text-decoration: underline;
 }
 
-/* END STYLECARDS*/
+/* END STYLECARDS */
 
 /* START ASIDE */
 
 #titulo_aside {
+  display: block;
   padding-bottom: 15px;
   margin-top: 5px;
   margin-bottom: 50px;
@@ -183,11 +185,14 @@ h2 {
 }
 
 aside {
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
-  height: 500px;
+  height: auto;
   border-bottom: 5px solid black;
   background: rgb(255, 186, 8);
+  margin-top: 50px;
 }
 
 .contenedor_aside {
@@ -195,7 +200,7 @@ aside {
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
   grid-template-areas: "productoUno productoDos productoTres";
-  height: 500px;
+  height: 350px;
   width: 100%;
   text-align: center;
 }
@@ -273,7 +278,7 @@ aside {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
   height: 350px;
   padding: 50px;
   gap: 3em;
@@ -286,7 +291,6 @@ aside {
   height: 250px;
   text-align: center;
   cursor: default;
-
 }
 
 #pagoEfectivo {
@@ -300,7 +304,6 @@ aside {
   height: 250px;
   text-align: center;
   cursor: default;
-
 }
 
 #pagoTransferencia {
@@ -314,7 +317,6 @@ aside {
   height: 250px;
   text-align: center;
   cursor: default;
-
 }
 
 #pagoTarjeta {
@@ -343,7 +345,7 @@ aside {
   transition: all 300ms;
 }
 
-.material-symbols-outlined:hover{
+.material-symbols-outlined:hover {
   scale: 1.05;
 }
 
@@ -359,4 +361,47 @@ aside {
   text-decoration: none;
   color: rgb(255, 186, 8);
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 37.5em) {
+
+  .formasDePago{
+    margin-bottom: 200px;
+  }
+ 
+  /* .container{
+    width: 100%;
+  }
+
+  .container img{
+    width: 100%;
+  } */
+}
+
+@media screen and (max-width: 48em) {
+  .formasDePago{
+    margin-bottom: 200px;
+  } 
+ 
+}
+
+@media screen and (max-width: 64em) {
+  .formasDePago{
+    margin-bottom: 200px;
+  }
+  
+}
+
+@media screen and (min-width: 64em) {
+  .formasDePago{
+    margin-bottom: 200px;
+  }
+  
+}
+
+@media screen and (min-width: 120em) {
+  .formasDePago{
+    margin-bottom: 0px;
+  }
+  
 }
