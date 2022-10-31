@@ -157,7 +157,6 @@ h2 {
 .text_card a {
   text-decoration: none;
   color: white;
-  display: inline-block;
   float: right;
   font-size: 17px;
 }
