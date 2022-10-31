@@ -24,6 +24,8 @@ body{
     width: 80%;
     margin: 1em;
     padding-left: 1rem;
+    outline: none;
+    border: none;
 }
 
 .buttons{

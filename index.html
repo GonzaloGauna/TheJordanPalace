@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script
       src="https://kit.fontawesome.com/ce9fd9f657.js"
       crossorigin="anonymous"
@@ -40,11 +41,9 @@
       </div>
     </header>
     <main class="main">
-      <img class="imgMediosDePago" src="./../images/others/mediosDePago.jpg" alt="medios de pago">
-      <img class="imgMediosDePagoCripto" src="./../images/others/mediosDePagoCripto.jpg" alt="medios de pago">
       <div class="container">
         <div class="carrusel" id="carrusel1">
-          <h2 class="modelos">JORDAN EJEMPLO 1</h2>
+          <h2 class="modelos">JORDAN 1</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-HighDaveWhite.png"
@@ -52,12 +51,12 @@
             />
           </div>
           <div class="flechaCarrusel">
-            <a href="#carrusel4"><i class="fa-solid fa-chevron-left"></i></a>
-            <a href="#carrusel2"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="flecha" href="#carrusel4"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="flecha" href="#carrusel2"><i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="carrusel" id="carrusel2">
-          <h2 class="modelos">JORDAN EJEMPLO 2</h2>
+          <h2 class="modelos">JORDAN 2</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-HyperRoyal.png"
@@ -65,12 +64,12 @@
             />
           </div>
           <div class="flechaCarrusel">
-            <a href="#carrusel1"><i class="fa-solid fa-chevron-left"></i></a>
-            <a href="#carrusel3"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="flecha" href="#carrusel1"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="flecha" href="#carrusel3"><i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="carrusel" id="carrusel3">
-          <h2 class="modelos">JORDAN EJEMPLO 3</h2>
+          <h2 class="modelos">JORDAN 3</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-mid-winterizad.png"
@@ -78,12 +77,12 @@
             />
           </div>
           <div class="flechaCarrusel">
-            <a href="#carrusel2"><i class="fa-solid fa-chevron-left"></i></a>
-            <a href="#carrusel4"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="flecha" href="#carrusel2"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="flecha" href="#carrusel4"><i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
         <div class="carrusel" id="carrusel4">
-          <h2 class="modelos">JORDAN EJEMPLO 4</h2>
+          <h2 class="modelos">JORDAN 4</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-retro-1-HighStrap.png"
@@ -91,8 +90,8 @@
             />
           </div>
           <div class="flechaCarrusel">
-            <a href="#carrusel3"><i class="fa-solid fa-chevron-left"></i></a>
-            <a href="#carrusel1"><i class="fa-solid fa-chevron-right"></i></a>
+            <a class="flecha" href="#carrusel3"><i class="fa-solid fa-chevron-left"></i></a>
+            <a class="flecha" href="#carrusel1"><i class="fa-solid fa-chevron-right"></i></a>
           </div>
         </div>
       </div>
@@ -131,58 +130,82 @@
           </div>
         </div>
       </div>
-      <aside>
-        <h3 id="titulo_aside">PRODUCTOS RELACIONADOS</h2>
-        <div class="contenedor_aside">
-          <div class="producto">
-            <img src="/images/styleCards/3.png">
-            <p class="descripcion">JORDAN</p>
+      <h2 id="encabezadoPago">FORMAS DE PAGO</h2>
+        <div class="mediosDePago">
+          <div class="formasDePago">
+            <div id="efectivo">
+              <h2 id="pagoEfectivo">Efectivo</h2>
+              <span class="material-symbols-outlined">
+                  payments
+              </span>
+            </div>
+            <div id="transferencia">
+              <h2 id="pagoTransferencia">Transferencia bancaria</h2>
+              <span class="material-symbols-outlined">
+                  account_balance
+              </span>
+            </div>
+            <div id="tarjeta">
+              <h2 id="pagoTarjeta">Tarjeta de crédito</h2>
+              <span class="material-symbols-outlined">
+                  credit_card
+              </span>
+            </div>
+            <div id="crypto">
+              <h2 id="pagoCrypto">Criptomonedas</h2>
+              <span class="material-symbols-outlined">
+                currency_bitcoin
+              </span>
+            </div>
           </div>
-          <div class="producto">
-            <img src="/images/styleCards/6.png">
-            <p class="descripcion">JORDAN</p>          </div>
-          <div class="producto">
-            <img src="/images/styleCards/8.png">
-            <p class="descripcion">JORDAN</p>          </div>
-        </div>
-      </aside>
-      <h3 class="formasDePagoTittle">FORMAS DE PAGO</h3>     
+        </div> 
+        <aside>
+          <h3 id="titulo_aside">PRODUCTOS RELACIONADOS</h2>
+          <div class="contenedor_aside">
+            <div class="producto" id="productoUno">
+              <img src="/images/styleCards/3.png">
+              <p class="descripcion">JORDAN EJEMPLO</p>
+            </div>
+            <div class="producto" id="productoDos">
+              <img src="/images/styleCards/6.png">
+              <p class="descripcion">JORDAN EJEMPLO</p>          </div>
+            <div class="producto" id="productoTres">
+              <img src="/images/styleCards/8.png">
+              <p class="descripcion">JORDAN EJEMPLO</p>          </div>
+          </div>
+        </aside>
+
+
     </main>
     <footer class="footer">
-      <div>
-          <div class="column">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3643336747227!2d-58.56499388505009!3d-34.67075316855472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1661516466757!5m2!1ses!2sar" width="400" height="300" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
-          </div>  
-
-          <div class="column">
-              <p>Fortuna Mateo 45.238.796</p>
-              <br>
-              <p>Gauna Gonzalo 41.806.073</p>
-              <br>
-              <p>Herlein Gonzalo 43.861.369</p> <br>
-              <p>Pizarro Santiago 45.315.788</p>
-              <br> 
-              <p>Seguinos En</p>
-              <br>
-
-              <div>
-                  <i class='bx bxl-facebook-circle'></i>
-                  <i class='bx bxl-instagram' ></i>
-                  <i class='bx bxl-twitter' ></i>
-              </div>
-              
-          </div>
-          <div class="column">
-              <p>Lunes a Sabado de 8 a 19hs</p>
-              <p>© 2022 The Jordan Palace</p>
-              <br>
-              <br>
-              <p>Terminos de uso</p>
-              <p>Politica de privacidad</p>
-          </div>
-          <div class="column">
-            <a href="./pages/popups.html">PopUps</a>
-          </div>
+      <div> 
+        <div class="column">
+          <p>Fortuna Mateo 45.238.796</p>
+          <br>
+          <p>Gauna Gonzalo 41.806.073</p>
+          <br>
+          <p>Herlein Gonzalo 43.861.369</p> <br>
+          <p>Pizarro Santiago 45.315.788</p>
+          <br> 
+          <p>Seguinos En</p>
+          <br>
+          <div>
+            <i class='bx bxl-facebook-circle'></i>
+            <i class='bx bxl-instagram' ></i>
+            <i class='bx bxl-twitter' ></i>
+          </div>   
+        </div>
+        <div class="column">
+          <p>Lunes a Sabado de 8 a 19hs</p>
+          <p>© 2022 The Jordan Palace</p>
+          <br>
+          <br>
+          <p>Terminos de uso</p>
+          <p>Politica de privacidad</p>
+        </div>
+        <div class="column">
+          <a href="./pages/popups.html">PopUps</a>
+        </div>
       </div>
   </footer>
   </body>
