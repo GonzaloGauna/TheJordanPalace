@@ -49,7 +49,6 @@ function validation(){
         document.querySelector("#message").innerHTML = menssageError;
         document.querySelector('#message').style.display = 'inline-block';
     }else{
-        console.log("el form se mando");
         form.submit();
     }
 }
