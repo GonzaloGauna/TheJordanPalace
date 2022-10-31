@@ -24,6 +24,26 @@ html::-webkit-scrollbar-thumb {
     transition: all 0.5s 0s ease;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    box-shadow: none;
+    padding: 2em;
+    background:transparent;
+}
+
+.bx-undo{
+    font-size: 3em;
+    color: white;
+    border-radius: 50%;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.bx-undo:hover{
+    color: black;
+    background-color: white;
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -40,14 +60,18 @@ body {
 }
 img{
     border-radius: 50%;
+    width: 8em;
+    position: relative;
+    right: 0.5em;
+    font-size: 2em;
 }
 
 main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
+    width: 30%;
+    height: 30%;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     background-color: darkgray;
     grid-area: main;
     padding-top: 8rem;
@@ -56,7 +80,20 @@ main{
 }
 .footer {
     grid-area: footer;
+    /* background: transparent;
+    padding-top: 6em; */
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;  
+    background-image: url(../images/others/fondo_basket1.jpg);
+}
+
 .ingreso{
     width: 100%;
     height: 40px;
@@ -115,7 +152,6 @@ main{
 .form-login p{
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid;
 }
 
 .form-login a{
@@ -126,4 +162,96 @@ main{
 
 .form-login a:hover{
     text-decoration: underline;
+}
+
+#message{
+    margin-top: 2em;
+}
+
+.error{
+    color:crimson;
+    padding: 1.5em;
+}
+
+@media screen and (max-width: 1200px){
+    main{
+        width: 30%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: transparent;
+        padding-top: 6em;
+    }
+}
+
+@media screen and (min-width: 37.5em){
+
+    main{
+        width: 50%;
+        position: relative;
+        bottom: 4em;
+    }
+
+    img{
+        width: 5em;
+        position: relative;
+        left: 0.05em;
+    }
+
+    .form-login{
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        background-color: RGB(255, 186, 8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 20px 11px;
+        border-top: 4px solid #252323;
+        color: white;
+        border-radius: 10px;
+    }
+    
+
+
+    .form-login p{
+        font-size: 1em;
+        height: 40px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 37.5em){
+
+    main{
+        width: 70%;
+        position: relative;
+        bottom: 4em;
+    }
+
+    img{
+        width: 5em;
+        position: relative;
+        left: 0.05em;
+    }
+
+    .form-login{
+        width: 80%;
+        height: 80%;
+        text-align: center;
+        background-color: RGB(255, 186, 8);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        padding: 20px 11px;
+        border-top: 4px solid #252323;
+        color: white;
+        border-radius: 10px;
+    }
+    
+
+
+    .form-login p{
+        font-size: 1em;
+        height: 40px;
+        text-align: center;
+        border-bottom: 1px solid;
+    }
 }

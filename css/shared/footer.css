@@ -12,24 +12,23 @@ body{
 
 .footer{
     background-color: black;
-    padding: 20px;  
-    width: 100%;
+    width: 50%;
     color: white;
-    
 }
 
-.bx{
-    font-size: 3rem;
+.bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
+    font-size: 2rem;
     color: white;
     text-align: center;
     cursor: pointer;
 }
+
 .column{
     float: left;
-    width: 33.33%;
-    display: flex;
-    place-items: center;
-    flex-direction: column;
+    width: 50%;
+    flex-direction: row;
     padding-top: 20px;
 }
 
@@ -41,5 +40,90 @@ body{
 
 .footer div p{
     color: white;
-    font-size: 16px;
+    font-size: 0.8em;
+}
+
+/* Tablet */
+@media screen and (min-width: 47em){
+    .footer{
+        background-color: black;
+        padding: 20px;  
+        width: 100%;
+        color: white;
+        
+    }
+    
+    .bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
+        font-size: 2rem;
+        padding: 0.1em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .column{
+        float: left;
+        width: 33.33%;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+    
+    .copyright{
+        color: darkgray;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .footer div p{
+        color: white;
+        font-size: 16px;
+    }
+}
+
+/* PC */
+
+@media screen and (min-width: 60em){
+    .footer{
+        background-color: black;
+        padding: 20px;  
+        width: 100%;
+        color: white;   
+    }
+    
+    .bxl-facebook-circle, 
+    .bxl-instagram, 
+    .bxl-twitter{
+        font-size: 2rem;
+        padding: 0.1em;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .column{
+        float: left;
+        width: 33.33%;
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    .copyright{
+        color: darkgray;
+        text-align: center;
+        width: 95%;
+    }
+    
+    .footer div p{
+        color: white;
+        font-size: 16px;
+    }
 }

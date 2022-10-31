@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximumscale=1">
     <link rel="stylesheet" href="../css/login.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -12,14 +11,25 @@
 </head>
 <body>
     <main>
+<<<<<<< HEAD
         <section  class="form-login">
+=======
+         <header>
+            <a href="index.html">
+                <i class='bx bx-undo'></i>
+            </a>
+        </header> 
+        
+        <form action="../pages/index.html" method="post" enctype="application/x-www-form-urlencoded" class="form-login">
+            
+>>>>>>> GonzaloHerlein
             <img src="../images/others/jordan_logo.png" alt="logo-jordan">
             <h5>Iniciar Sesion</h5>
             <br>
             <label for="usuario">Usuario</label> 
             <br>
             <br>
-            <input class="field" type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+            <input class="field" type="text" id="user" name="user" placeholder="Ingrese su usuario">
             <br>
             <br>
             <br>
@@ -29,6 +39,7 @@
             <input class="field" type="password" id="password" name="password" placeholder="Ingrese su contraseña">
             <br>
             <br>
+            <div id="message" class="error" style="display: none;"></div>
             <p><a>¿Olvidaste tu contraseña?</a></p><br><br>
             <a href="../index.html"><input type="submit" class="ingreso" value="Ingresar"></a>
             <br>
@@ -36,6 +47,10 @@
             <p>Si no tiene una cuenta, puede <a href="register.html"> registrarse</a> </p>
         </section>
     </main>
+<<<<<<< HEAD
 
+=======
+    <script src="/js/login.js"></script>
+>>>>>>> GonzaloHerlein
 </body>
 </html>
