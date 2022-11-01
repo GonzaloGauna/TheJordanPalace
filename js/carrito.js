@@ -7,7 +7,7 @@ for (i = 0; i < botonAgregar.length; i++) {
       e.preventDefault();
       console.log(e);
       agregarAlCarrito(e);
-      añadirCarrito();
+      // añadirCarrito();
     });
   }
 }
