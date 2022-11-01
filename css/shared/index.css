@@ -23,20 +23,37 @@ body {
 }
 
 .carrito {
+  /* display: flex; */
   display: inline-block;
   position: absolute;
   left: 3rem;
   font-size: 3rem;
-  top: 6rem;
+  top: 6.5rem;
   transition: all 300ms;
+  /* justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  background: white;
+  border-radius: 50%;
+  padding: 5px; */
 }
-
 .carrito:hover {
   scale: 1.3;
 }
 
-.carrito a {
+.carrito a i{
   color: white;
+  font-size: 50px;
+}
+
+.carrito p.contador{
+  width: 100%;
+  height: 100%;
+  color: black;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 100;
+  text-decoration: none;
 }
 
 main {
