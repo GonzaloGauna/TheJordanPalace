@@ -10,16 +10,20 @@
     </head>
     <body>
         <header class="header">
-            <img src="/images/others/jordan-icon.jpg" alt="logo" id="logo" />
-            <input type="search" id="buscador" />
-            <nav class="menu">
-                <ul>
-                    <li><a href="./../index.html">Home</a></li>
-                    <li><a href="/pages/contact.html" target="_blank">Contacto</a></li>
-                    <li><a href="./catalog.html">Catálogo</a></li>
-                    <li><a href="./login.html">Mi Cuenta</a></li>
+            <figure class="header__logo">
+                <img src="./../images/others/jordan-icon.jpg" alt="jordan logo">
+            </figure>
+            <nav class="header__nav menu-close" id="headerNav">
+                <ul class="nav__container">
+                    <li><a class="nav__link" href="./../index.html">Home</a></li>
+                    <li><a class="nav__link" href="./contact.html">Contacto</a></li>
+                    <li><a class="nav__link" href="./catalog.html">Catálogo</a></li>
+                    <li><a class="nav__link" href="./vista-cuenta.html">Mi Cuenta</a></li>
                 </ul>
             </nav>
+            <div class="navMenu__container">
+                <i class='bx bx-menu navMenu__icon' id="navMenu"></i>
+            </div>
         </header>
         <main class="main">
             <section class="container">
