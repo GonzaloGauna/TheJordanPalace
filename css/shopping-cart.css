@@ -25,11 +25,20 @@ main {
   justify-content: space-around;
   gap: 6em;
   width: 80%;
+  position: relative;
+}
+
+h1#titulo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
 }
 
 .cart-item {
   width: 25%;
-  height: 400px;
+  height: 450px;
   border: 5px solid black;
   border-radius: 20px;
   position: relative;
@@ -42,24 +51,35 @@ main {
 
 .cart-item img {
   padding: 10px;
-  width: 100%;
+  width: 80%;
   position: absolute;
-  height: auto;
-  top: 60%;
+  height: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  border-radius: 20px;
+
 }
 
-.cart-item h3 {
+.cart-item h3{
+  font-size: 20px;
   text-align: center;
-  padding-top: 10px;
-  font-size: 18px;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
 
 .cart-item h4 {
   font-size: 20px;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
+  position: absolute;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
 
 .cart-item button {
@@ -83,10 +103,8 @@ main {
 }
 
 #monto {
-  height: 200px;
-  padding: 20px;
-  width: 100%;
   position: relative;
+  padding: 20px;
   background: black;
   border-radius: 10px;
   margin-top: 20px;
@@ -97,21 +115,18 @@ main {
   color: white;
 }
 
-#monto h3 {
-  margin-top: 10px;
-  color: white;
-}
-
 #monto a {
   text-decoration: none;
   position: absolute;
-  top: 140px;
+  top: 20px;
   padding: 10px;
+  left: 40px;
   background: white;
   color: black;
   font-weight: bolder;
   border-radius: 10px;
   transition: all 300ms;
+  text-align: center;
 }
 
 #monto a:hover {
@@ -143,16 +158,21 @@ main {
   }
 }
 
+
 @media screen and (max-width: 48em) {
   .cart-item {
     width: 20%;
+  }
+
+  #monto{
+    height: 100px;
   }
 
   #monto a{
     width: 90%;
     display: inline-block;
     margin-top: 30px;
-    margin-left: -10px;
+    margin-left: -15px;
   }
 }
 
@@ -163,8 +183,14 @@ main {
 
   #monto {
     width: 50%;
-    height: 220px;
+    height: 150px;
   }
+
+  #monto a{
+    margin-top: 75px;
+    margin-left: -30px;
+  }
+
 }
 
 @media screen and (min-width: 64em) {
@@ -174,13 +200,13 @@ main {
 
   #monto{
     width: 20%;
-    height: 220px;
+    height: 180px;
   }
   #monto a{
     width: 90%;
     display: inline-block;
-    margin-top: 30px;
-    margin-left: -10px;
+    margin-top: 80px;
+    margin-left: -30px;
   }
 
 }
@@ -195,7 +221,8 @@ main {
   }
 
   #monto a{
-    margin-right: 5px;
+    left: 15%;
+    margin-top: 110px;
     width: auto;
   }
 }

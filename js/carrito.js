@@ -1,32 +1,49 @@
 var botonAgregar = document.getElementsByClassName("agregar-producto");
 var botonEliminar = document.getElementsByClassName("eliminar-producto");
+var carritoContainer = document.querySelector("#container-cart");
+var tituloCarritoVacio = document.getElementById("titulo");
+const productos = [];
 
-for (i = 0; i < botonAgregar.length; i++) {
+for (let i = 0; i < botonAgregar.length; i++) {
   if (botonAgregar[i]) {
     botonAgregar[i].addEventListener("click", function (e) {
       e.preventDefault();
       console.log(e);
       agregarAlCarrito(e);
-      // añadirCarrito();
     });
   }
 }
+function eliminarProductos() {
+  for (let i = 0; i < botonEliminar.length; i++) {
+    if (botonEliminar[i]) {
+      botonEliminar[i].addEventListener("click", function (e) {
+        // for (let j = 0; j < productos.length; j++) {
+        //   localStorage.removeItem('productos', productos[j])
+        //   break;
+        // }
+        e.preventDefault();
+        console.log(e);
+        eliminarProducto(e);
+      });
+    }
+  }
+}
 
-for (i = 0; i < botonEliminar.length; i++) {
-  if (botonEliminar[i]) {
-    botonEliminar[i].addEventListener("click", function (e) {
-      e.preventDefault();
-      console.log(e);
-      eliminarProducto(e);
-    });
+function eliminarProducto(e) {
+  e.preventDefault();
+  if (e.target.classList.contains("eliminar-producto")) {
+    e.target.parentElement.remove();
   }
 }
 
 function agregarAlCarrito(e) {
   if (e.target.classList.contains("agregar-producto")) {
     let producto = e.target.parentElement.parentElement;
-    alert('El producto se agrego correctamente')
-    
+
+    Swal.fire({
+      icon: "success",
+      title: "El producto se agregó correctamente",
+    });
     this.leerDatosProductos(producto);
   }
 }
@@ -37,29 +54,33 @@ function leerDatosProductos(producto) {
     imagen: producto.querySelector("img").src,
     precio: producto.querySelector(".text_card .precio").textContent,
   };
-  localStorage.setItem("producto", JSON.stringify(productoObjeto));
+
+  productos.push(productoObjeto);
+  localStorage.setItem("productos", JSON.stringify(productos));
 }
 
-function añadirCarrito() {
-
-  let producto = JSON.parse(localStorage.getItem("producto"));
-  console.log(producto);
-  let item = document.createElement("div");
-  item.classList.add("cart-item");
-  item.innerHTML = `
-                  <h4>${producto.titulo}</h4>
-                  <img src="${producto.imagen}">
-                  <h4>${producto.precio}</h4>
-                  <button>Elminiar producto</button>
-              `;
-  item.querySelector('button').classList.add('eliminar-producto')
-  var carritoContainer = document.querySelector("#container-cart");
-  carritoContainer.appendChild(item);
-}
-
-function eliminarProducto(e) {
-  e.preventDefault();
-  if (e.target.classList.contains("eliminar-producto")) {
-    e.target.parentElement.remove();
+function obtenerProductos() {
+  tituloCarritoVacio.style.display = "inline-block";
+  if (localStorage.getItem("productos")) {
+    tituloCarritoVacio.style.display = 'none'
+    let productos = JSON.parse(localStorage.getItem("productos"));
+    for (let i = 0; i < productos.length; i++) {
+      let item = document.createElement("div");
+      item.classList.add("cart-item");
+      item.innerHTML = `
+                      <h4>${productos[i].titulo}</h4>
+                      <img src="${productos[i].imagen}">
+                      <h3>${productos[i].precio}</h3>
+                      <button class="eliminar-producto" onfocus="eliminarProductos()">Elminiar producto</button>
+                  `;
+      carritoContainer.appendChild(item);
+    }
   }
 }
+
+// function eliminarProducto(e) {
+//   e.preventDefault();
+//   if (e.target.classList.contains("eliminar-producto")) {
+//     e.target.parentElement.remove();
+//   }
+// }
