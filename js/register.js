@@ -1,5 +1,7 @@
 const form = document.querySelector("form");
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-z._.-]+\.[a-z]+$/;
+const usuarios = [];
+localStorage.setItem("usuarios"," ");
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -15,10 +17,17 @@ function validation(){
     const password = document.querySelector("#password");
     const repeatPassword = document.querySelector("#repeatPassword");
 
-    if(!regexEmail.test(document.querySelector("#email").value)){
-        error = true;
-        menssageError += "<p> El email tiene que tener un formato valido </p>";
+    const user = {
+        email: email.value,
+        name: name.value,
+        surname: surname.value,
+        password: password.value
     }
+
+    // if(!regexEmail.test(document.querySelector("#email").value)){
+    //     error = true;
+    //     menssageError += "<p> El email tiene que tener un formato valido </p>";
+    // }
 
     if(email.value == ""){
         error = true;
@@ -49,6 +58,14 @@ function validation(){
         document.querySelector("#message").innerHTML = menssageError;
         document.querySelector('#message').style.display = 'inline-block';
     }else{
+        createUser(user);
         form.submit();
+    }
+
+    function createUser(user) {
+        localStorage.setItem("usuarios",user);
+        let json = JSON.stringify(user);
+        let obj = JSON.parse(json);
+        console.log(obj);
     }
 }
