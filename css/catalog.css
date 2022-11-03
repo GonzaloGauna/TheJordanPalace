@@ -26,7 +26,9 @@ body {
         "main main main"
         "footer footer footer";
 }
-
+header {
+    font-size: 16px;
+}
 /* =========================== MAIN =========================== */
 .main {
     background-color: #f5f5f5;

@@ -4,7 +4,6 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
   font-family: "Outfit", sans-serif;
 }
 *,
@@ -45,8 +44,9 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  height: 800px;
   align-items: center;
+  gap: 4em;
+  padding: 8em 0 4em 0;
 }
 
 #contact-form{
@@ -66,7 +66,7 @@ body {
 
 .contact-title{
   font-weight: bolder;
-  font-size: 4rem;  
+  font-size: 2.5em;  
   text-align: center;
   margin: 5px;
 }
