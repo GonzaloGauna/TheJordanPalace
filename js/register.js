@@ -1,6 +1,6 @@
 const form = document.querySelector("form");
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-z._.-]+\.[a-z]+$/;
-
+const usuarios = [];
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
@@ -62,7 +62,6 @@ function validation(){
     }
 
     function createUser(user) {
-        const usuarios = [];
         usuarios.push(user);
         localStorage.setItem("usuarios", JSON.stringify(user));
         const usuariosLocalStorage = JSON.parse(localStorage.getItem("usuarios"));

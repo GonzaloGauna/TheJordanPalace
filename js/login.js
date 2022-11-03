@@ -25,6 +25,7 @@ function validation(){
 
     if(error){
         document.querySelector("#message").innerHTML = messageError;
+        document.querySelector('#message').style.display = 'inline-block';
     }else{
         console.log("Ha iniciado sesion correctamente");
         form.submit();
