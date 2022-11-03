@@ -7,3 +7,5 @@ filterBtn.addEventListener("click", () => {
     filtersContainer.classList.toggle("filters__container--close");
     filtersContainer.classList.toggle("filters__container--open");
 })
+
+
