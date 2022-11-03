@@ -10,6 +10,7 @@ form.addEventListener("submit", (e)=>{
 function validation(){
     let error = false;
     let menssageError = "";
+   
     const email = document.querySelector("#email");
     const name = document.querySelector("#name");
     const surname = document.querySelector("#surname");
@@ -58,13 +59,14 @@ function validation(){
         document.querySelector('#message').style.display = 'inline-block';
     }else{
         createUser(user);
-        form.submit();
     }
+}
 
-    function createUser(user) {
-        usuarios.push(user);
-        localStorage.setItem("usuarios", JSON.stringify(user));
-        const usuariosLocalStorage = JSON.parse(localStorage.getItem("usuarios"));
-        console.log(usuariosLocalStorage)
-    }
+function createUser(user) {
+    usuarios.push(user);
+    localStorage.setItem("usuarios", JSON.stringify(user));
+    const usuariosLocalStorage = JSON.parse(localStorage.getItem("usuarios"));
+    console.log(usuariosLocalStorage)
+    form.submit();
+    window.location.href = "file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html";
 }
