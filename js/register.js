@@ -68,5 +68,5 @@ function createUser(user) {
     const usuariosLocalStorage = JSON.parse(localStorage.getItem("usuarios"));
     console.log(usuariosLocalStorage)
     form.submit();
-    window.location.href = "file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html";
+    window.location.href= 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html';
 }
