@@ -8,7 +8,3 @@ filterBtn.addEventListener("click", () => {
     filtersContainer.classList.toggle("filters__container--open");
 })
 
-// Swal.fire({
-//     icon: "success",
-//     title: "El producto se agregó correctamente",
-//     });
