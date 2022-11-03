@@ -14,23 +14,30 @@
             <img src="../images/others/jordan_logo.png" alt="">
             <h5>Registrarse</h5>
             <br>
-            <input class="field" type="email" name="email" id="email" placeholder="Ingrese su email" required>
+            <input class="field" type="text" name="email" id="email" placeholder="Ingrese su email" required>
+ 
             <br>
-            <input class="field "type="text" name="nombre" placeholder="Ingrese su nombre" required>
+            <input class="field "type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+    
             <br>
-            <input class="field "type="text" name="apellido" placeholder="Ingrese su apellido" required>
+            <input class="field "type="text" name="surname" id="surname" placeholder="Ingrese su apellido" required>
+      
             <br>
-            <input class="field "type="password" name="password" placeholder="Ingrese su contraseña" required>
+            <input class="field "type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+        
             <br>
-            <input class="field "type="password" name="password" placeholder="Repita su contraseña" required>
+            <input class="field "type="password" name="password" id="repeatPassword" placeholder="Repita su contraseña" required>
+            
             <br>
             <section class="buttons">
-                <a href="login.html" class="ingreso">Guardar</a> 
+                <input type="submit" href="login.html" class="ingreso" value="Ingresar">
                 <br>
                 <br>
                 <a href="login.html" class="cancelar">Cancelar</a> 
             </section>
+            <div id="message" class="error" style="display: none;"></div>
         </form>
     </main>
+    <script src="./../js/register.js"></script>
 </body>
 </html>
