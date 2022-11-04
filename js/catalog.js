@@ -8,3 +8,7 @@ filterBtn.addEventListener("click", () => {
     filtersContainer.classList.toggle("filters__container--open");
 })
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 801a37ca6e061f71839e7779ef76a1ef803877ea

@@ -107,7 +107,7 @@ nav.menu ul li a:hover {
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
     font-family: "Outfit", sans-serif;
 }
 html::-webkit-scrollbar {
@@ -134,7 +134,7 @@ body {
 .header {
     grid-area: header;
     background-color: black;
-    height: 7rem;
+    height: 4.375em;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -145,8 +145,8 @@ body {
 }
 
 .header__logo {
-    width: 7rem;
-    height: 7rem;
+    width: 4.375em;
+    height: 4.375em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,9 +161,12 @@ body {
     list-style: none;
 }
 .nav__link {
-    font-size: 2rem;
+    font-size: 1.25em;
     color: white;
     text-decoration: none;
+}
+.nav__link--miCuenta {
+    cursor: pointer;
 }
 
 /* =========== MENU ========== */
