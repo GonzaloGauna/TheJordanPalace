@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="/css/shared/index.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
@@ -14,36 +15,40 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <script
       src="https://kit.fontawesome.com/ce9fd9f657.js"
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>The Jordan Palace</title>
   </head>
   <body>
     <header class="header">
       <figure class="header__logo">
-          <img src="./images/others/jordan-icon.jpg" alt="jordan logo">
+        <img src="./images/others/jordan-icon.jpg" alt="jordan logo" />
       </figure>
       <nav class="header__nav menu-close" id="headerNav">
         <ul class="nav__container">
           <li><a class="nav__link" href="./index.html">Home</a></li>
           <li><a class="nav__link" href="./pages/contact.html">Contacto</a></li>
           <li><a class="nav__link" href="./pages/catalog.html">Catálogo</a></li>
-          <li><a class="nav__link" id="user">Mi Cuenta</a></li>
+          <li><a class="nav__link" href="./pages/vista-cuenta.html">Mi Cuenta</a></li>
         </ul>
       </nav>
+      <div class="loginIcon">
+        <a href="./pages/login.html"><i class='bx bx-log-in'></i></a>
+      </div>
+      <div class="carrito">
+        <a href="./pages/shopping-cart.html"><i class='bx bx-cart' ></i></a>
+      </div>
       <div class="navMenu__container">
-        <i class='bx bx-menu navMenu__icon' id="navMenu"></i>
+        <i class="bx bx-menu navMenu__icon" id="navMenu"></i>
       </div>
     </header>
     <main class="main">
       <div class="container">
         <div class="carrusel" id="carrusel1">
-          <h2 class="modelos">JORDAN 1</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-HighDaveWhite.png"
@@ -56,7 +61,6 @@
           </div>
         </div>
         <div class="carrusel" id="carrusel2">
-          <h2 class="modelos">JORDAN 2</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-HyperRoyal.png"
@@ -69,7 +73,6 @@
           </div>
         </div>
         <div class="carrusel" id="carrusel3">
-          <h2 class="modelos">JORDAN 3</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-1-mid-winterizad.png"
@@ -82,7 +85,6 @@
           </div>
         </div>
         <div class="carrusel" id="carrusel4">
-          <h2 class="modelos">JORDAN 4</h2>
           <div class="tarjetaCarrusel">
             <img
               src="/images/articles/air-jordan-retro-1-HighStrap.png"
@@ -103,8 +105,9 @@
             style="width: 100%"
           />
           <div class="text_card">
-            <h4>JORDAN EJEMPLO</h4>
-            <a href="#">Agregar al carrito</a>
+            <h4 class="titulo">JORDAN EJEMPLO</h4>
+            <h4 class="precio">$2000</h4>
+            <a href="./pages/shopping-cart.html" class="agregar-producto">Agregar al carrito</a>
           </div>
         </div>
         <div class="card">
@@ -114,8 +117,9 @@
             style="width: 100%"
           />
           <div class="text_card">
-            <h4>JORDAN EJEMPLO</h4>
-            <a href="#">Agregar al carrito</a>
+            <h4 class="titulo">JORDAN EJEMPLO</h4>
+            <h4 class="precio">$2000</h4>
+            <a href="./pages/shopping-cart.html" class="agregar-producto">Agregar al carrito</a>
           </div>
         </div>
         <div class="card">
@@ -125,8 +129,9 @@
             style="width: 100%"
           />
           <div class="text_card">
-            <h4>JORDAN EJEMPLO</h4>
-            <a href="#">Agregar al carrito</a>
+            <h4 class="titulo">JORDAN EJEMPLO</h4>
+            <h4 class="precio">$2000</h4>
+            <a href="./pages/shopping-cart.html" class="agregar-producto">Agregar al carrito</a>
           </div>
         </div>
       </div>
@@ -208,6 +213,6 @@
         </div>
       </div>
   </footer>
-  <script src="./js/header.js"></script>
+  <script src="./js/carrito.js" type="text/javascript" ></script>
   </body>
 </html>
