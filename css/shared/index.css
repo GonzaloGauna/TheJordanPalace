@@ -52,20 +52,19 @@ h2 {
 .carrusel{
   display: block;
   height: 700px;
-  width: 1200px;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
   margin: 0 auto;
 }
 
 .slide{
   width: 100%;
-  height: 700px;
   padding: 150px;
 }
 
 .slide img{
-  width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
 
 /* END SLIDER */
@@ -338,10 +337,13 @@ aside {
  
 }
 
+
 @media screen and (max-width: 64em) {
   .formasDePago{
     margin-bottom: 200px;
   }
+  
+  
   
 }
 
@@ -352,9 +354,40 @@ aside {
   
 }
 
+@media screen and (max-width: 75em){
+  .slide img{
+    width: 600px;
+  }
+}
+
 @media screen and (min-width: 120em) {
   .formasDePago{
     margin-bottom: 0px;
   }
   
+}
+@media screen and (max-width: 55em){
+  .slide img{
+    width: 550px;
+    padding-top: 0;
+  }
+
+  .carrusel{
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 50em){
+  .slide img{
+    width: 450px;
+    padding-top: 0;
+  }
+
+  .slide{
+    width: 100%;
+  }
+
+  .carrusel{
+    height: 500px;
+  }
 }

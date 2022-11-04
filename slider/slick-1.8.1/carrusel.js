@@ -6,6 +6,9 @@ $(document).ready(function () {
     fade: true,
     autoplay: true,
     autoplaySpeed: 4000,
-    mobileFirst: true
+    mobileFirst: true,
+    responsive: {
+      
+    }
   });
 });
