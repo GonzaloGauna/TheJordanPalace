@@ -6,7 +6,6 @@
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
     font-family: "Outfit", sans-serif;
 }
 *,
@@ -26,21 +25,19 @@ body {
         "main main main"
         "footer footer footer";
 }
-header {
-    font-size: 16px;
-}
+
 /* =========================== MAIN =========================== */
 .main {
     background-color: #f5f5f5;
     width: 100%;
-    padding-top: 7rem;
+    padding-top: 4.375em;
     grid-area: main;
 }
 .main .container {
     width: 70%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 30rem auto;
+    grid-template-columns:  18.75em auto;
     grid-template-rows: max-content;
     grid-template-areas: "aside content";
 }
@@ -59,8 +56,8 @@ header {
     grid-area: aside;
     width: 100%;
     color: black;
-    margin: 5rem 0;
-    padding: 2rem;
+    margin: 3.125em 0;
+    padding: 1.25em;
     background-color: white;
     border-radius: 15px;
 }
@@ -68,23 +65,30 @@ header {
     width: 100%;
     height: 2px;
     background-color: black;
-    margin: 1rem 0;
+    margin: 0.0625em 0;
 }
 .filter h3 {
-    font-size: 1.8rem;
+    font-size: 1.125em;
+    margin-top: 1em;
+}
+.filter h3, .filter .checkModel {
+    margin-bottom: 10px;
 }
 .checkModel {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    font-size: 1.6rem;
-    padding: 1rem;
+    gap: 0.0625em;
+    font-size: 1em;
+    padding: 0.0625em;
+}
+.checkModel input {
+    margin-right: 1em;
 }
 .filter__btn {
     display: none;
 }
 .filter__btn h3 {
-    font-size: 2rem;
+    font-size: 1.25em;
 }
 .filter__btn i {
     color: black;
@@ -118,8 +122,8 @@ header {
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid black;
-        padding-bottom: 1rem;
-        margin-bottom: 2rem;
+        padding-bottom: 0.0625em;
+        margin-bottom: 1.25em;
     }
     .filters__container {
         flex-direction: column;
@@ -129,21 +133,21 @@ header {
         transition: all 1.5s;
     }
     .filters__container--close {
-        height: 1rem;
+        height: 0.0625em;
     }
     .filters__container--open {
-        height: 50rem;
+        height: 31.25em;
     }
 }
 
 /* ============= Articles ============= */
 .content {
-    margin: 5rem 0;
-    margin-left: 5rem;
+    margin: 3.125em 0;
+    margin-left: 3.125em;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.625em;
 }
 .container-card .card--colorRed::before,
 .container-card .card--colorRed .contentBx .size span:hover,
@@ -167,6 +171,7 @@ header {
 .content article:last-child .card {
     display: none;
 }
+
 @media (max-width: 1500px){
     .content {
         justify-content: center;
@@ -183,27 +188,27 @@ header {
 
 .carrito {
     position: absolute;
-    left: 5rem;
-    top: 10rem;
+    left: 3.125em;
+    top: 6.25em;
     z-index: 1000000;
 }
 .carrito a i{
-    font-size: 5rem;
+    font-size: 3.125em;
     color: rgb(39, 37, 37);
 }
 .loginIcon {
     display: inline-block;
     position: absolute;
-    right: 2rem;
-    font-size: 3rem;
-    top: 2.5rem;
+    right: 1.25em;
+    font-size: 1.875em;
+    top: 1.5625em;
 }
 .loginIcon a {
     color: white;
 }
 
-.bx{
-    font-size: 5rem;
+.filter__icon{
+    font-size: 1.875em;
     color: white;
     text-align: center;
     cursor: pointer;
