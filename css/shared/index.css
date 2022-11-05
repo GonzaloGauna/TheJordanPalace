@@ -355,9 +355,9 @@ aside {
 }
 
 @media screen and (max-width: 75em){
-  .slide img{
+  /* .slide img{
     width: 600px;
-  }
+  } */
 }
 
 @media screen and (min-width: 120em) {
@@ -367,18 +367,18 @@ aside {
   
 }
 @media screen and (max-width: 55em){
-  .slide img{
+  /* .slide img{
     width: 550px;
     padding-top: 0;
-  }
+  } */
 
-  .carrusel{
+  /* .carrusel{
     height: 500px;
-  }
+  } */
 }
 
 @media screen and (max-width: 50em){
-  .slide img{
+  /* .slide img{
     width: 450px;
     padding-top: 0;
   }
@@ -389,5 +389,5 @@ aside {
 
   .carrusel{
     height: 500px;
-  }
+  } */
 }
