@@ -1,6 +1,8 @@
 const form = document.querySelector("form");
 let regexPasswordValid = /^(([A-Z])+\w+([0-9])+)+\w+$/;
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-z._.-]+\.[a-z]+$/;
+
+
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     validation();
@@ -46,7 +48,7 @@ function validation(){
 
     if(password.value.length < 7){
         error = true;
-        messageError += "<p class='asd'> La contraseña debe tener al menos 7 caracteres </p>"
+        messageError += "<p> La contraseña debe tener al menos 7 caracteres </p>"
     }
 
     if(!regexPasswordValid.test(document.querySelector("#password").value)){
@@ -70,13 +72,13 @@ function validation(){
 }
 
 function saveAccountObj(user){ 
-    let myAccountArray = JSON.parse(localStorage.getItem("Usuarios") || []);
+    let myAccountArray = JSON.parse(localStorage.getItem("Usuarios"));
+    if(myAccountArray == null){
+        myAccountArray = [];
+    }
     myAccountArray.push(user);
     //Convierto el array en Json
     let usuariosLocalStorage = JSON.stringify(myAccountArray);
     //Guardo la array de cuentas en formato json en el localstorage
     localStorage.setItem("Usuarios", usuariosLocalStorage);
 }
-
-
-
