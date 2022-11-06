@@ -1,9 +1,5 @@
 const form = document.querySelector("form");
 
-const email = JSON.parse(localStorage.getItem('email'));
-const password = JSON.parse(localStorage.getItem('password'));
-
-
 form.addEventListener("submit", (e)=>{
     e.preventDefault;
     validation();
@@ -16,13 +12,15 @@ function validation(){
     const email = document.querySelector("#email");
     const password = document.querySelector("#password");
 
+    
 
-    if(email.value != email){
+
+    if(email.value != JSON.stringify(localStorage.getItem("email"))){
         error = true;
         messageError += "<p> Email no registrado </p>";
     }
 
-    if(password.value != password){
+    if(password.value != JSON.stringify(localStorage.getItem("password"))){
         error = true;
         messageError += "<p> Contraseña incorrecta </p>";
     }
@@ -32,5 +30,6 @@ function validation(){
         document.querySelector('#message').style.display = 'inline-block';
     }else{
         form.submit();
+        window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html';
     }
 }
