@@ -104,7 +104,7 @@ body{
 }
 
 .ingreso{
-    width: 100%;
+    width: 80%;
     height: 40px;
     background-color: #E38B29;
     border: none;
@@ -140,14 +140,17 @@ body{
   margin-bottom: 100px;
 }
 
-.form-login h5 {
-  margin: 0;
-  margin-top: 20px;
-  text-align: center;
-  height: 40px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid;
-  font-size: 30px;
+.field{
+    width: 80%;
+    margin-bottom: 15px;
+    padding: 10px 0.5px;
+    background-color: #252323;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: white;
+    outline: none;
+    padding-left: 1rem;
 }
 
 .field {
@@ -231,13 +234,13 @@ body{
         border-radius: 10px;
     }
     
-
-
     .form-login p{
         font-size: 1em;
         height: 40px;
         text-align: center;
     }
+
+    
 }
 
 @media screen and (max-width: 37.5em){

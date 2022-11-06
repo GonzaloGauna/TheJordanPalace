@@ -1,32 +1,35 @@
-// const form = document.querySelector("form");
+const form = document.querySelector("form");
 
-// form.addEventListener("submit", (e)=>{
-//     e.preventDefault;
-//     validation();
-// });
+form.addEventListener("submit", (e)=>{
+    e.preventDefault;
+    validation();
+});
 
-// function validation(){
-//     let error = false;
-//     let messageError = "";
+function validation(){
+    let error = false;
+    let messageError = "";
 
-//     const user = document.querySelector("#user");
-//     const password = document.querySelector("#password");
+    const email = document.querySelector("#email");
+    const password = document.querySelector("#password");
+
+    
 
 
-//     if(user.value != user1.email.value){
-//         error = true;
-//         messageError += "<p> Email no registrado </p>";
-//     }
+    if(email.value != JSON.stringify(localStorage.getItem("email"))){
+        error = true;
+        messageError += "<p> Email no registrado </p>";
+    }
 
-//     if(password.value != user1.password.value){
-//         error = true;
-//         messageError += "<p> Contraseña incorrecta </p>";
-//     }
+    if(password.value != JSON.stringify(localStorage.getItem("password"))){
+        error = true;
+        messageError += "<p> Contraseña incorrecta </p>";
+    }
 
-//     if(error){
-//         document.querySelector("#message").innerHTML = messageError;
-//     }else{
-//         console.log("Ha iniciado sesion correctamente");
-//         form.submit();
-//     }
-// }
+    if(error){
+        document.querySelector("#message").innerHTML = messageError;
+        document.querySelector('#message').style.display = 'inline-block';
+    }else{
+        form.submit();
+        window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html';
+    }
+}
