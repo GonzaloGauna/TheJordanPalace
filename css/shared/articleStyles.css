@@ -216,7 +216,7 @@ body {
     display: flex;
     margin-bottom: 3rem;
 }
-.info__price, .info__amount {
+.info__price, .info__size {
     color: white;
     font-size: 2rem;
     font-family: 'Ubuntu', sans-serif;
@@ -230,24 +230,27 @@ body {
     font-weight: 700;
     font-style: italic;
 }
-.info__amount {
+.info__size {
     position: relative;
+    display: flex;
 }
 /* ========================= STEPPER ========================= */
 .stepper-container{
     position: absolute;
     transform: translate(-50%,-50%);
-    top: 60%;
-    left: 50%;
+    top: 5.5rem;
+    left: 2.8rem;
     display: flex;
     background-color: #ffffff;
     border-radius: 45px;
     box-shadow: 0 20px 30px rgba(0,0,0,0.15);
     z-index: 2;
 }
-input[type="number"]{
-    -moz-appearance: textfield;
-    text-align: center;
+.stepper-container div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
     font-size: 20px;
     border: none;
     background-color: #ffffff;

@@ -1,127 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="../css/shopping-cart.css" />
-        <link rel="stylesheet" href="../css/shared/footer.css" />
-        <link
-            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
-            rel="stylesheet"
-        />
-        <title>The Jordan Palace</title>
-    </head>
-    <body>
-        <header class="header">
-            <img src="/images/others/jordan-icon.jpg" alt="logo" id="logo" />
-            <input type="search" placeholder="Buscador..." id="buscador" />
-            <nav class="menu">
-                <ul>
-                    <li><a href="./../index.html">Home</a></li>
-                    <li><a href="/pages/contact.html">Contacto</a></li>
-                    <li><a href="./catalog.html">Catálogo</a></li>
-                    <li><a href="./vista-cuenta.html">Mi Cuenta</a></li>
-                </ul>
-            </nav>
-            <div class="loginIcon">
-                <a href="./login.html"><i class="bx bx-log-in"></i></a>
-            </div>
-        </header>
-        <main class="main">
-            <h1 class="carritoTitle">Carrito</h1>
-            <article class="containerTable">
-                <table class="ta1">
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Cantidad</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Retro Low Travis Scott</td>
-                            <td>1</td>
-                            <td>$868</td>
-                        </tr>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Mid George Town</td>
-                            <td>5</td>
-                            <td>$447</td>
-                        </tr>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Retro High OG</td>
-                            <td>1</td>
-                            <td>$152</td>
-                        </tr>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Retro White University</td>
-                            <td>1</td>
-                            <td>$330</td>
-                        </tr>
-                        <tr>
-                            <td>Jordan 1 Retro High Dark Mocha</td>
-                            <td>1</td>
-                            <td>$400</td>
-                        </tr>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Retro High OG Dark</td>
-                            <td>1</td>
-                            <td>$119</td>
-                        </tr>
-                        <tr>
-                            <td>Zapatillas Jordan 1 Retro Chicago (2015)</td>
-                            <td>2</td>
-                            <td>$1.200</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </article>
-            <button type="submit" class="btn">Editar</button>
-        </main>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/shopping-cart.css" />
+    <link rel="stylesheet" href="/css/shared/header.css" />
+    <link rel="stylesheet" href="/css/shared/footer.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Carrito de compras</title>
+  </head>
+  <body onload="obtenerProductos()">
+    <header class="header">
+      <figure class="header__logo">
+        <img src="./images/others/jordan-icon.jpg" alt="jordan logo" />
+      </figure>
+      <nav class="header__nav menu-close" id="headerNav">
+        <ul class="nav__container">
+          <li><a class="nav__link" href="./../index.html">Home</a></li>
+          <li><a class="nav__link" href="./contact.html">Contacto</a></li>
+          <li><a class="nav__link" href="./catalog.html">Catálogo</a></li>
+          <li><a class="nav__link" href="./vista-cuenta.html">Mi Cuenta</a></li>
+          <li><a href="./pages/shopping-cart.html"><i class='bx bx-cart nav__carrito' ></i></a></li>
+        </ul>
+      </nav>
+      <div class="navMenu__container">
+        <i class="bx bx-menu navMenu__icon" id="navMenu"></i>
+      </div>
+    </header>
+    <main>
+      <div id="container-cart">
+        <h1 id="titulo">El carrito esta vacio...</h1>
+      </div>
+      <div id="monto">
+        <h2>Monto total: $x</h2>
+        <hr />
+        <a href="./popups.html">Finalizar compra</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div>
+          <div class="column">
+              <p>Fortuna Mateo 45.238.796</p>
+              <br>
+              <p>Gauna Gonzalo 41.806.073</p>
+              <br>
+              <p>Herlein Gonzalo 43.861.369</p> <br>
+              <p>Pizarro Santiago 45.315.788</p>
+              <br> 
 
-        <footer class="footer">
-            <div>
-                <div class="column">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3643336747227!2d-58.56499388505009!3d-34.67075316855472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1661516466757!5m2!1ses!2sar"
-                        width="400"
-                        height="300"
-                        style="border: 1px solid black"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
-                </div>
+              
+          </div>
 
-                <div class="column">
-                    <p>Fortuna Mateo 45.238.796</p>
-                    <br />
-                    <p>Gauna Gonzalo 41.806.073</p>
-                    <br />
-                    <p>Herlein Gonzalo 43.861.369</p>
-                    <br />
-                    <p>Pizarro Santiago 45.315.788</p>
-                    <br />
-                    <p>Seguinos En</p>
-                    <br />
+          <div class="column">
+              <i class='bx bxl-facebook-circle'></i>
+              <i class='bx bxl-instagram' ></i>
+              <i class='bx bxl-twitter' ></i>
+          </div>
 
-                    <div>
-                        <i class="bx bxl-facebook-circle"></i>
-                        <i class="bx bxl-instagram"></i>
-                        <i class="bx bxl-twitter"></i>
-                    </div>
-                </div>
-                <div class="column">
-                    <p>Lunes a Sabado de 8 a 19hs</p>
-                    <p>© 2022 The Jordan Palace</p>
-                    <br />
-                    <br />
-                    <p>Terminos de uso</p>
-                    <p>Politica de privacidad</p>
-                </div>
-            </div>
-        </footer>
-    </body>
+          <div class="column">
+              <p>Lunes a Sabado de 8 a 19hs</p>
+              <p>© 2022 The Jordan Palace</p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p>Terminos de uso</p>
+              <p>Politica de privacidad</p>
+          </div>
+      </div>
+  </footer>
+    <script src="./../js/carrito.js" type="text/javascript"></script>
+    <script src="./../js/header.js"></script>
+  </body>
 </html>

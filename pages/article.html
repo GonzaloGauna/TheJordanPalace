@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="./../css/shared/articleStyles.css">
 </head>
 <body>
-    <header>
-        <img src="/images/others/jordan-icon.jpg" alt="logo" id="logo" />
-        <input type="search" placeholder="Buscador..." id="buscador" />
-        <nav class="menu">
-            <ul>
-                <li><a href="./../index.html">Home</a></li>
-                <li><a href="/pages/contact.html">Contacto</a></li>
-                <li><a href="./catalog.html">Catálogo</a></li>
-                <li><a href="./login.html">Mi Cuenta</a></li>
+    <header class="header">
+        <figure class="header__logo">
+            <img src="./../images/others/jordan-icon.jpg" alt="jordan logo">
+        </figure>
+        <nav class="header__nav menu-close" id="headerNav">
+            <ul class="nav__container">
+                <li><a class="nav__link" href="./../index.html">Home</a></li>
+                <li><a class="nav__link" href="./contact.html">Contacto</a></li>
+                <li><a class="nav__link" href="./catalog.html">Catálogo</a></li>
+                <li><a class="nav__link" href="./vista-cuenta.html">Mi Cuenta</a></li>
             </ul>
         </nav>
+        <div class="navMenu__container">
+            <i class='bx bx-menu navMenu__icon' id="navMenu"></i>
+        </div>
     </header>
     <main class="main">
         <div class="container">
@@ -38,12 +42,12 @@
                         <h4>Precio</h4>
                         <p>$60.000</p>
                     </div>
-                    <div class="info__amount">
-                        <h4>Cantidad</h4>
+                    <div class="info__size">
+                        <h4>Talle</h4>
                         <div class="stepper-container">
-                            <button id="decrement" onclick="stepper(this)"> - </button>
-                            <input type="number" min="0" max="100" step="1" value="20" id="my-input" readonly>
-                            <button id="increment" onclick="stepper(this)"> + </button>
+                            <button id="decrement"> - </button>
+                            <div>37</div>
+                            <button id="increment"> + </button>
                         </div>
                     </div>
                 </div>
@@ -149,9 +153,6 @@
     <footer class="footer">
         <div>
             <div class="column">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.3643336747227!2d-58.56499388505009!3d-34.67075316855472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1661516466757!5m2!1ses!2sar" width="400" height="300" style="border:1px solid black;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
-            </div>  
-            <div class="column">
                 <p>Fortuna Mateo 45.238.796</p>
                 <br>
                 <p>Gauna Gonzalo 41.806.073</p>
@@ -159,17 +160,21 @@
                 <p>Herlein Gonzalo 43.861.369</p> <br>
                 <p>Pizarro Santiago 45.315.788</p>
                 <br> 
-                <p>Seguinos En</p>
-                <br>
-                <div>
-                    <i class='bx bxl-facebook-circle'></i>
-                    <i class='bx bxl-instagram' ></i>
-                    <i class='bx bxl-twitter' ></i>
-                </div>
+ 
+                
             </div>
+
+            <div class="column">
+                <i class='bx bxl-facebook-circle'></i>
+                <i class='bx bxl-instagram' ></i>
+                <i class='bx bxl-twitter' ></i>
+            </div>
+
             <div class="column">
                 <p>Lunes a Sabado de 8 a 19hs</p>
                 <p>© 2022 The Jordan Palace</p>
+                <br>
+                <br>
                 <br>
                 <br>
                 <p>Terminos de uso</p>
