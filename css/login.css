@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url(./shared/header.css);
-@import url(./shared/footer.css);
+/* @import url(./shared/header.css);
+@import url(./shared/footer.css); */
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background: transparent;
 }
 
 html::-webkit-scrollbar {
@@ -42,6 +43,8 @@ header{
     border-radius: 50%;
     background-color: black;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    right: 10em;
 }
 
 .bx-undo:hover{
@@ -51,6 +54,7 @@ header{
 
 body {
   font-family: "Roboto", sans-serif;
+  background: transparent;
   width: 100vw;
   height: 100%;
   overflow-x: hidden;
@@ -76,7 +80,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: darkgray;
+  background: transparent;
   grid-area: main;
   padding-top: 8rem;
   font-size: 15px;
@@ -113,16 +117,6 @@ body{
     font-weight: 600;
 }
 
-.ingreso {
-  width: 100%;
-  height: 40px;
-  background-color: #e38b29;
-  border: none;
-  color: white;
-  border-radius: 15px;
-  font-weight: 600;
-}
-
 .ingreso:hover {
   background-color: white;
   color: #252323;
@@ -132,25 +126,13 @@ body{
 .form-login {
   width: 40%;
   text-align: center;
-  background-color: rgb(255, 186, 8);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  /* background-color: rgb(255, 186, 8); */
+  /* box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); */
   padding: 20px 30px;
   color: white;
   border-radius: 10px;
   margin-bottom: 100px;
-}
-
-.field{
-    width: 80%;
-    margin-bottom: 15px;
-    padding: 10px 0.5px;
-    background-color: #252323;
-    font-size: 14px;
-    font-weight: bold;
-    border-radius: 15px;
-    color: white;
-    outline: none;
-    padding-left: 1rem;
+  background: transparent;
 }
 
 .field {

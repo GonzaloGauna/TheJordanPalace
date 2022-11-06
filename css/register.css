@@ -1,6 +1,4 @@
 @import url(login.css);
-@import url(./shared/header.css);
-@import url(./shared/footer.css);
 
 *{
     margin: 0;
@@ -8,9 +6,13 @@
     box-sizing: border-box;
 }
 
+html{
+    background-image: url(./../images/others/fondo_basket1.jpg);
+}
+
 main{
     background: transparent;
-    width: 80%;
+    width: 50%; 
 }
 
 
@@ -18,38 +20,67 @@ body{
     overflow-x: hidden;
 }
 
-.field{
-    width: 80%;
-    margin: 1em;
-    padding-left: 1rem;
-    outline: none;
+.ingreso{
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cancelar{
+    display:block;
+    width: 100%;
+    height: 40px;
+    background-color: #252323;
     border: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
+.cancelar:hover{
+    background-color: white;
+    color: #252323;
+}
+
+img{
+    font-size: 2em;
+}
+
+.error{
     margin-top: 2em;
+    color:crimson;
+    padding: 1.5em;
 }
 
-.buttons a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
+@media only screen and (min-width: 48em){
+
+    .field{
+        width: 80%;
+        margin: 1em;
+        padding-left: 1rem;
+        outline: none;
+        border: none;
+    }
+
     .buttons{
         display: flex;
         justify-content: center;
         gap: 4rem;
+        margin-top: 2em;
     }
-    
+
     .buttons a{
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
+
     
     .buttons a:hover{
         text-decoration: none;
@@ -64,6 +95,7 @@ body{
     }
     
     .cancelar{
+        display:block;
         width: 26%;
         height: 40px;
         background-color: #252323;
@@ -80,7 +112,7 @@ body{
         background-color: white;
         color: #252323;
     }
-
+}
 
 @media only screen and (min-width: 60em){
 
@@ -115,6 +147,7 @@ body{
     }
     
     .cancelar{
+        display:block;
         width: 26%;
         height: 40px;
         background-color: #252323;
@@ -133,79 +166,6 @@ body{
     }
 }
 
-.ingreso{
-    width: 80%;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-}
-
-.cancelar{
-    width: 80%;
-    height: 40px;
-    background-color: #252323;
-    border: none;
-    color: white;
-    border-radius: 15px;
-    cursor: pointer;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-}
-
-.cancelar:hover{
-    background-color: white;
-    color: #252323;
-}
-
-img{
-    font-size: 2em;
-}
-
-.error{
-    margin-top: 2em;
-    color:crimson;
-    padding: 1.5em;
-}
-
-@media only screen and (min-width: 768px){
-    .field{
-        font-size: 0.7em;
-    }
-}
-
-@media only screen and (min-width: 600px){
-
-    main{
-        width: 40%;
-        height: 40%;
-    }
-
-    .form-login{
-        width: 100%;
-        
-    }
-
-    .ingreso{
-        width: 100%;
-        
-    }
-
-    .cancelar{
-        width: 100%;
-       
-    }
-
-    .field{
-        font-size: 0.7em;
-    }
-
-    .buttons{
-        display: block;
-    }
-}
-
 @media only screen and (max-width: 600px){
 
     main{
@@ -218,17 +178,13 @@ img{
     }
 
     .ingreso{
+        display:block;
         width: 100%;
     }
 
     .cancelar{
-
         width: 100%;
-    }
-
-    .buttons{
         display:block;
     }
 }
 
->>>>>>> 68ceef9a74aecdc52939dc9b2d3fa2e9b124ea37
