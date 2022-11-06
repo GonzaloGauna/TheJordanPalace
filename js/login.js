@@ -12,15 +12,14 @@ function validation(){
     const email = document.querySelector("#email");
     const password = document.querySelector("#password");
 
-    
 
 
-    if(email.value != JSON.stringify(localStorage.getItem("email"))){
+    if(JSON.stringify(email.value) != localStorage.getItem("email")){
         error = true;
         messageError += "<p> Email no registrado </p>";
     }
 
-    if(password.value != JSON.stringify(localStorage.getItem("password"))){
+    if(JSON.stringify(password.value) != localStorage.getItem("password")){
         error = true;
         messageError += "<p> Contraseña incorrecta </p>";
     }
