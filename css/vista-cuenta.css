@@ -177,26 +177,34 @@ table.ta2 thead th {
   text-align: center;
   border-left: 1px solid black;
 }
-#tachito1 {
-  position: absolute;
-  right: 60px;
-  bottom: 170px;
+#tachito1 img{
+  width: 35px;
+  position: relative;
+  top: 120px;
+  left: 1252px;
+
 }
-#tachito2 {
-  position: absolute;
-  right: 60px;
-  bottom: 110px;
+#tachito2 img{
+  width: 35px;
+  position: relative;
+  top: 190px;
+  left: 1219px;
+
 }
 
-#tachito3 {
-  position: absolute;
-  right: 60px;
-  bottom: -110px;
+#tachito3 img{
+  width: 35px;
+  position: relative;
+  top: 425px;
+  left: 1182px;
+
 }
-#tachito4 {
-  position: absolute;
-  right: 60px;
-  bottom: -170px;
+#tachito4 img{
+  width: 35px;
+  position: relative;
+  top: 480px;
+  left: 1147px;
+
 }
 
 table {
@@ -268,6 +276,7 @@ table:hover {
 .form button:hover {
     letter-spacing: 5px;
 }
+
 
 
 .popups {
@@ -387,6 +396,35 @@ table.ta1 th {
   left: 35px;
 
 }
+#tachito1 img{
+  width: 35px;
+  position: relative;
+  top: 120px;
+  left: 571px;
+
+}
+#tachito2 img{
+  width: 35px;
+  position: relative;
+  top: 190px;
+  left: 536px;
+
+}
+
+#tachito3 img{
+  width: 35px;
+  position: relative;
+  top: 420px;
+  left: 501px;
+
+}
+#tachito4 img{
+  width: 35px;
+  position: relative;
+  top: 490px;
+  left: 466px;
+
+}
 }
 
 @media only screen and (max-width: 800px) and (orientation: landscape) {
@@ -414,6 +452,86 @@ table.ta1 th {
 .s2 button{
   position: relative;
   left: 25px;
+
+}
+#tachito1 img{
+  width: 35px;
+  position: relative;
+  top: 120px;
+  left: 625px;
+
+}
+#tachito2 img{
+  width: 35px;
+  position: relative;
+  top: 190px;
+  left: 590px;
+
+}
+
+#tachito3 img{
+  width: 35px;
+  position: relative;
+  top: 420px;
+  left: 555px;
+
+}
+#tachito4 img{
+  width: 35px;
+  position: relative;
+  top: 490px;
+  left: 520px;
+
+}
+}
+@media only screen and (min-width: 1900px) and (orientation: landscape) {
+  table.ta1 td,
+table.ta1 th {
+  border: 1px solid black;
+  padding: 20px
+}
+
+
+.popUp{
+  width: 95em;
+}
+.popUp i{
+  position: relative;
+  right: 25px;
+}
+.s2{
+  padding-top: 20px;
+  padding-bottom: 70px;
+}
+
+
+#tachito1 img{
+  width: 35px;
+  position: relative;
+  top: 120px;
+  left: 1795px;
+
+}
+#tachito2 img{
+  width: 35px;
+  position: relative;
+  top: 190px;
+  left: 1762px;
+
+}
+
+#tachito3 img{
+  width: 35px;
+  position: relative;
+  top: 500px;
+  left: 1728px;
+
+}
+#tachito4 img{
+  width: 35px;
+  position: relative;
+  top: 570px;
+  left: 1692px;
 
 }
 }
