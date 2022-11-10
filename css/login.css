@@ -37,21 +37,6 @@ header{
     background:transparent;
 }
 
-.bx-undo{
-    font-size: 3em;
-    color: white;
-    border-radius: 50%;
-    background-color: black;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
-    right: 10em;
-}
-
-.bx-undo:hover{
-    color: black;
-    background-color: white;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   background: transparent;
@@ -142,6 +127,16 @@ body{
   border: 1px solid #017bab;
 }
 
+.form-login{
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px 11px;
+  border-top: 4px solid #252323;
+  color: white;
+  border-radius: 10px;
+}
 
 .form-login p {
   height: 40px;
@@ -211,7 +206,6 @@ body{
         text-align: center;
     }
 
-    
 }
 
 @media screen and (max-width: 37.5em){

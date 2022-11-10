@@ -15,7 +15,7 @@ function validation(){
     const password = document.querySelector("#password");
 
     listaDeUsuariosRegistrados.forEach(usuario => {
-        
+
         if(usuario.email != email){
         error = true;
         messageError += "<p> Email no registrado </p>";
@@ -31,6 +31,8 @@ function validation(){
             document.querySelector('#message').style.display = 'inline-block';
         }else{
             form.submit();
+            console.log("se mando la wea");
+            window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html'
         }
     });
 }

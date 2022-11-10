@@ -67,7 +67,7 @@ function validation(){
     }else{
         saveAccountObj(user);
         form.submit();
-        window.location.href= 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html';
+        window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html'
     }
 }
 
