@@ -17,24 +17,27 @@ for (let i = 0; i < btnAgregarCarrito.length; i++) {
 function eliminarProducto() {
   for (let i = 0; i < btnEliminarCarrito.length; i++) {
     if (btnEliminarCarrito[i]) {
-      btnEliminarCarrito[i].addEventListener("click", (e) => {
+      let boton = btnEliminarCarrito[i];
+
+      boton.addEventListener("click", (e) => {
         e.preventDefault();
         console.log(e);
-        // let productos = JSON.parse(localStorage.getItem('productos'))
-        // for (let i = 0; i < productos.length; i++) {
-        //     if(productos[i]){
-        //         console.log(btnEliminarCarrito[i])
-        //         if(btnEliminarCarrito[i].id == productos[i].id){
-        //             localStorage.removeItem(productos[i].id)
-        //             break;
-        //         }
-        //     }
-            
-        // }
+
+        let productos = JSON.parse(localStorage.getItem("productos"));
+        for (let i = 0; i < productos.length; i++) {
+          if (productos[i]) {
+            console.log(boton);
+            if (boton.id == productos[i].id) {
+              localStorage.setItem("productos", JSON.stringify(removeObjectWithId(productos, productos[i].id)));
+              console.log("son iguales");
+              break;
+            }
+          }
+        }
+
         if (e.target.classList.contains("eliminar-producto")) {
           e.target.parentElement.remove();
         }
-
       });
     }
   }
@@ -64,7 +67,15 @@ function leerDatos(e) {
 
 function obtenerProductos() {
   let productos = JSON.parse(localStorage.getItem("productos"));
-  tituloCarrito.style.display = "none";
+  
+  if(productos){
+    if(productos.length >= 1){
+      tituloCarrito.style.display = "none";
+    }else{
+      tituloCarrito.style.display = "inline-block";
+    }
+  }
+  
   for (let i = 0; i < productos.length; i++) {
     let div = document.createElement("div");
     div.classList.add("cart-item");
@@ -77,5 +88,11 @@ function obtenerProductos() {
     containerCarrito.appendChild(div);
   }
 
-//   tituloCarrito.style.display = "inline-block";
+}
+
+function removeObjectWithId(arr, id) {
+  const objWithIdIndex = arr.findIndex((obj) => obj.id === id);
+  arr.splice(objWithIdIndex, 1);
+
+  return arr;
 }
