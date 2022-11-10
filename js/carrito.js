@@ -2,6 +2,7 @@ var containerCarrito = document.getElementById("container-cart");
 var btnAgregarCarrito = document.getElementsByClassName("agregarCarrito");
 var btnEliminarCarrito = document.getElementsByClassName("eliminar-producto");
 var tituloCarrito = document.getElementById("titulo");
+var montoTotal = document.getElementById('total')
 const productos = [];
 
 for (let i = 0; i < btnAgregarCarrito.length; i++) {
@@ -66,7 +67,9 @@ function leerDatos(e) {
 }
 
 function obtenerProductos() {
+  
   let productos = JSON.parse(localStorage.getItem("productos"));
+  let precio = 0;
   
   if(productos){
     if(productos.length >= 1){
@@ -75,7 +78,7 @@ function obtenerProductos() {
       tituloCarrito.style.display = "inline-block";
     }
   }
-  
+
   for (let i = 0; i < productos.length; i++) {
     let div = document.createElement("div");
     div.classList.add("cart-item");
@@ -88,6 +91,18 @@ function obtenerProductos() {
     containerCarrito.appendChild(div);
   }
 
+  for (let i = 0; i < productos.length; i++) {
+    if(productos[i]){
+      numero = productos[i].precio.slice(1, -1)
+      precio += parseInt(numero);
+    } 
+  }
+
+  if(precio == 0){
+    montoTotal.innerHTML = `Monto total: $0.00`
+  }else{
+    montoTotal.innerHTML = `Monto total: $${precio.toFixed(3)}`
+  }
 }
 
 function removeObjectWithId(arr, id) {
