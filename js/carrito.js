@@ -22,15 +22,15 @@ function eliminarProducto() {
 
       boton.addEventListener("click", (e) => {
         e.preventDefault();
-        console.log(e);
+        // console.log(e);
 
         let productos = JSON.parse(localStorage.getItem("productos"));
         for (let i = 0; i < productos.length; i++) {
           if (productos[i]) {
-            console.log(boton);
+            // console.log(boton);
             if (boton.id == productos[i].id) {
               localStorage.setItem("productos", JSON.stringify(removeObjectWithId(productos, productos[i].id)));
-              console.log("son iguales");
+              // console.log("son iguales");
               break;
             }
           }
