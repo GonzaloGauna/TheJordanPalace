@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 let listaDeUsuariosRegistrados = JSON.parse(localStorage.getItem("Usuarios"));
 
 
+
 form.addEventListener("submit", (e)=>{
     e.preventDefault;
     validation();
@@ -15,7 +16,6 @@ function validation(){
     const password = document.querySelector("#password");
 
     listaDeUsuariosRegistrados.forEach(usuario => {
-
         if(usuario.email != email){
         error = true;
         messageError += "<p> Email no registrado </p>";
@@ -32,7 +32,6 @@ function validation(){
         }else{
             form.submit();
             console.log("se mando la wea");
-            window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html'
         }
     });
 }
