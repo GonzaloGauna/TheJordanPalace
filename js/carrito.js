@@ -63,6 +63,23 @@ function leerDatos(e) {
     //agregar al local storage
     productos.push(productoAgregar);
     localStorage.setItem("productos", JSON.stringify(productos));
+
+    //alerta de que se agrego el producto
+    const Toast = Swal.mixin({
+      background: 'black',
+      color: 'white',
+      toast: true,
+      position: 'bottom-start',
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: false
+    })
+    
+    Toast.fire({
+      icon: 'success',
+      title: 'Producto agregado correctamente'
+    })
+
   }
 }
 
