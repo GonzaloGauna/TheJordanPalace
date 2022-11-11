@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+h5{
+    font-size: 20px;
+}
+
 main{
     background: transparent;
     width: 80%;
@@ -20,6 +24,10 @@ body{
     width: 80%;
     margin: 1em;
     padding-left: 1rem;
+}
+
+.field::placeholder{
+    font-size: 12px;
 }
 
 .buttons{

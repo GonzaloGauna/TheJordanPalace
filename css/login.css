@@ -103,6 +103,9 @@ body{
     color: white;
     outline: none;
     padding-left: 1rem;
+    border: none;
+    outline: none;
+    overflow: hidden;
 }
 
 .field:focus{
