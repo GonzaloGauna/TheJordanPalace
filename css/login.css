@@ -154,7 +154,7 @@ main {
   grid-area: main;
   padding-top: 8rem;
   font-size: 15px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
 }
 
 label{
