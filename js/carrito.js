@@ -39,6 +39,7 @@ function eliminarProducto() {
         if (e.target.classList.contains("eliminar-producto")) {
           e.target.parentElement.remove();
         }
+        location.reload();
       });
     }
   }
