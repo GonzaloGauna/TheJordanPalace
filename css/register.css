@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+h5{
+    font-size: 20px;
+}
+
 main{
     background: transparent;
     width: 80%;
@@ -24,6 +28,10 @@ body{
     padding-left: 1rem;
     outline: none;
     border: none;
+}
+
+.field::placeholder{
+    font-size: 12px;
 }
 
 .buttons{
@@ -230,5 +238,3 @@ img{
         display:block;
     }
 }
-
->>>>>>> 68ceef9a74aecdc52939dc9b2d3fa2e9b124ea37
