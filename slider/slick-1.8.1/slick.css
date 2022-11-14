@@ -53,10 +53,14 @@
     position: relative;
     top: 0;
     left: 0;
+    height: 700px;
 
-    display: block;
+    /* display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .slick-track:before,
 .slick-track:after
@@ -76,7 +80,7 @@
 
 .slick-slide
 {
-    display: none;
+    /* display: none; */
     float: left;
 
     height: 100%;
@@ -100,7 +104,7 @@
 }
 .slick-initialized .slick-slide
 {
-    display: block;
+    /* display: block; */
 }
 .slick-loading .slick-slide
 {
@@ -110,7 +114,7 @@
 {
     display: block;
 
-    height: auto;
+    height: 100%;
 
     border: 1px solid transparent;
 }

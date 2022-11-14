@@ -66,7 +66,7 @@ main{
 .nav__container {
     display: flex;
     align-items: center;
-    gap: 2em;
+    /* gap: 2em; */
     list-style: none;
 }
 .nav__link {
@@ -74,6 +74,7 @@ main{
     color: white;
     text-decoration: none;
     transition: all 1s;
+    margin: 0 1.2em;
 }
 .nav__link:hover {
     letter-spacing: .2em;
@@ -82,8 +83,12 @@ main{
     cursor: pointer;
 }
 .nav__carrito {
-    font-size: 2rem;
+    font-size: 2em;
     color: white;
+    transition: all .6s;
+}
+.nav__carrito:hover {
+    transform: rotate(25deg);
 }
 /* =========== MENU ========== */
 .navMenu__container {
@@ -94,6 +99,9 @@ main{
 @media (max-width: 900px) {
     .header {
         padding: 0%;
+    }
+    .header__logo {
+        padding-left: 1em;
     }
     .navMenu__container {
         display: block;
@@ -125,5 +133,9 @@ main{
     .menu-close {
         top: -100%;
         opacity: 0;
+    }
+    .nav__link {
+        margin: 1em 0;
+        display: block;
     }
 }
