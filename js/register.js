@@ -60,7 +60,6 @@ function validation(){
     }else{
         registrarNuevaCuenta();
         form.submit();
-        // window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/pages/login.html'
     }
 }
 

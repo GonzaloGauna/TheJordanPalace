@@ -22,10 +22,26 @@ function enableButton(password) {
 function validation() {
     listaDeUsuariosRegistrados.forEach( usuario =>{
         if(usuario.email == email.value && usuario.password == password.value){
-            alert('Ingresando....');
+            alertBienvenido();
             form.submit();
         }else {
-            alert('Usuario o contraseña invalidos');
+            alertInvalido();
         }
     });
+}
+
+function alertBienvenido(){
+    swal({
+        title: "Bienvenido!",
+        text: "Ha iniciado sesion correctamente!",
+        icon: "success",
+      });
+}
+
+function alertInvalido(){
+    swal({
+        title: "Ha ocurrido un error!",
+        text: "Usuario o contraseña invalidos!",
+        icon: "warning",
+      });
 }
