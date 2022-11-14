@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1, maximumscale=1">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="./../css/login.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>The Jordan Palace</title>
@@ -12,13 +12,7 @@
 <body>
     <main>
         <section  class="form-login">
-         <header>
-            <a href="./../index.html">
-                <i class='bx bx-undo'></i>
-            </a>
-        </header> 
-        
-        <form action="../pages/index.html" method="post" enctype="application/x-www-form-urlencoded" class="form-login">
+        <form method="post" action="./../index.html" enctype="application/x-www-form-urlencoded" class="form-login">
             <img src="../images/others/jordan_logo.png" alt="logo-jordan">
             <h5>Iniciar Sesion</h5>
             <br>
@@ -32,17 +26,17 @@
             <label for="password">Contraseña</label> 
             <br>
             <br>
-            <input class="field" type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+            <input class="field" type="password" id="password" name="password" placeholder="Ingrese su contraseña" onkeyup="enableButton(password)">
             <br>
             <br>
-            <div id="message" class="error" style="display: none;"></div>
             <p><a>¿Olvidaste tu contraseña?</a></p><br><br>
-            <a href="../index.html"><input type="submit" class="ingreso" value="Ingresar"></a>
+            <input type="submit" class="ingreso" value="Ingresar" id="button" disabled>
             <br>
             <br>
             <p>Si no tiene una cuenta, puede <a href="register.html"> registrarse</a> </p>
         </section>
     </main>
     <script src="./../js/login.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </body>
 </html>

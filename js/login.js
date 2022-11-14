@@ -1,35 +1,70 @@
 const form = document.querySelector("form");
+let listaDeUsuariosRegistrados = JSON.parse(localStorage.getItem("Usuarios"));
+let email = document.querySelector("#email");
+let password = document.querySelector("#password");
+let button = document.getElementById("button");
 
-form.addEventListener("submit", (e)=>{
+form.addEventListener("submit", (e) => {
     e.preventDefault;
+    enableButton(password);
     validation();
 });
 
-function validation(){
-    let error = false;
-    let messageError = "";
+// function validation(){
+//     let error = false;
+//     let messageError = "";
 
-    const email = document.querySelector("#email");
-    const password = document.querySelector("#password");
+//     const email = document.querySelector("#email");
+//     const password = document.querySelector("#password");
 
+//     if(JSON.stringify(email.value) != localStorage.getItem("email")){
+//         error = true;
+//         messageError += "<p> Email no registrado </p>";
+//     }
 
+//     if(JSON.stringify(password.value) != localStorage.getItem("password")){
+//         error = true;
+//         messageError += "<p> Contraseña incorrecta </p>";
+//     }
 
-    if(JSON.stringify(email.value) != localStorage.getItem("email")){
-        error = true;
-        messageError += "<p> Email no registrado </p>";
-    }
-
-    if(JSON.stringify(password.value) != localStorage.getItem("password")){
-        error = true;
-        messageError += "<p> Contraseña incorrecta </p>";
-    }
-
-    if(error){
-        document.querySelector("#message").innerHTML = messageError;
-        document.querySelector('#message').style.display = 'inline-block';
-    }else{
-        form.submit();
-        window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html';
+//     if(error){
+//         document.querySelector("#message").innerHTML = messageError;
+//         document.querySelector('#message').style.display = 'inline-block';
+//     }
+// }
+function enableButton(password) {
+    if (password.value != "") {
+        button.disabled = false;
+    } else {
+        button.disabled = true;
     }
 }
+function validation() {
+    listaDeUsuariosRegistrados.forEach((usuario) => {
+        if (
+            usuario.email == email.value &&
+            usuario.password == password.value
+        ) {
+            alertBienvenido();
+            form.submit();
+        } else {
+            alertInvalido();
+        }
+    });
+}
 
+function alertBienvenido() {
+    swal({
+        title: "Bienvenido!",
+        text: "Ha iniciado sesion correctamente!",
+        icon: "success",
+    });
+}
+
+function alertInvalido() {
+    swal({
+        title: "Ha ocurrido un error!",
+        text: "Usuario o contraseña invalidos!",
+        icon: "warning",
+    });
+}
