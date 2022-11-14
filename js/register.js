@@ -2,7 +2,6 @@ const form = document.querySelector("form");
 let regexPasswordValid = /^(([A-Z])+\w+([0-9])+)+\w+$/;
 let regexEmail = /^[0-9a-zA-Z._.-]+\@[0-9a-z._.-]+\.[a-z]+$/;
 
-
 form.addEventListener("submit", (e)=>{
     e.preventDefault();
     validation();
@@ -11,7 +10,6 @@ form.addEventListener("submit", (e)=>{
 function validation(){
     let error = false;
     let messageError = "";
-   
     const email = document.querySelector("#email");
     const name = document.querySelector("#name");
     const surname = document.querySelector("#surname");

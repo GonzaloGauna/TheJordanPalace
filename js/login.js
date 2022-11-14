@@ -32,3 +32,4 @@ function validation(){
         window.location.href = 'file:///C:/Users/Gonza/Desktop/Universidad/TheJordanPalace/index.html';
     }
 }
+
