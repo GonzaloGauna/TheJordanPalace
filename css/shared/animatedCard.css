@@ -1,4 +1,4 @@
-.container-card .card{
+.container-card .card__catalog{
     position: relative;
     width: 320px;
     height: 450px;
@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.container-card .card:before{
+.container-card .card__catalog:before{
     content: '';
     position: absolute;
     top: 0;
@@ -18,60 +18,59 @@
     transition: 0.5s ease-in-out;
 }
 
-.container-card .card:hover:before{
+.container-card .card__catalog:hover:before{
     clip-path: circle(300px at 80% -20%);
 }
 
-.container-card .card:after{
+.container-card .card__catalog:after{
     content: 'Nike';
     position: absolute;
     top: 30%;
-    left: -20%;
+    left: -10%;
     font-size: 11.25em;
     font-weight: 800;
     font-style: italic;
     color: rgba(255,255,25,0.05);
 }
 
-.container-card .card .imgBx{
+.container-card .card__catalog .imgBx{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 10000;
+    z-index: 11;
     width: 100%;
     height: 220px;
     transition: 0.5s;
 }
 
-.container-card .card:hover .imgBx{
+.container-card .card__catalog:hover .imgBx{
     top: 0%;
     transform: translateY(0%);
-    
 }
 
-.container-card .card .imgBx img{
+.container-card .card__catalog .imgBx img{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-25deg);
-    width: 270px;
+    width: 250px;
 }
 
-.container-card .card .contentBx{
+.container-card .card__catalog .contentBx{
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 100px;
     text-align: center;
-    transition: 1s;
+    transition: .5s;
     z-index: 10;
 }
 
-.container-card .card:hover .contentBx{
+.container-card .card__catalog:hover .contentBx{
     height: 210px;
 }
 
-.container-card .card .contentBx h2{
+.container-card .card__catalog .contentBx h2{
     position: relative;
     font-weight: 600;
     letter-spacing: 1px;
@@ -81,7 +80,7 @@
     margin-bottom:  0.9375em;
 }
 
-.container-card .card .contentBx .size, .container .card .contentBx .color {
+.container .card .contentBx .color {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,48 +91,13 @@
     padding-bottom: 0;
 }
 
-.container-card .card:hover .contentBx .size{
-    opacity: 1;
-    visibility: visible;
-    transition-delay: 0.5s;
-}
-
-.container-card .card:hover .contentBx .color{
+.container-card .card__catalog:hover .contentBx .color{
     opacity: 1;
     visibility: visible;
     transition-delay: 0.6s;
 }
 
-.container-card .card .contentBx .size h3, .container .card .contentBx .color h3{
-    color: #fff;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-right: 10px;
-}
-
-.container-card .card .contentBx .size span{
-    width: 26px;
-    height: 26px;
-    text-align: center;
-    line-height: 26px;
-    font-size: 14px;
-    display: inline-block;
-    color: #111;
-    background: #fff;
-    margin: 0 5px;
-    transition: 0.5s;
-    color: #111;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.container-card .card .contentBx .size span:hover{
-    background: #d90429;
-}
-
-.container-card .card .contentBx .card__purchase {
+.container-card .card__catalog .contentBx .card__purchase {
     margin: auto;
     margin-top: 1.25em;
     width: 100%;
@@ -144,16 +108,16 @@
     transition: 0.5s;
     opacity: 0;
 }
-.container-card .card:hover .contentBx .card__purchase {
+.container-card .card__catalog:hover .contentBx .card__purchase {
     transform: translateY(0px);
     opacity: 1;
 }
-.container-card .card .contentBx .card__price {
+.card__price {
     font-size: 1.875em;
     font-weight: 600;
     color: white;
 }
-.container-card .card .contentBx a{
+.card__purchase button{
     background: #fff;
     border-radius: 45px;
     text-decoration: none;
@@ -162,11 +126,28 @@
     font-size: 1em;
     padding: 1.125em;
     text-transform: uppercase;
+    cursor: pointer;
 }
-.container-card .card .contentBx a:hover{
+.card__purchase a:hover{
     color: white;
+    background: #d90429;
+}
+.card__purchase {
+    position: absolute;
+    z-index: 11;
+    margin: auto;
+    margin-top: 1.25em;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(50px);
+    transition: 0.5s;
+    opacity: 0;
+    bottom: 0;
 }
 
-.container-card .card .contentBx a:hover {
-    background: #d90429;
+.card__catalog:hover .card__purchase {
+    transform: translateY(-40px);
+    opacity: 1;
 }

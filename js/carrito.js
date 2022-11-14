@@ -66,7 +66,7 @@ function leerDatos(e) {
 
     //alerta de que se agrego el producto
     const Toast = Swal.mixin({
-      background: 'black',
+      background: '#73777B',
       color: 'white',
       toast: true,
       position: 'bottom-start',
