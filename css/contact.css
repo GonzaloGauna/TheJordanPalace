@@ -113,6 +113,9 @@ body {
   cursor: pointer;
   transition: all 1s;
 }
+.social--igm i{
+  font-size: 1.2em;
+}
 .social--wsp:hover {
   background-color: #03c100;
 }
@@ -134,4 +137,12 @@ body {
 }
 .contact__info {
   font-size: 1.2em;
+}
+@media (max-width: 550px) {
+  .block__container {
+    width: 350px;
+  }
+  .social {
+    height: 1.5em;
+  }
 }
