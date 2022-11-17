@@ -12,7 +12,12 @@ html{
 
 main{
     background: transparent;
-    width: 50%; 
+    width: 80%;
+    height: 100%; 
+}
+
+img{
+    font-size: 1em;
 }
 
 
@@ -29,7 +34,7 @@ body{
 }
 
 .cancelar{
-    display:block;
+    display:flex;
     width: 100%;
     height: 40px;
     background-color: #252323;
@@ -40,18 +45,10 @@ body{
     font-weight: 600;
     text-decoration: none;
     text-align: center;
-}
-
-/* .field::placeholder{
-    font-size: 12px;
-}
-
-.buttons{
-    display: flex;
     justify-content: center;
-    gap: 4rem;
-    margin-top: 2em;
-} */
+    align-items: center;
+}
+
 .cancelar:hover{
     background-color: white;
     color: #252323;
@@ -65,10 +62,19 @@ img{
     margin-top: 2em;
     color:crimson;
     padding: 1.5em;
+    text-decoration: none;
+    border: none;
 }
 
 
 @media only screen and (min-width: 48em){
+    main{
+        height: 100%;
+    }
+
+    img{
+        font-size: 2em;
+    }
 
     .field{
         width: 80%;
@@ -83,6 +89,8 @@ img{
         justify-content: center;
         gap: 4rem;
         margin-top: 2em;
+        align-items: center;
+        text-align: center;
     }
 
     .buttons a{
@@ -125,6 +133,14 @@ img{
 }
 
 @media only screen and (min-width: 60em){
+
+    main{
+        height: 100%;
+    }
+
+    img{
+        font-size: 2em;
+    }
 
     .field{
         width: 70%;
@@ -176,10 +192,15 @@ img{
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 37.5em){
 
     main{
         width: 70%;
+        height: 50%;
+    }
+
+    img{
+        font-size: 2em;
     }
 
     .form-login{
@@ -188,12 +209,26 @@ img{
     }
 
     .ingreso{
-        display:block;
         width: 100%;
+        display: flex;
+        position: relative;
+        text-align: center;
+        justify-content: center;
+        top: 1em;
+        left: 0;
     }
 
     .cancelar{
         width: 100%;
-        display:block;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+@media screen and (min-width: 1000px){
+    main{
+        width: 50%;
     }
 }
