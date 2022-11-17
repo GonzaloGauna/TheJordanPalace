@@ -127,6 +127,11 @@
     padding: 1.125em;
     text-transform: uppercase;
     cursor: pointer;
+    transition: all .6s;
+}
+.card__purchase button:hover {
+    background-color: black;
+    color: white;
 }
 .card__purchase a:hover{
     color: white;
