@@ -4,7 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./../css/vista-cuenta.css" />
+        <link rel="stylesheet" href="./../css/vistaCuenta.css" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="./../css/popups.css">
         <link rel="stylesheet" href="./../css/shared/header.css" />
         <link rel="stylesheet" href="./../css/shared/footer.css" />
         <link
@@ -57,7 +59,7 @@
                 <div id="tarjetas">
                     <div class="titulo">
                         <h2>Mis Tarjetas</h2>
-                        <button class="agregar">Agregar Tarjeta</button>
+                        <button id="agregarTarjeta" class="agregar">Agregar Tarjeta</button>
                     </div>
                     <hr />
                     <div class="tarjeta">
@@ -68,7 +70,7 @@
                 <div id="direcciones">
                     <div class="titulo">
                         <h2>Mis Direcciones</h2>
-                        <button class="agregar">Agregar Dirección</button>
+                        <button class="agregar" id="agregarDireccion">Agregar Dirección</button>
                     </div>
                     <hr />
                     <div class="direccion">
@@ -76,6 +78,185 @@
                         <button class="eliminar">Eliminar</button>
                     </div>
                 </div>
+                <!-- POPUP NUEVA TARJETA -->
+                <div id="area" class="popupTarjeta">
+                    <div class="master-card">
+                        <i class='bx bx-x closeBtn' id="closeBtnTarjeta"></i>
+                        <div class="card">
+                            <div class="title">CREDIT CARD</div>
+                            <div class="input-number">
+                                <span class="title-number">CARD NUMBER</span>
+                                <div class="inputs-number">
+                                    <input
+                                        type="text"
+                                        maxlength="4"
+                                        name="number-card"
+                                        placeholder="0000"
+                                        required="required"
+                                    />
+                                    <input
+                                        type="text"
+                                        maxlength="4"
+                                        name="number-card"
+                                        placeholder="0000"
+                                        required="required"
+                                    />
+                                    <input
+                                        type="text"
+                                        maxlength="4"
+                                        name="number-card"
+                                        placeholder="0000"
+                                        required="required"
+                                    />
+                                    <input
+                                        type="text"
+                                        maxlength="4"
+                                        name="number-card"
+                                        placeholder="0000"
+                                        required="required"
+                                    />
+                                </div>
+                                <div class="selects-date selecters">
+                                    <div class="day-select">
+                                        <span>DAY</span>
+                                        <select id="dates">
+                                            <option value="">1</option>
+                                            <option value="">2</option>
+                                            <option value="">3</option>
+                                            <option value="">4</option>
+                                            <option value="">5</option>
+                                            <option value="">6</option>
+                                            <option value="">7</option>
+                                            <option value="">8</option>
+                                            <option value="">9</option>
+                                            <option value="">10</option>
+                                            <option value="">11</option>
+                                            <option value="">12</option>
+                                            <option value="">13</option>
+                                            <option value="">14</option>
+                                            <option value="">15</option>
+                                            <option value="">16</option>
+                                            <option value="">17</option>
+                                            <option value="">18</option>
+                                            <option value="">19</option>
+                                            <option value="">20</option>
+                                            <option value="">21</option>
+                                            <option value="">22</option>
+                                            <option value="">23</option>
+                                            <option value="">24</option>
+                                            <option value="">25</option>
+                                            <option value="">26</option>
+                                            <option value="">27</option>
+                                            <option value="">28</option>
+                                            <option value="">29</option>
+                                            <option value="">30</option>
+                                        </select>
+                                    </div>
+                                    <div class="year-select">
+                                        <span>YEAR</span>
+                                        <select id="dates">
+                                            <option value="">22</option>
+                                            <option value="">23</option>
+                                            <option value="">24</option>
+                                            <option value="">25</option>
+                                            <option value="">26</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mark-gold">
+                                <div class="round">
+                                    <div class="circles">
+                                        <div class="circle-1"></div>
+                                        <div class="circle-2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="name"><span>JEAN O IMPSUM</span></div>
+                        </div>
+                        <div class="card-back">
+                            <div class="tire"></div>
+                            <div class="secret-area">
+                                <input
+                                    type="text"
+                                    maxlength="3"
+                                    name="number-card"
+                                    placeholder="000"
+                                    required="required"
+                                />
+                            </div>
+                            <div class="chip-card"></div>
+                        </div>
+                    </div>
+                    <div class="button-sent">
+                        <button id="back">VOLTAR</button>
+                        <button id="continue">CONTINUAR</button>
+                    </div>
+                </div>
+                <!-- POPUP DATOS -->
+                <article class="popUp" id="popupDireccion">
+                    <i class='bx bx-x' id="closeBtnDireccion"></i>
+                    <div class="rowBox">
+                        <h2 class="popUp__title">Nueva Dirección</h2>
+                        <i class='bx bxs-credit-card'></i>
+                    </div>
+                    <form class="form">
+                        <div>
+                            <label for="alias">Alias</label>
+                            <input id="alias" type="text" name="alias" placeholder="Alias">
+                        </div>
+                        <div>
+                            <label class="text-izquierda2" for="provincias">Provincias</label> 
+                                <select class="text-derecha2" id="provincias" name="provincias">
+                                    <option value="1">Buenos Aires</option>
+                                    <option value="2">Catamarca</option>
+                                    <option value="3">Chaco</option>
+                                    <option value="4">Chubut</option>
+                                    <option value="5">Córdoba</option>
+                                    <option value="6">Corrientes</option>
+                                    <option value="7">Entre Ríos</option>
+                                    <option value="8">Formosa</option>
+                                    <option value="9">Jujuy</option>
+                                    <option value="10">La Pampa</option>
+                                    <option value="11">La Rioja</option>
+                                    <option value="12">Mendoza</option>
+                                    <option value="13">Misiones</option>
+                                    <option value="14">Neuquén</option>
+                                    <option value="15">Río Negro</option>
+                                    <option value="16">Salta</option>
+                                    <option value="17">San Juan</option>
+                                    <option value="18">San Luis</option>
+                                    <option value="19">Santa Cruz</option>
+                                    <option value="20">Santa Fe</option>
+                                    <option value="21">Santiago del Estero</option>
+                                    <option value="22">Tierra del Fuego</option>
+                                    <option value="23">Tucumán</option>
+                                </select>
+                        </div>
+                        <div>
+                            <label id="localidad" for="localidades">Localidad</label>
+                            <select id="localidades" name="localidades">
+                                <option value="1">Villa Eduardo Madero</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="direccion">Dirección</label>
+                            <input id="direccion" type="text" name="direccion" placeholder="Dirección">
+                        </div>
+                        <div> 
+                            <label for="tel">Telefono</label>
+                            <input id="tel" type="tel" name="tel" placeholder="Telefono" pattern="[0-9]{8,}" required>
+                    </div>
+                    <div>
+                        <label for="piso">Piso</label>
+                        <input id="piso" type="text" name="piso" pattern="[0-9]{1}">
+                    </div>
+                    <div>
+                        <label for="dept">Dept</label>
+                        <input id="dept" type="text" name="dept" pattern="[A-Z]{1}">
+                    </div>
+                    <button type="submit">agregar</button>
+                </article>
             </div>
         </main>
         <footer class="footer">
@@ -112,7 +293,10 @@
                 </div>
             </div>
         </footer>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="./../js/popups.js"></script>
+        <script src="./../js/vistaCuenta.js"></script>
         <script src="./../js/header.js"></script>
+        <script src="./../js/popups.js"></script>
     </body>
 </html>
