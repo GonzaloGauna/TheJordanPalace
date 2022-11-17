@@ -110,8 +110,8 @@ function obtenerProductos() {
   }
 
   for (let i = 0; i < productos.length; i++) {
-    if(productos[i]){
-      numero = productos[i].precio.slice(1, -1)
+    if(productos[i]){ 
+      numero = productos[i].precio.slice(3)
       precio += parseInt(numero);
     } 
   }
@@ -119,7 +119,7 @@ function obtenerProductos() {
   if(precio == 0){
     montoTotal.innerHTML = `Monto total: $0.00`
   }else{
-    montoTotal.innerHTML = `Monto total: $${precio.toFixed(3)}`
+    montoTotal.innerHTML = `Monto total: US$${precio}`
   }
 }
 
