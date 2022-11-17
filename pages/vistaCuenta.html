@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../css/vista-cuenta.css" />
+        <link rel="stylesheet" href="./../css/shared/header.css" />
+        <link rel="stylesheet" href="./../css/shared/footer.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <title>Mi cuenta</title>
+    </head>
+    <body>
+        <header class="header">
+            <figure class="header__logo">
+                <img
+                    src="./../images/others/jordan-icon.jpg"
+                    alt="jordan logo"
+                />
+            </figure>
+            <nav class="header__nav menu-close" id="headerNav">
+                <ul class="nav__container">
+                    <li>
+                        <a class="nav__link" href="./../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./../pages/contact.html"
+                            >Contacto</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./../pages/catalog.html"
+                            >Catálogo</a
+                        >
+                    </li>
+                    <li>
+                        <a class="nav__link nav__link--miCuenta" id="user"
+                            >Mi Cuenta</a
+                        >
+                    </li>
+                    <li>
+                        <a href="./../pages/shopping-cart.html"
+                            ><i class="bx bx-cart nav__carrito"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navMenu__container">
+                <i class="bx bx-menu navMenu__icon" id="navMenu"></i>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div id="tarjetas">
+                    <div class="titulo">
+                        <h2>Mis Tarjetas</h2>
+                        <button class="agregar">Agregar Tarjeta</button>
+                    </div>
+                    <hr />
+                    <div class="tarjeta">
+                        <p class="datos">mi tarjeta 123</p>
+                        <button class="eliminar">Eliminar</button>
+                    </div>
+                </div>
+                <div id="direcciones">
+                    <div class="titulo">
+                        <h2>Mis Direcciones</h2>
+                        <button class="agregar">Agregar Dirección</button>
+                    </div>
+                    <hr />
+                    <div class="direccion">
+                        <p class="datos">mi direccion 123</p>
+                        <button class="eliminar">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div>
+                <div class="column">
+                    <p>Fortuna Mateo 45.238.796</p>
+                    <br />
+                    <p>Gauna Gonzalo 41.806.073</p>
+                    <br />
+                    <p>Herlein Gonzalo 43.861.369</p>
+                    <br />
+                    <p>Pizarro Santiago 45.315.788</p>
+                    <br />
+                    <p>Seguinos En</p>
+                    <br />
+
+                    <div>
+                        <i class="bx bxl-facebook-circle"></i>
+                        <i class="bx bxl-instagram"></i>
+                        <i class="bx bxl-twitter"></i>
+                    </div>
+                </div>
+                <div class="column">
+                    <p>Lunes a Sabado de 8 a 19hs</p>
+                    <p>© 2022 The Jordan Palace</p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <p>Terminos de uso</p>
+                    <p>Politica de privacidad</p>
+                </div>
+            </div>
+        </footer>
+        <script src="./../js/popups.js"></script>
+        <script src="./../js/header.js"></script>
+    </body>
+</html>
