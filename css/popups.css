@@ -71,30 +71,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
-input,
-select {
-  color: rgba(255, 255, 255, 0.5);
-}
-input option,
-select option {
-  color: gray;
-}
 
-::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
 .popupTarjeta {
   display: none;
   background: #222222e7;
