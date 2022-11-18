@@ -57,12 +57,16 @@
     border: none;
     background-color: rgb(235, 156, 52);
     align-self: center;
-    margin-bottom: 2em;
     cursor: pointer;
+    margin-top: 1em;
     transition: letter-spacing .3s;
 }
 .form button:hover {
     letter-spacing: 5px;
+}
+
+#agregarDireccionPopUp{
+    margin-top: 0;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu");
