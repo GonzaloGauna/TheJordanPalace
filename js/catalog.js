@@ -285,7 +285,8 @@ function showArray(lista) {
     });
 }
 
-function showArticle(nombre, precio, modelo, imgUrl, id) {
+function showArticle(nombre, precio, modelo, imgUrl) {
+    const id = "agregarCarrito";
     return `
     <article class="card-container">
     <div class="card__catalog card--colorRed">

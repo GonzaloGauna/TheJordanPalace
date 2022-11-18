@@ -2,10 +2,25 @@ var containerCarrito = document.getElementById("container-cart");
 var btnAgregarCarrito = document.getElementsByClassName("agregarCarrito");
 var btnEliminarCarrito = document.getElementsByClassName("eliminar-producto");
 var tituloCarrito = document.getElementById("titulo");
-var montoTotal = document.getElementById('total')
+var montoTotal = document.getElementById('total');
+const filtrarBoton = document.getElementById("filtrarBtn");
 const productos = [];
 
+filtrarBoton.addEventListener("click", () => {
+  for (let i = 0; i < btnAgregarCarrito.length; i++) {
+    console.log("hola");
+    if (btnAgregarCarrito[i]) {
+      btnAgregarCarrito[i].addEventListener("click", (e) => {
+        e.preventDefault();
+        console.log(e);
+        leerDatos(e);
+      });
+    }
+  }
+});
+
 for (let i = 0; i < btnAgregarCarrito.length; i++) {
+  console.log("hola");
   if (btnAgregarCarrito[i]) {
     btnAgregarCarrito[i].addEventListener("click", (e) => {
       e.preventDefault();
