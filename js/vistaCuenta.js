@@ -14,6 +14,12 @@ const codigoSeguridad = document.querySelector("#cod-seguridad");
 const vencimiento = document.querySelector("#vencimiento");
 const titular = document.querySelector("#titular");
 
+// regex tarjeta
+let regexTarjeta = /^5[1-5][0-9]{14}$/
+
+// regex direccion
+let regexNumeroTelefono = /^(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
+
 // botones de agregar
 const btnAgregarDireccion = document.querySelector("#agregarDireccionPopUp");
 const btnGuardarTarjeta = document.querySelector("#guardarTarjeta");
