@@ -156,8 +156,10 @@ select{
     margin-bottom: 20px;
 }
 
+
+
 /* mensajes de error */
-.mensajesDeError{
+form p{
     margin-top: 10px;
 }
 

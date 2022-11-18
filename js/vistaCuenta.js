@@ -14,13 +14,6 @@ const codigoSeguridad = document.querySelector("#cod-seguridad");
 const vencimiento = document.querySelector("#vencimiento");
 const titular = document.querySelector("#titular");
 
-// regex tarjeta
-let regexTarjeta = /^5[1-5][0-9]{14}$/
-let regexCodigoSeguridad = /^[0-9]{3}$/
-
-// regex direccion
-let regexNumeroTelefono = /^(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
-
 // botones de agregar
 const btnAgregarDireccion = document.querySelector("#agregarDireccionPopUp");
 const btnGuardarTarjeta = document.querySelector("#guardarTarjeta");
@@ -57,8 +50,8 @@ formTarjeta.addEventListener("submit", (e)=>{
   function validarTarjeta(){
     let error=false;
     let mensajesError='';
-    let regexTarjeta = /^5[1-5][0-9]{14}$/
-    let regexVenc = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/
+    let regexTarjeta = /^[0-9]{10}$/
+    let regexVenc = /^(0[1-9]|1[0-2])\/([0-9]{2})$/
     let regexCodigoSeguridad = /^[0-9]{3}$/
     let regexTitular = /^[A-Z][a-zA-Z]+$/
 
@@ -147,3 +140,94 @@ formTarjeta.addEventListener("submit", (e)=>{
     }
 ];
 let tarjetasObtenidas=JSON.parse(localStorage.getItem("listaTarjetas"));
+
+
+
+
+const formDireccion=document.getElementById("formularioDireccion");
+const alias=document.getElementById("alias");
+const provincias=document.getElementById("provincias");
+const localidad=document.getElementById("localidad");
+const direccion=document.getElementById("direccion");
+const tel=document.getElementById("tel");
+const dept=document.getElementById("dept");
+const piso=document.getElementById("piso");
+
+formDireccion.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    validarDireccion();
+});
+function validarDireccion(){
+    let error=false;
+    let mensajesError='';
+    let regexNumeroTelefono = /^(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
+    let regexPiso = /^[0-9]+$/;
+    let regexDept = /^[A-Za-z]{1}/;
+
+    if(alias.value==""){
+        error=true;
+        mensajesError+="<p>El campo alias es obligatorio</p>";
+    }
+    if(provincias.value==0){
+        error=true;
+        mensajesError+="<p>El campo provincia es obligatorio</p>"
+    }
+    if(localidad.value==""){
+        error=true;
+        mensajesError+="<p>El campo localidad es obligatorio</p>";
+    }
+    if(tel.value==""){
+        error=true;
+        mensajesError+="<p>El campo teléfono es obligatorio</p>";
+    }
+    if(!regexNumeroTelefono.test(tel.value)){
+        error=true;
+        mensajesError+="<p>El formato del teléfono es invalido</p>";
+    }
+    if(dept.value==""){
+        error=true;
+        mensajesError+="<p>El campo dept es obligatorio</p>";
+    }
+    if(!regexDept.test(dept.value)){
+        error=true;
+        mensajesError+="<p>El formato del departamento es invalido</p>";
+    }
+    if(piso.value==""){
+        error=true;
+        mensajesError+="<p>El campo piso es obligatorio</p>";
+    }
+    if(!regexPiso.test(piso.value)){
+        error=true;
+        mensajesError+="<p>El formato del piso es invalido</p>";
+    }
+    if(error){
+        document.getElementById("mensajeDireccion").innerHTML=mensajesError;
+    }else{
+        let nuevaDireccionData = {
+            alias:alias.value,
+            provincias:provincias.value,
+            localidad:localidad.value,
+            direccion:direccion.value,
+            tel:tel.value,
+            dept:dept.value,
+            piso:piso.value,
+        }
+        direccionData.push(nuevaDireccionData);
+        localStorage.setItem("listaDirecciones",JSON.stringify(direccionData));
+        formDireccion.submit();
+    }
+
+}
+
+let direccionData=[
+    {
+        alias:"",
+        provincias:"",
+        localidad:"",
+        direccion:"",
+        tel:"",
+        dept:"",
+        piso:"",
+    }
+];
+let direccionesObtenidas=JSON.parse(localStorage.getItem("listaDirecciones"));
