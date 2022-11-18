@@ -62,9 +62,10 @@
             <button id="agregarTarjeta" class="agregar">Agregar Tarjeta</button>
           </div>
           <hr />
-          <div class="tarjeta">
-            <p class="datos">mi tarjeta 123</p>
-            <button class="eliminar">Eliminar</button>
+          <div class="tarjetasContainer">
+              <div class="tarjeta">
+                
+              </div>
           </div>
         </div>
         <div id="direcciones">
@@ -75,9 +76,10 @@
             </button>
           </div>
           <hr />
-          <div class="direccion">
-            <p class="datos">mi direccion 123</p>
-            <button class="eliminar">Eliminar</button>
+          <div class="direccionesContainer">
+              <div class="direccion">
+                
+              </div>
           </div>
         </div>
         <!-- POPUP NUEVA TARJETA -->
@@ -87,7 +89,7 @@
             <h2 class="popUp__title">Nueva Tarjeta</h2>
             <i class="bx bxs-credit-card"></i>
           </div>
-          <form action="#" class="form" id="form-tarjeta">
+          <form action="#" class="form" id="form-tarjeta" method="get">
             <div>
               <label class="text-izquierda3" for="serial"
                 >Número de tarjeta</label
@@ -98,7 +100,6 @@
                 type="number"
                 name="serial"
                 placeholder="10 Dígitos"
-                pattern="[0-9]{16}"
               />
             </div>
             <div>
@@ -109,7 +110,6 @@
                 type="text"
                 name="cod-seguridad"
                 placeholder="xxx"
-                pattern="[0-9]{3}"
               />
             </div>
             <div>
@@ -122,7 +122,6 @@
                 type="text"
                 name="vencimiento"
                 placeholder="mm/aa"
-                pattern="{5}"
               />
             </div>
             <div>
@@ -138,8 +137,7 @@
               />
             </div>
             <button type="submit" id="guardarTarjeta">Guardar</button>
-            <!-- <p class="mensajesDeError">HOLAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            <p class="mensajesDeError">holaaaaa</p> -->
+            <p class="mensajesDeError" id="mensaje2"></p>
           </form>
         </article>
         <!-- POPUP DATOS -->
@@ -213,7 +211,6 @@
                 id="piso"
                 type="number"
                 name="piso"
-                pattern="[0-9]{1}"
                 placeholder="Número de piso"
               />
             </div>
@@ -223,13 +220,11 @@
                 id="dept"
                 type="text"
                 name="dept"
-                pattern="[0-9]{1}[A-Z]{1}"
-                placeholder="Ej: 4A"
+                placeholder="Ej: A"
               />
             </div>
             <button type="submit" id="agregarDireccionPopUp">agregar</button>
-            <!-- <p class="mensajesDeError">HOLAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
-            <p class="mensajesDeError">holaaaaa</p> -->
+            <p class="mensajesDeError" id="mensajeDireccion"></p>
           </form>
         </article>
       </div>

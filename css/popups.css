@@ -157,7 +157,7 @@ select{
 }
 
 /* mensajes de error */
-.mensajesDeError{
+form p{
     margin-top: 10px;
 }
 
