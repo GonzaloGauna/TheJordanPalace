@@ -56,6 +56,8 @@ body{
 
 img{
     font-size: 2em;
+    position: relative;
+    right: .8em;
 }
 
 .error{
@@ -64,6 +66,22 @@ img{
     padding: 1.5em;
     text-decoration: none;
     border: none;
+}
+
+.bx-undo{
+    font-size: 3em;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+    bottom: 3em;
+    right: 5em;
+    cursor: pointer;
+}
+
+.bx-undo:hover{
+    background-color: white;
+    color: black;
 }
 
 
