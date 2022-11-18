@@ -66,11 +66,32 @@ main {
     font-size: 30px;
 }
 
+.tarjetasContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.tarjetasContainer div{
+    width: 100%;
+}
+
+.direccionesContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.direccionesContainer div{
+    width: 100%;
+}
+
 .direccion,
 .tarjeta {
     display: flex;
     justify-content: space-between;
     margin: 15px;
+    flex-wrap: nowrap;
 }
 
 .eliminar {
