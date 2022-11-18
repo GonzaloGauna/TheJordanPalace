@@ -1,16 +1,16 @@
 const agregarTarjeta = document.getElementById("agregarTarjeta");
-const area = document.getElementById("area");
+const popupTarjeta = document.getElementById("popupTarjeta");
 const closeBtnTarjeta = document.getElementById("closeBtnTarjeta");
 const popupDireccion = document.getElementById("popupDireccion");
 const agregarDireccion = document.getElementById("agregarDireccion");
 const closeBtnDireccion = document.getElementById("closeBtnDireccion");
 
 agregarTarjeta.addEventListener("click", ()=> {
-    area.classList.add("popupTarjetasActivo");
+    popupTarjeta.classList.add("popupTarjetasActivo");
 })
 
 closeBtnTarjeta.addEventListener("click", ()=> {
-    area.classList.remove("popupTarjetasActivo");
+    popupTarjeta.classList.remove("popupTarjetasActivo");
 })
 
 agregarDireccion.addEventListener("click", ()=> {
@@ -21,11 +21,11 @@ closeBtnDireccion.addEventListener("click", ()=> {
     popupDireccion.classList.remove("popUpDireccionActivo");
 })
 
-var popupDireccion = document.getElementById("popup-direccion");
+// var popupDireccion = document.getElementById("popup-direccion");
 var botonDireccion = document.getElementById("boton-direccion");
 var cerrarDireccion = document.getElementById("cerrar-direccion");
 
-const formDireccion = document.getElementById("form-direccion");
+const formDireccion = document.getElementById("formularioDireccion");
 const alias = document.getElementById("alias");
 const provincias = document.getElementById("provincias");
 const localidad = document.getElementById("localidad");
@@ -113,24 +113,6 @@ let direccionData = [
 let direccionesObtenidas = JSON.parse(localStorage.getItem("listaDirecciones"));
 
 /*metodos de pago*/
-
-var popupTarjeta = document.getElementById("popup-tarjeta");
-var botonTarjeta = document.getElementById("boton-tarjeta");
-var cerrarTarjeta = document.getElementById("cerrar-tarjeta");
-
-botonTarjeta.onclick = function () {
-    popupTarjeta.style.display = "block";
-};
-
-cerrarTarjeta.onclick = function () {
-    popupTarjeta.style.display = "none";
-};
-
-window.onclick = function (event) {
-    if (event.target == popupTarjeta) {
-        popupTarjeta.style.display = "none";
-    }
-};
 
 const formTarjeta = document.getElementById("form-tarjeta");
 var serial = document.getElementById("serial");
