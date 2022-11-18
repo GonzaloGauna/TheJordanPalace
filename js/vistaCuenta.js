@@ -137,8 +137,11 @@ function validarTarjeta() {
     tarjetaData.push(nuevaTarjetaData);
     localStorage.setItem("listaTarjetas", JSON.stringify(tarjetaData));
     // formTarjeta.submit();
+    agregarNuevaTarjeta();
+    setTimeout(() => {
+      popupTarjeta.classList.remove("popupTarjetasActivo");
+    }, 1000);
   }
-  agregarNuevaTarjeta();
 }
 
 function agregarNuevaTarjeta(){
@@ -226,8 +229,11 @@ function validarDireccion() {
     direccionData.push(nuevaDireccionData);
     localStorage.setItem("listaDirecciones", JSON.stringify(direccionData));
     // formDireccion.submit();
+    agregarNuevaDireccion();
+    setTimeout(() => {
+      popupDireccion.classList.remove("popUpDireccionActivo");
+    }, 1000);
   }
-  agregarNuevaDireccion();
 }
 
 function agregarNuevaDireccion(){
