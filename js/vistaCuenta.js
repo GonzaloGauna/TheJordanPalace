@@ -20,5 +20,3 @@ agregarDireccion.addEventListener("click", ()=> {
 closeBtnDireccion.addEventListener("click", ()=> {
     popupDireccion.classList.remove("popUpDireccionActivo");
 })
-
-
