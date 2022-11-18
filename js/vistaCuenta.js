@@ -22,7 +22,7 @@ const btnAgregarDireccion = document.querySelector("#agregarDireccionPopUp");
 const btnGuardarTarjeta = document.querySelector("#guardarTarjeta");
 
 // botones de eliminar
-const botonesEliminar = document.getElementsByClassName(".eliminar");
+const botonesEliminar = document.getElementsByClassName("eliminar");
 
 // arrays
 const tarjetaData = [];
@@ -43,6 +43,17 @@ agregarDireccion.addEventListener("click", () => {
 closeBtnDireccion.addEventListener("click", () => {
   popupDireccion.classList.remove("popUpDireccionActivo");
 });
+
+function eliminar(){
+  for (let i = 0; i < botonesEliminar.length; i++) {
+    if(botonesEliminar[i]){
+      botonesEliminar[i].addEventListener('click', (e)=>{
+        let target = e.target;
+        target.parentElement.remove();
+      })
+    }
+  }
+}
 
 formTarjeta.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -125,7 +136,7 @@ function validarTarjeta() {
     };
     tarjetaData.push(nuevaTarjetaData);
     localStorage.setItem("listaTarjetas", JSON.stringify(tarjetaData));
-    formTarjeta.submit();
+    // formTarjeta.submit();
   }
   agregarNuevaTarjeta();
 }
@@ -137,23 +148,11 @@ function agregarNuevaTarjeta(){
       let nuevaTarjeta = document.createElement("div");
       nuevaTarjeta.classList.add("tarjeta");
       nuevaTarjeta.innerHTML = `<p class="datos">Titular: ${tarjetasObtenidas[i].titular} Numero: ${tarjetasObtenidas[i].numeroTarjeta}</p>
-            <button class="eliminar">Eliminar</button>`;
+            <button class="eliminar" onfocus="eliminar()">Eliminar</button>`;
       divTarjetas.appendChild(nuevaTarjeta);
     }
   }
 }
-// btnGuardarTarjeta.addEventListener("click", () => {
-//   let tarjetasObtenidas = JSON.parse(localStorage.getItem("listaTarjetas"));
-//   for (let i = 0; i < tarjetasObtenidas.length; i++) {
-//     if (tarjetasObtenidas[i]) {
-//       let nuevaTarjeta = document.createElement("div");
-//       nuevaTarjeta.classList.add("tarjeta");
-//       nuevaTarjeta.innerHTML = `<p class="datos">Titular: ${tarjetasObtenidas[i].titular} Numero: ${tarjetasObtenidas[i].numeroTarjeta}</p>
-//             <button class="eliminar">Eliminar</button>`;
-//       divTarjetas.appendChild(nuevaTarjeta);
-//     }
-//   }
-// });
 
 const formDireccion = document.getElementById("formularioDireccion");
 const alias = document.getElementById("alias");
@@ -226,7 +225,7 @@ function validarDireccion() {
     };
     direccionData.push(nuevaDireccionData);
     localStorage.setItem("listaDirecciones", JSON.stringify(direccionData));
-    formDireccion.submit();
+    // formDireccion.submit();
   }
   agregarNuevaDireccion();
 }
@@ -238,24 +237,10 @@ function agregarNuevaDireccion(){
       let nuevaDireccion = document.createElement("div");
       nuevaDireccion.classList.add("direccion");
       nuevaDireccion.innerHTML = `<p class="datos">Direccion: ${direccionesObtenidas[i].direccion} Alias: ${direccionesObtenidas[i].alias}</p>
-                <button class="eliminar">Eliminar</button>`;
+                <button class="eliminar" onfocus="eliminar()">Eliminar</button>`;
       divDirecciones.appendChild(nuevaDireccion);
     }
   }
 }
-
-// btnAgregarDireccion.addEventListener("click", () => {
-//   let direccionesObtenidas = JSON.parse(localStorage.getItem("listaDirecciones"));
-//   for (let i = 0; i < direccionesObtenidas.length; i++) {
-//     if (direccionesObtenidas[i]) {
-//       let nuevaDireccion = document.createElement("div");
-//       nuevaDireccion.classList.add("direccion");
-//       nuevaDireccion.innerHTML = `<p class="datos">Direccion: ${direccionesObtenidas[i].direccion} Alias: ${direccionesObtenidas[i].alias}</p>
-//                 <button class="eliminar">Eliminar</button>`;
-//       divDirecciones.appendChild(nuevaDireccion);
-//     }
-//   }
-// });
-
 
 
