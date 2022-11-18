@@ -147,3 +147,5 @@ formTarjeta.addEventListener("submit", (e)=>{
     }
 ];
 let tarjetasObtenidas=JSON.parse(localStorage.getItem("listaTarjetas"));
+
+
