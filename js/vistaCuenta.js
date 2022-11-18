@@ -7,6 +7,11 @@ const popupDireccion = document.getElementById("popupDireccion");
 const agregarDireccion = document.getElementById("agregarDireccion");
 const closeBtnDireccion = document.getElementById("closeBtnDireccion");
 
+
+
+
+
+
 // formulario
 const formulario =  document.querySelector('#form-tarjeta')
 const numeroTarjeta = document.querySelector('#serial')
