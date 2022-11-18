@@ -13,6 +13,7 @@
             href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
             rel="stylesheet"
         />
+        <link rel="icon" type="image/jpg" href="./images/others/jordan-icon.jpg"/>
         <title>Mi cuenta</title>
     </head>
     <body>
@@ -133,7 +134,10 @@
                                 placeholder="Titular"
                             />
                         </div>
-                        <button type="submit">Guardar</button>
+                        <button type="submit" id="guardarTarjeta">Guardar</button>
+                        <div id="mensaje2" class="error">
+
+                        </div>
                     </form>
                 </article>
                 <!-- POPUP DATOS -->
@@ -188,7 +192,7 @@
                         </div>
                         <div> 
                             <label for="tel">Telefono</label>
-                            <input id="tel" type="tel" name="tel" placeholder="Telefono" pattern="[0-9]{8,}" required>
+                            <input id="tel" type="number" name="tel" placeholder="11-1111-1111" pattern="[0-9]{8,}" required>
                     </div>
                     <div>
                         <label for="piso">Piso</label>
@@ -199,6 +203,9 @@
                         <input id="dept" type="text" name="dept" pattern="[A-Z]{1}">
                     </div>
                     <button type="submit" id="agregarDireccionPopUp">agregar</button>
+                    <div id="mensajeDireccion" class="error">
+
+                    </div>
                 </article>
             </div>
         </main>
