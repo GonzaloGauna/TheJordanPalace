@@ -98,4 +98,18 @@ button:hover {
 
 .popUpTarjeta {
     height: 100%;
+    position: relative;
+}
+.closeBtnTarjeta {
+    font-size: 3em;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 5%;
+}
+@media (max-width: 700px) {
+    .closeBtnTarjeta {
+        right: .8%;
+        top: 1%;
+    }
 }
