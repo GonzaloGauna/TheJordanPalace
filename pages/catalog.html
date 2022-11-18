@@ -1,130 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Jordan Palace</title>
-    <link rel="stylesheet" href="./../css/catalog.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/jpg" href="./images/others/jordan-icon.jpg"/>
-  </head>
-  <body>
-    <header class="header">
-      <figure class="header__logo">
-        <img src="./../images/others/jordan-icon.jpg" alt="jordan logo" />
-      </figure>
-      <nav class="header__nav menu-close" id="headerNav">
-        <ul class="nav__container">
-          <li><a class="nav__link" href="./../index.html">Home</a></li>
-          <li><a class="nav__link" href="./contact.html">Contacto</a></li>
-          <li><a class="nav__link" href="./catalog.html">Catálogo</a></li>
-          <li><a class="nav__link" href="./vistaCuenta.html">Mi Cuenta</a></li>
-          
-          <li>
-            <a href="./shopping-cart.html"
-              ><i class="bx bx-cart nav__carrito"></i
-            ></a>
-          </li>
-          <li>
-            <a href="./../pages/register.html"
-              ><i class="bx bx-user nav__carrito"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <div class="navMenu__container">
-        <i class="bx bx-menu navMenu__icon" id="navMenu"></i>
-      </div>
-    </header>
-    <main class="main">
-      <section class="container">
-        <aside class="aside">
-          <div class="filter__btn">
-            <h3>Filtros</h3>
-            <i class="bx bx-filter filter__icon" id="filterBtn"></i>
-          </div>
-          <div
-            class="filters__container filters__container--close"
-            id="filtersContainer"
-          >
-            <div class="filter" id="filter">
-              <h3>MODELO</h3>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="modelo1" />
-                <p>Air Jordan VIII</p>
-              </div>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="modelo2" />
-                <p>Air Jordan VII</p>
-              </div>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="modelo3" />
-                <p>Air Jordan XXXIV</p>
-              </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Jordan Palace</title>
+        <link rel="stylesheet" href="./../css/catalog.css" />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="icon"
+            type="image/jpg"
+            href="./images/others/jordan-icon.jpg"
+        />
+    </head>
+    <body>
+        <header class="header">
+            <figure class="header__logo">
+                <img
+                    src="./../images/others/jordan-icon.jpg"
+                    alt="jordan logo"
+                />
+            </figure>
+            <nav class="header__nav menu-close" id="headerNav">
+                <ul class="nav__container">
+                    <li>
+                        <a class="nav__link" href="./../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./contact.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./catalog.html">Catálogo</a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="./vistaCuenta.html"
+                            >Mi Cuenta</a
+                        >
+                    </li>
+
+                    <li>
+                        <a href="./shopping-cart.html"
+                            ><i class="bx bx-cart nav__carrito"></i
+                        ></a>
+                    </li>
+                    <li>
+                        <a href="./../pages/register.html"
+                            ><i class="bx bx-user nav__carrito"></i
+                        ></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="navMenu__container">
+                <i class="bx bx-menu navMenu__icon" id="navMenu"></i>
             </div>
-            <hr />
-            <div class="filter" id="filter">
-              <h3>PRECIOS</h3>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="precioMenor" />
-                <p>Menor a US$150</p>
-              </div>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="precioIntermedio" />
-                <p>$150 a US$200</p>
-              </div>
-              <div class="checkModel">
-                <input type="checkbox" name="air jordan 1" id="precioMayor" />
-                <p>Mayor a US$200</p>
-              </div>
+        </header>
+        <main class="main">
+            <section class="container">
+                <aside class="aside">
+                    <div class="filter__btn">
+                        <h3>Filtros</h3>
+                        <i class="bx bx-filter filter__icon" id="filterBtn"></i>
+                    </div>
+                    <div
+                        class="filters__container filters__container--close"
+                        id="filtersContainer"
+                    >
+                        <div class="filter" id="filter">
+                            <h3>MODELO</h3>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="modelo1"
+                                />
+                                <p>Air Jordan VIII</p>
+                            </div>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="modelo2"
+                                />
+                                <p>Air Jordan VII</p>
+                            </div>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="modelo3"
+                                />
+                                <p>Air Jordan XXXIV</p>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="filter" id="filter">
+                            <h3>PRECIOS</h3>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="precioMenor"
+                                />
+                                <p>Menor a US$150</p>
+                            </div>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="precioIntermedio"
+                                />
+                                <p>$150 a US$200</p>
+                            </div>
+                            <div class="checkModel">
+                                <input
+                                    type="checkbox"
+                                    name="air jordan 1"
+                                    id="precioMayor"
+                                />
+                                <p>Mayor a US$200</p>
+                            </div>
+                        </div>
+                        <button class="button" type="button" id="filtrarBtn">
+                            Filtrar
+                        </button>
+                    </div>
+                </aside>
+                <section
+                    class="content container-card"
+                    id="catalogContent"
+                ></section>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__content">
+                <p>Fortuna Mateo 45.238.796</p>
+                <br />
+                <p>Gauna Gonzalo 41.806.073</p>
+                <br />
+                <p>Herlein Gonzalo 43.861.369</p>
+                <br />
+                <p>Pizarro Santiago 45.315.788</p>
+                <br />
             </div>
-            <button class="button" type="button" id="filtrarBtn">
-                Filtrar
-            </button>
-          </div>
-        </aside>
-        <section class="content container-card" id="catalogContent">
 
-        </section>
-      </section>
-    </main>
-    <footer class="footer">
-      <div>
-        <div class="column">
-          <p>Fortuna Mateo 45.238.796</p>
-          <br />
-          <p>Gauna Gonzalo 41.806.073</p>
-          <br />
-          <p>Herlein Gonzalo 43.861.369</p>
-          <br />
-          <p>Pizarro Santiago 45.315.788</p>
-          <br />
-          <br />
-        </div>
+            <div class="footer__content footer__iconos">
+                <i class="bx bxl-facebook-circle"></i>
+                <i class="bx bxl-instagram"></i>
+                <i class="bx bxl-twitter"></i>
+            </div>
 
-        <div class="column">
-          <i class="bx bxl-facebook-circle"></i>
-          <i class="bx bxl-instagram"></i>
-          <i class="bx bxl-twitter"></i>
-        </div>
-
-        <div class="column">
-          <p>Lunes a Sabado de 8 a 19hs</p>
-          <p>© 2022 The Jordan Palace</p>
-          <br />
-          <br />
-          <p>Terminos de uso</p>
-          <p>Politica de privacidad</p>
-        </div>
-      </div>
-    </footer>
-    <script src="./../js/catalog.js"></script>
-    <script src="./../js/header.js"></script>
-    <script src="./../js/carrito.js" type="text/javascript"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </body>
+            <div class="footer__content">
+                <p>Lunes a Sabado de 8 a 19hs</p>
+                <p>© 2022 The Jordan Palace</p>
+                <br />
+                <p>Terminos de uso</p>
+                <p>Politica de privacidad</p>
+            </div>
+        </footer>
+        <script src="./../js/catalog.js"></script>
+        <script src="./../js/header.js"></script>
+        <script src="./../js/carrito.js" type="text/javascript"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
 </html>
