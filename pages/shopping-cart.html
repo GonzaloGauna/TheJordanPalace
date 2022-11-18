@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/shopping-cart.css" />
-        <link rel="stylesheet" href="/css/shared/header.css" />
-        <link rel="stylesheet" href="/css/shared/footer.css" />
+        <link rel="stylesheet" href="./../css/shopping-cart.css" />
+        <link rel="stylesheet" href="./../css/shared/header.css" />
+        <link rel="stylesheet" href="./../css/shared/footer.css" />
         <link
             href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
             rel="stylesheet"
@@ -14,7 +14,7 @@
         <link
             rel="icon"
             type="image/jpg"
-            href="./images/others/jordan-icon.jpg"
+            href="./../images/others/jordan-icon.jpg"
         />
         <title>Carrito de compras</title>
     </head>
@@ -63,9 +63,13 @@
                 <h1 id="titulo">El carrito esta vacio...</h1>
             </div>
             <div id="monto">
-                <h2 id="total">Monto total: $x</h2>
+                <h2 id="total">Monto total: $0.00</h2>
                 <hr />
                 <button id="finalizarCompra">Finalizar compra</button>
+            </div>
+            <div class="popUpFinalizarCompra" id="popUpFinalizarCompra">
+                <p>Gracias por comprar en</p>
+                <p>THE JORDAN PALACE!</p>
             </div>
         </main>
         <footer class="footer">

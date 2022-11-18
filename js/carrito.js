@@ -1,34 +1,20 @@
-var containerCarrito = document.getElementById("container-cart");
-var btnAgregarCarrito = document.getElementsByClassName("agregarCarrito");
 var btnEliminarCarrito = document.getElementsByClassName("eliminar-producto");
 var tituloCarrito = document.getElementById("titulo");
 var montoTotal = document.getElementById('total');
+const finalizarCompra = document.getElementById("finalizarCompra");
+const popUpFinalizarCompra = document.getElementById("popUpFinalizarCompra");
 const filtrarBoton = document.getElementById("filtrarBtn");
 const productos = [];
 
-filtrarBoton.addEventListener("click", () => {
-  for (let i = 0; i < btnAgregarCarrito.length; i++) {
-    console.log("hola");
-    if (btnAgregarCarrito[i]) {
-      btnAgregarCarrito[i].addEventListener("click", (e) => {
-        e.preventDefault();
-        console.log(e);
-        leerDatos(e);
-      });
-    }
-  }
-});
-
-for (let i = 0; i < btnAgregarCarrito.length; i++) {
-  console.log("hola");
-  if (btnAgregarCarrito[i]) {
-    btnAgregarCarrito[i].addEventListener("click", (e) => {
-      e.preventDefault();
-      console.log(e);
-      leerDatos(e);
-    });
-  }
-}
+finalizarCompra.addEventListener("click", ()=> {
+  popUpFinalizarCompra.classList.add("mostrarPopup");
+  setTimeout(() => {
+    popUpFinalizarCompra.classList.remove("mostrarPopup");
+    localStorage.setItem("productos", productos);
+    location.reload();
+  }, 3500);
+  montoTotal.innerHTML = `Monto total: $0.00`;
+})
 
 function eliminarProducto() {
   for (let i = 0; i < btnEliminarCarrito.length; i++) {
@@ -60,49 +46,10 @@ function eliminarProducto() {
   }
 }
 
-function leerDatos(e) {
-  e.preventDefault();
-  if (e.target.classList.contains("agregarCarrito")) {
-    const producto = e.target.parentElement.parentElement.parentElement;
-    const nombre = producto.querySelector(".nombreProducto").textContent;
-    const precio = producto.querySelector(".card__price").textContent;
-    const imagen = producto.querySelector(".imagen_carrito").src;
-    const id = producto.querySelector(".agregarCarrito").id;
-
-    let productoAgregar = {
-      nombre: nombre,
-      precio: precio,
-      imagen: imagen,
-      id: id,
-    };
-
-    //agregar al local storage
-    productos.push(productoAgregar);
-    localStorage.setItem("productos", JSON.stringify(productos));
-
-    //alerta de que se agrego el producto
-    const Toast = Swal.mixin({
-      background: '#73777B',
-      color: 'white',
-      toast: true,
-      position: 'bottom-start',
-      showConfirmButton: false,
-      timer: 2000,
-      timerProgressBar: false
-    })
-    
-    Toast.fire({
-      icon: 'success',
-      title: 'Producto agregado correctamente'
-    })
-
-  }
-}
-
 function obtenerProductos() {
   
   let productos = JSON.parse(localStorage.getItem("productos"));
-  let precio = 0;
+  var precio = 0;
   
   if(productos){
     if(productos.length >= 1){
@@ -113,6 +60,7 @@ function obtenerProductos() {
   }
 
   for (let i = 0; i < productos.length; i++) {
+    const containerCarrito = document.getElementById("container-cart");
     let div = document.createElement("div");
     div.classList.add("cart-item");
     div.innerHTML = `
@@ -143,4 +91,7 @@ function removeObjectWithId(arr, id) {
   arr.splice(objWithIdIndex, 1);
 
   return arr;
+}
+function limpiarProductosLocalStorage(){
+  console.log("hola");
 }
