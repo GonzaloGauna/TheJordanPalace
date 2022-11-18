@@ -13,7 +13,7 @@
 
 .popUpDireccionActivo {
   display: flex;
-  height: 560px;
+  height: auto;
 }
 .rowBox {
   display: flex;
@@ -88,7 +88,7 @@
 
 .popupTarjetasActivo {
   display: flex;
-  height: 450px;
+  height: auto;
 }
 
 input[type='text']{
@@ -147,6 +147,20 @@ select{
   transform: rotate(-90deg);
   color: #fdfdfd;
 }
+
+#form-tarjeta{
+    margin-bottom: 20px;
+}
+
+#formularioDireccion {
+    margin-bottom: 20px;
+}
+
+/* mensajes de error */
+.mensajesDeError{
+    margin-top: 10px;
+}
+
 @media (max-width: 600px) {
   .popupTarjeta {
     width: 20em;

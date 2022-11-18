@@ -16,6 +16,7 @@ const titular = document.querySelector("#titular");
 
 // regex tarjeta
 let regexTarjeta = /^5[1-5][0-9]{14}$/
+let regexCodigoSeguridad = /^[0-9]{3}$/
 
 // regex direccion
 let regexNumeroTelefono = /^(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/
