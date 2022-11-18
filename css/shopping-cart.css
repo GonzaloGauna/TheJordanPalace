@@ -117,7 +117,7 @@ h1#titulo{
   color: white;
 }
 
-#monto a {
+#monto button {
   text-decoration: none;
   position: absolute;
   top: 20px;
@@ -131,7 +131,7 @@ h1#titulo{
   text-align: center;
 }
 
-#monto a:hover {
+#monto button:hover {
   scale: 1.05;
   text-decoration: underline;
 }
@@ -153,7 +153,7 @@ h1#titulo{
     margin-bottom: 20px;
 }
 
-  #monto a{
+  #monto button{
     display: inline-block;
     margin-top: 40px;
     margin-right: 20px;
@@ -170,7 +170,7 @@ h1#titulo{
     height: 100px;
   }
 
-  #monto a{
+  #monto button {
     width: 90%;
     display: inline-block;
     margin-top: 30px;
@@ -188,7 +188,7 @@ h1#titulo{
     height: 150px;
   }
 
-  #monto a{
+  #monto button {
     margin-top: 75px;
     margin-left: -30px;
   }
@@ -204,7 +204,7 @@ h1#titulo{
     width: 20%;
     height: 180px;
   }
-  #monto a{
+  #monto button {
     width: 90%;
     display: inline-block;
     margin-top: 80px;
@@ -222,7 +222,7 @@ h1#titulo{
     width: 20%;
   }
 
-  #monto a{
+  #monto button {
     left: 15%;
     margin-top: 110px;
     width: auto;
